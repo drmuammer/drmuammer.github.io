@@ -47,11 +47,17 @@ website:
     foreground: "#C4B8A0"
     border: false
     left: |
-      © 2026 Muammer Beslen — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+      **Muammer Beslen, MD**  
+      Saha epidemiyologu · Hekim  
+      Ankara, Türkiye
     center: |
-      *Sitenin yapısı [Silvia Canelón](https://silviacanelon.com)'un Quarto sitesinden esinlendi.*
+      **Bağlantılar**  
+      [Hakkımda](/hakkimda.html) · [Notlar](/notlar.html)  
+      [Projeler](/projeler.html) · [İletişim](/iletisim.html)
     right: |
-      [GitHub](https://github.com/drmuammer) · [LinkedIn](https://linkedin.com/in/drmuammer)
+      **Sosyal**  
+      [GitHub](https://github.com/drmuammer) · [LinkedIn](https://linkedin.com/in/drmuammer)  
+      [contact@muammerbeslen.com](mailto:contact@muammerbeslen.com)
 
 format:
   html:
