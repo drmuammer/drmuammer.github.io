@@ -148,49 +148,61 @@ pre {
   border-bottom: 2px solid $accent-walnut;
 }
 
-// Footer
+// Footer — ince, tek satır, çizgi yok, esinlenme yazısı yok
 .nav-footer {
-  font-size: 0.9rem;
-  padding: 3rem 1.5rem 2rem;
+  font-family: $font-family-sans-serif !important;
+  font-size: 0.78rem !important;
+  padding: 0.85rem 1.5rem !important;
+  border-top: none !important;
+  background: $earth-deep !important;
+  color: $earth-mute !important;
+  letter-spacing: 0.02em;
+  line-height: 1.4 !important;
   position: relative;
+}
+.nav-footer p {
+  margin: 0 !important;
+  color: $earth-mute !important;
+  font-size: 0.78rem !important;
+  line-height: 1.4 !important;
 }
 .nav-footer .nav-footer-left,
 .nav-footer .nav-footer-center,
 .nav-footer .nav-footer-right {
-  font-family: $font-family-sans-serif;
-  line-height: 1.7;
+  font-family: $font-family-sans-serif !important;
+  font-size: 0.78rem !important;
+  line-height: 1.4 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .nav-footer strong {
-  font-family: $font-family-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  color: $earth-cream;
-  display: block;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.01em;
+  display: inline !important;
+  margin: 0 !important;
+  font-size: 0.78rem !important;
+  color: $earth-mute !important;
+  font-family: $font-family-sans-serif !important;
+  font-weight: 600 !important;
 }
 .nav-footer a {
-  color: $earth-line;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.15s ease, color 0.15s ease;
+  color: $earth-mute !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transition: color 0.15s ease;
 }
-.nav-footer a:hover {
-  color: $accent-amber;
-  border-bottom-color: $accent-amber;
+.nav-footer a:hover { 
+  color: $accent-amber !important;
 }
-// Footer'ın altına ince bir hat ve mikro bilgi
+// ::after esinlenme yazısı kalksın
 .nav-footer::after {
-  content: "© 2026 Muammer Beslen · CC BY 4.0 · Sitenin yapısı Silvia Canelón'un Quarto sitesinden esinlendi.";
-  display: block;
-  margin: 2rem auto 0;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(196, 184, 160, 0.15);
-  font-size: 0.78rem;
-  color: $earth-mute;
-  text-align: center;
-  letter-spacing: 0.02em;
-  max-width: 800px;
+  display: none !important;
+  content: none !important;
+}
+// Hr / divider'ları kaldır
+.nav-footer hr,
+.nav-footer-contents hr,
+hr.footer-divider {
+  display: none !important;
 }
 
 // Callout
