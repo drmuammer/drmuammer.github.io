@@ -4,20 +4,19 @@
 //   Toprak / saman palet — saha epidemiyologu kimliği
 // ============================================================
 
-$earth-deep:   #2D2418;   // koyu kahve · ana metin
-$earth-mid:    #4A3C2A;   // orta kahve · alt başlık
-$earth-soft:   #6B5A42;   // yumuşak kahve · ikincil metin
-$earth-mute:   #9B8A6F;   // soluk kahve · etiket
-$earth-line:   #D9CDB6;   // border / ayraç
-$earth-card:   #F0E6D2;   // kart arka planı
-$earth-paper:  #F7F2E8;   // alternatif bölüm bg
-$earth-cream:  #FAF7F2;   // ana arka plan
+$earth-deep:   #2D2418;
+$earth-mid:    #4A3C2A;
+$earth-soft:   #6B5A42;
+$earth-mute:   #9B8A6F;
+$earth-line:   #D9CDB6;
+$earth-card:   #F0E6D2;
+$earth-paper:  #F7F2E8;
+$earth-cream:  #FAF7F2;
 
-$accent-walnut: #7A5C3A;  // koyu accent · linkler / vurgu
-$accent-amber:  #B5945C;  // sıcak amber · etiket / tarih
-$accent-leaf:   #5C7A4A;  // yumuşak yeşil · ikincil accent
+$accent-walnut: #7A5C3A;
+$accent-amber:  #B5945C;
+$accent-leaf:   #5C7A4A;
 
-// Bootstrap değişkenlerini overide et
 $body-bg:        $earth-cream;
 $body-color:     $earth-deep;
 $link-color:     $accent-walnut;
@@ -28,69 +27,78 @@ $secondary:      $accent-amber;
 $dark:           $earth-deep;
 $light:          $earth-paper;
 
-// Tipografi — sıcak akademik
-$font-family-sans-serif: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-$font-family-serif:      "Source Serif Pro", "Source Serif 4", Georgia, "Times New Roman", serif;
+// Tipografi — havalı serif başlık + temiz sans gövde
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-family-serif:      "Fraunces", "Source Serif Pro", Georgia, "Times New Roman", serif;
 $font-family-monospace:  "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
 
-$headings-font-family:   $font-family-sans-serif;
-$headings-font-weight:   700;
+$headings-font-family:   $font-family-serif;
+$headings-font-weight:   500;
 $headings-color:         $earth-deep;
-$headings-line-height:   1.2;
+$headings-line-height:   1.15;
 
 $font-size-base:        1.0625rem;
 $line-height-base:      1.7;
 $paragraph-margin-bottom: 1.25rem;
 
-// Container
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 800px,
-  xl: 800px,
-  xxl: 800px
+  sm: 540px, md: 720px, lg: 800px, xl: 1100px, xxl: 1100px
 );
 
-// Component shapes
 $border-radius:     6px;
 $border-radius-lg:  10px;
 
-// Web font import
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
 
 /*-- scss:rules --*/
 
-// Body genel
 body {
-  font-feature-settings: "kern", "liga", "calt";
+  font-feature-settings: "kern", "liga", "calt", "ss01";
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background: $earth-cream;
 }
 
-// Tipografi rafine
-h1, h2, h3, h4 {
-  letter-spacing: -0.015em;
+// Başlıklar Fraunces ile karakterli
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
   color: $earth-deep;
+  font-feature-settings: "kern", "liga", "ss01";
 }
-h2 { margin-top: 2.5rem; }
-h3 { margin-top: 1.75rem; }
-
-p, li {
-  color: $earth-mid;
+h1 {
+  font-weight: 600;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  letter-spacing: -0.03em;
+}
+h2 { 
+  margin-top: 3rem;
+  font-size: 1.7rem;
+}
+h3 { 
+  margin-top: 2rem;
+  font-size: 1.3rem;
 }
 
-em { color: $earth-deep; font-style: italic; }
-strong { color: $earth-deep; }
+p, li, dt, dd { color: $earth-mid; }
 
+em { 
+  color: $earth-deep;
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+strong { color: $earth-deep; font-weight: 600; }
+
+// Linkler — sıcak kahve, hover'da amber
 a {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   text-decoration-color: rgba($accent-walnut, 0.4);
   transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
-a:hover {
-  text-decoration-color: $accent-amber;
-}
+a:hover { text-decoration-color: $accent-amber; }
 
 // Inline kod
 code:not(pre code) {
@@ -110,26 +118,31 @@ pre {
   font-size: 0.92rem;
 }
 
-// Navbar
+// Navbar — alttaki çizgi yok
 .navbar {
   background: $earth-cream !important;
-  border-bottom: 1px solid $earth-line;
+  border-bottom: none !important;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.navbar-collapse,
+.navbar-expand-lg {
+  border-bottom: none !important;
+}
 .navbar-title {
-  font-weight: 700;
+  font-family: $font-family-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
   letter-spacing: -0.01em;
   color: $earth-deep !important;
 }
 .navbar-nav .nav-link {
+  font-family: $font-family-sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
   color: $earth-mid !important;
 }
-.navbar-nav .nav-link:hover {
-  color: $accent-walnut !important;
-}
+.navbar-nav .nav-link:hover { color: $accent-walnut !important; }
 .navbar .nav-link.active {
   color: $accent-walnut !important;
   border-bottom: 2px solid $accent-walnut;
@@ -146,7 +159,7 @@ pre {
 }
 .nav-footer a:hover { color: $accent-amber; }
 
-// Callout — softer
+// Callout
 .callout {
   border-left-width: 3px;
   border-radius: 6px;
@@ -155,24 +168,33 @@ pre {
 }
 .callout-note { background: $earth-paper; border-color: $accent-walnut; }
 
-// Quarto'nun about template'ini kişiselleştir
-.quarto-about-trestles {
-  padding-top: 2.5rem;
+// About template (trestles + solana)
+.quarto-about-trestles { 
+  padding-top: 2.5rem; 
   padding-bottom: 1.5rem;
+}
+// Trestles'in dikey ayraç çizgisini kaldır
+.quarto-about-trestles .about-entity {
+  border-right: none !important;
+}
+.quarto-about-trestles .about-contents {
+  border-left: none !important;
+  padding-left: 2rem;
+}
+.quarto-about-trestles > .grid {
+  border: none !important;
 }
 .quarto-about-trestles .about-image {
   border: 4px solid $earth-paper;
   box-shadow: 0 0 0 1px $earth-line;
 }
-.quarto-about-jolla, .quarto-about-solana {
-  text-align: left;
-}
+.quarto-about-jolla, .quarto-about-solana { text-align: left; }
 .quarto-about-solana .about-image {
   border: 4px solid $earth-paper;
   box-shadow: 0 0 0 1px $earth-line;
 }
 
-// About sayfa link butonları
+// About link buttons
 .about-link {
   background: $earth-card !important;
   color: $earth-deep !important;
@@ -181,6 +203,7 @@ pre {
   padding: 0.4rem 0.85rem !important;
   font-weight: 500 !important;
   font-size: 0.9rem !important;
+  font-family: $font-family-sans-serif !important;
   transition: all 0.15s ease !important;
 }
 .about-link:hover {
@@ -189,32 +212,47 @@ pre {
   border-color: $accent-walnut !important;
 }
 
-// Listing — blog feed
-.quarto-listing-default {
-  margin-top: 1rem;
-}
+// Listing — Notlar
+.quarto-listing-default { margin-top: 1.5rem; }
 .list .listing-title a {
+  font-family: $font-family-serif;
   color: $earth-deep;
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
   text-decoration: none;
 }
 .list .listing-title a:hover { color: $accent-walnut; }
-.list .listing-description {
-  color: $earth-mid;
-  font-size: 0.95rem;
-}
-.list .listing-date,
-.list .listing-categories {
-  color: $accent-amber;
-  font-size: 0.85rem;
+.list .listing-description { color: $earth-mid; font-size: 0.95rem; }
+.list .listing-date { color: $accent-amber; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+.list .listing-categories { font-size: 0.75rem; }
+.list .listing-categories .listing-category {
+  background: $earth-card;
+  color: $accent-walnut;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  margin-right: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
 }
 
-// Mobile tweaks
+// Listing tek itemlı düzeltmesi
+.list.grid {
+  grid-template-columns: 1fr !important;
+}
+.quarto-listing > .list {
+  display: block !important;
+}
+.quarto-listing-default .list-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid $earth-line;
+}
+.quarto-listing-default .list-item:last-child { border-bottom: none; }
+
 @media (max-width: 768px) {
-  .quarto-about-trestles {
-    text-align: center;
-  }
+  .quarto-about-trestles { text-align: center; }
   .quarto-about-trestles .about-link {
     display: inline-block;
     margin: 0.25rem;
