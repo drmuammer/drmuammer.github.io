@@ -1,0 +1,408 @@
+/* ============================================================
+   Site özel layout — section, liste, kart
+   ============================================================ */
+
+/* Quarto wrapper'larını içeride 800px ile kısıtla — Silvia gibi */
+main.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Eyebrow label — bölüm üstündeki minik tarih/kategori gibi etiket */
+.eyebrow-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #B5945C;
+  margin-bottom: 0.5rem;
+}
+
+.section-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #B5945C;
+  margin-bottom: 0.5rem;
+}
+
+/* Section blokları */
+.section {
+  margin: 3rem -1.5rem;
+  padding: 2.5rem 1.5rem;
+}
+.section-alt {
+  background: #F3EDDF;
+  border-top: 1px solid #E5DCC4;
+  border-bottom: 1px solid #E5DCC4;
+}
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2D2418;
+  margin: 0 0 0.75rem;
+}
+.section-lead {
+  color: #6B5A42;
+  font-size: 1rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+/* Soft CTA — sayfa altı */
+.section-cta {
+  background: #2D2418;
+  color: #D9CDB6;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-radius: 0;
+}
+.section-cta p {
+  color: #D9CDB6;
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+.section-cta .cta-link {
+  color: #FAF7F2;
+  font-weight: 600;
+  border-bottom: 1px solid #B5945C;
+  text-decoration: none;
+  padding-bottom: 1px;
+  font-size: 1.05rem;
+}
+.section-cta .cta-link:hover {
+  color: #B5945C;
+}
+
+/* Arrow list (Şu sıralar) */
+.arrow-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.arrow-list li {
+  position: relative;
+  padding: 0.85rem 0 0.85rem 1.75rem;
+  border-bottom: 1px solid #D9CDB6;
+  color: #4A3C2A;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+.arrow-list li:last-child { border-bottom: none; }
+.arrow-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  color: #7A5C3A;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Resource row — anasayfa rehber listesi */
+.resource-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #E5DCC4;
+  text-decoration: none !important;
+  color: inherit;
+  transition: background 0.15s ease, padding 0.15s ease;
+}
+.resource-row:hover {
+  background: #FBF7EE;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.resource-row:last-of-type { border-bottom: none; }
+.resource-info { min-width: 0; }
+.resource-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2D2418;
+  margin-bottom: 0.25rem;
+}
+.resource-row:hover .resource-title { color: #7A5C3A; }
+.resource-desc {
+  font-size: 0.92rem;
+  color: #6B5A42;
+  line-height: 1.5;
+}
+.resource-tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  background: #F0E6D2;
+  color: #7A5C3A;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.tag-accent {
+  background: #B5945C;
+  color: #FAF7F2;
+}
+.tag-muted {
+  font-size: 0.72rem;
+  color: #9B8A6F;
+  font-style: italic;
+  padding: 0.2rem 0;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+.tag-sm {
+  display: inline-block;
+  background: #F0E6D2;
+  color: #7A5C3A;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  margin-right: 0.3rem;
+}
+.tag-year { background: #E8DCC2; color: #B5945C; }
+
+/* Project cards (projeler.qmd) */
+.project-card {
+  display: block;
+  background: #FAF7F2;
+  border: 1px solid #E5DCC4;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  text-decoration: none !important;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+.project-card:hover {
+  border-color: #B5945C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(122, 92, 58, 0.08);
+}
+.project-card-more {
+  background: transparent;
+  border: 1px dashed #D9CDB6;
+  text-align: center;
+}
+.project-card-more h3 { color: #7A5C3A !important; }
+.project-card-more:hover { background: #FBF7EE; }
+.project-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.project-card h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #2D2418;
+  font-weight: 600;
+}
+.project-card:hover h3 { color: #7A5C3A; }
+.project-desc {
+  color: #4A3C2A;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0 0 0.85rem;
+}
+.project-meta {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.proj-status {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.proj-active { background: #DCE9D2; color: #5C7A4A; }
+
+.lead-soft {
+  color: #6B5A42;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+/* About sayfa öğeleri — info list, cv entries, publications, talks */
+.info-list {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 0.5rem 1rem;
+  margin: 0;
+}
+.info-list dt {
+  font-weight: 600;
+  color: #2D2418;
+  font-size: 0.95rem;
+}
+.info-list dd {
+  color: #4A3C2A;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.cv-entry {
+  margin-bottom: 1.25rem;
+}
+.cv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+.cv-title {
+  font-weight: 600;
+  color: #2D2418;
+  font-size: 1rem;
+}
+.cv-date {
+  font-size: 0.85rem;
+  color: #B5945C;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.cv-meta {
+  font-size: 0.9rem;
+  color: #6B5A42;
+}
+
+.pub-entry {
+  padding-left: 1rem;
+  border-left: 3px solid #D9CDB6;
+  margin-bottom: 1.25rem;
+}
+.pub-cite {
+  font-size: 0.95rem;
+  color: #2D2418;
+  line-height: 1.5;
+  margin: 0 0 0.4rem;
+}
+.pub-tags {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.talk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.talk-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+.talk-date {
+  color: #B5945C;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.talk-title {
+  color: #2D2418;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+.talk-venue {
+  color: #6B5A42;
+  font-size: 0.88rem;
+}
+
+/* Contact cards (iletisim.qmd) */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+.contact-card {
+  display: block;
+  background: #FAF7F2;
+  border: 1px solid #E5DCC4;
+  border-left: 3px solid #7A5C3A;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  text-decoration: none !important;
+  color: inherit;
+  transition: border-left-color 0.15s ease, transform 0.15s ease;
+}
+.contact-card:hover {
+  border-left-color: #B5945C;
+  transform: translateX(4px);
+}
+.contact-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #F0E6D2;
+  color: #7A5C3A;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+.contact-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #B5945C;
+  margin-bottom: 0.25rem;
+}
+.contact-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2D2418;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+.contact-note {
+  color: #6B5A42;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.muted-suffix {
+  color: #9B8A6F;
+  font-weight: 400;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  main.content { padding: 0 1rem; }
+  .section { margin: 2rem -1rem; padding: 2rem 1rem; }
+  .section-cta { padding: 2.5rem 1rem; }
+  .info-list { grid-template-columns: 1fr; gap: 0.25rem 0; }
+  .info-list dt { margin-top: 0.75rem; }
+  .info-list dt:first-child { margin-top: 0; }
+  .talk-row { grid-template-columns: 1fr; gap: 0.25rem; }
+  .resource-row { grid-template-columns: 1fr; }
+  .resource-tags { margin-top: 0.5rem; }
+}

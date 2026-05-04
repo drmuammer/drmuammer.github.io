@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "projeler.html",
+    "href": "projeler.html",
+    "title": "Projeler",
+    "section": "",
+    "text": "Açık kaynak rehberler ve araçlar. Tamamı GitHub'da, ücretsiz, atıflıdır. Her başlık ilgili sitenin kendisine yönlendirir.\n\n\n\n  \n    İstatistiksel Yöntem Seçimi\n    Aktif\n  \n  Tıbbi araştırmada doğru istatistiksel testi bulmak için interaktif rehber. Sihirbaz adımlarıyla soruları yanıtla, karar haritasını canlı vurgularla izle, her testin nasıl çalıştığını sürüklenebilir D3 demolarıyla keşfet.\n  \n    TR · EN\n    İnteraktif\n    D3.js · Quarto\n  \n\n\n\n  \n    Veri Güvenliği\n    Aktif\n  \n  Klinik araştırma verisinde kimliksizleştirme, hashleme ve şifreleme rehberi. HIPAA, GDPR ve KVKK çerçevesinde 17 akademik kaynaklı kapsamlı doküman.\n  \n    TR\n    Akademik · Kaynaklı\n  \n\n\n\n  \n    Veri Temizliği\n    Aktif\n  \n  Klinik araştırmacılar için Excel/CSV tabanlı veri temizleme rehberi. Eksik veri, yinelenenler, format düzeltmeleri.\n  \n    TR\n    Pratik\n  \n\n\n\n  \n    OpenRefine Pratik\n    Aktif\n  \n  OpenRefine ile pratik veri temizliği — kümeleme algoritmaları, normalizasyon, GREL dönüşümleri ve gerçek dünya örnekleri.\n  \n    TR\n    Pratik · Araç\n  \n\n\n\n  \n    Zotero Rehberi\n    Aktif\n  \n  Akademisyenler için kapsamlı Zotero kılavuzu — kurulum, Word & LaTeX entegrasyonu, atıf stilleri, grup kütüphaneleri.\n  \n    TR\n    Akademik araç\n  \n\n\n\n  \n    Daha fazlası GitHub'da →\n  \n  Yeni rehberler ve mini araçlar GitHub profilinde yayınlanmaya devam ediyor.\n\n\n\n\n Başa dön"
+  },
+  {
+    "objectID": "notlar.html",
+    "href": "notlar.html",
+    "title": "Notlar",
+    "section": "",
+    "text": "Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler ve sıkça karşılaştığım hatalar.\nDaha kapsamlı içerikler için Projeler sayfasına bakabilirsin — orada GitHub’daki açık kaynak rehberlerin hepsi listeli.\n\n\n\n\n\n\n\n\n\nHoş geldiniz: bu site nasıl kuruldu, neden kuruldu\n\n\n\nduyuru\n\naçık-bilim\n\n\n\nSitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.\n\n\n\n\n\n3 May 2026\n\n1 dakika\n\n\n\n\nEşleşen öğe yok\n Başa dön"
+  },
+  {
+    "objectID": "hakkimda.html",
+    "href": "hakkimda.html",
+    "title": "Hakkımda",
+    "section": "",
+    "text": "Tıp eğitimimi tamamladıktan sonra halk sağlığı, sürveyans ve klinik araştırma metodolojisi üzerine odaklandım. Sahada toplanan veriden geçerli kanıt çıkarmanın inceliklerini öğrenmek beni hâlâ heyecanlandırıyor.\nÇalışmalarımda iki şey önemli: gözlemsel veriden geçerli nedensel çıkarım yapmak ve bu süreçte öğrendiklerimi paylaşmak.\nBoş zamanlarımda dağ yürüyüşü, kâğıt kitap okumak ve eski plak dinlemek gibi düşük teknolojili eğlenceleri tercih ediyorum."
+  },
+  {
+    "objectID": "hakkimda.html#şu-an",
+    "href": "hakkimda.html#şu-an",
+    "title": "Hakkımda",
+    "section": "Şu an",
+    "text": "Şu an\n\n  Görev[kurum adı] · saha epidemiyologu\n  KonumAnkara, Türkiye\n  İlgi alanlarıNedensel çıkarım · target trial emülasyonu · sürveyans tasarımı · açık bilim"
+  },
+  {
+    "objectID": "hakkimda.html#eğitim",
+    "href": "hakkimda.html#eğitim",
+    "title": "Hakkımda",
+    "section": "Eğitim",
+    "text": "Eğitim\n\nNot: Bu bölüm yapım aşamasında — tarih, kurum ve program isimleri eklenecek.\n\n\n  \n    Saha Epidemiyolojisi Eğitimi\n    YYYY — YYYY\n  \n  [Program adı]\n\n\n  \n    Tıp Doktoru\n    YYYY — YYYY\n  \n  [Üniversite adı]"
+  },
+  {
+    "objectID": "hakkimda.html#yayınlar",
+    "href": "hakkimda.html#yayınlar",
+    "title": "Hakkımda",
+    "section": "Yayınlar",
+    "text": "Yayınlar\n\nNot: Tam liste eklenecek. Aşağıda iskelet duruyor.\n\n\n  Beslen, M., Author B. (2025). Article title that gives context to the subject. Journal Name, 12(3), 45–67.\n  epidemiyoloji2025\n\n\n  Author A, Beslen, M. (2024). Another paper title. Journal Name, 8(2), 100–115.\n  istatistik2024"
+  },
+  {
+    "objectID": "hakkimda.html#konuşmalar-sunumlar",
+    "href": "hakkimda.html#konuşmalar-sunumlar",
+    "title": "Hakkımda",
+    "section": "Konuşmalar & Sunumlar",
+    "text": "Konuşmalar & Sunumlar\n\n  \n    YYYY May\n    \n      Açık kaynak rehberlerle Türkçe biyoistatistik öğretimi\n      [Konferans adı], İstanbul\n    \n  \n  \n    YYYY Eyl\n    \n      Sürveyans verisinde nedensel çıkarım pratikleri\n      [Etkinlik adı], Ankara"
+  },
+  {
+    "objectID": "hakkimda.html#çalışma-şekli",
+    "href": "hakkimda.html#çalışma-şekli",
+    "title": "Hakkımda",
+    "section": "Çalışma şekli",
+    "text": "Çalışma şekli\nAkademik bütünlüğün üç temel ilkesine bağlıyım:\nAçık metodoloji. Yapılan analiz şeffaftır — kod, sürüm geçmişi ve karar gerekçeleri belgelenir. Çoğu projede analiz adımları Quarto + Git ile takip edilir.\nDürüst raporlama. Sonuç ne olursa olsun olduğu gibi raporlanır. Yöntem sonuca göre seçilmez.\nVeri güvenliği. Paylaşılan her veri kimliksizleştirilmiş ve şifrelenmiş olarak alınır. Veri Güvenliği rehberinde standartlarımı açıkça yayınladım."
+  },
+  {
+    "objectID": "en/about.html",
+    "href": "en/about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a field epidemiologist and physician. After completing medical training I focused on public health, surveillance and clinical research methodology.\nMy work centers on two axes: drawing valid causal inferences from observational data, and producing accessible Turkish-language methodological resources for academic researchers.\n\nNote: Full CV is being added.\n\n\n\n Başa dön"
+  },
+  {
+    "objectID": "notlar/2026-05-03-hos-geldiniz.html",
+    "href": "notlar/2026-05-03-hos-geldiniz.html",
+    "title": "Hoş geldiniz: bu site nasıl kuruldu, neden kuruldu",
+    "section": "",
+    "text": "Bu site uzun süre ertelediğim bir şeydi. GitHub’da rehberler birikti, kişisel notlar dağınık duruyordu, akademik özgeçmiş başka bir yerdeydi. Tek bir adres, ulaşılabilir bir vitrin lazımdı.\nSite Quarto ile yapıldı. Statik HTML üretiyor, GitHub Pages’ta yayımlanıyor, Cloudflare üzerinden muammerbeslen.com adresine bağlı. Yapı Silvia Canelón’un sitesinden esinlendi — kendisinin hem yapı hem de açık kaynak kararlarına teşekkür ederim.\nBurada üç şeyi yapmaya çalışacağım:\nNotları toparlamak. Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler, sıkça karşılaştığım hatalar. Twitter’a yazmaktansa kalıcı bir yere yazmak istedim.\nRehberlere yön göstermek. Veri temizliği, güvenliği, istatistik testi seçimi gibi kapsamlı çalışmalar kendi sayfalarında yaşamaya devam edecek; burada onlara işaret eden bir vitrin olacak.\nErişilebilir olmak. Klinik araştırma metodolojisi konusunda Türkçe destek arayan akademisyen ve hekimlere kolay ulaşılır bir kanal.\nSoru, öneri veya katkı için iletişim sayfasından ulaşabilirsin.\n\n\n\n Başa dön"
+  },
+  {
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Hi, I’m Muammer.",
+    "section": "",
+    "text": "Field epidemiologist · Physician\n\n\nHi, I’m Muammer.\nI work on clinical research, biostatistics, and causal inference. Most of the content I produce is in Turkish — making methodological resources accessible to Turkish-speaking researchers is a personal priority.\nTwo things matter in my work: drawing valid causal conclusions from observational data, and sharing what I learn along the way.\n\n  Open-source\n  Featured guides\n  \n    \n      Statistical Method Selection\n      Interactive guide for choosing the right statistical test in medical research. Wizard, decision map, draggable D3 demos.\n    \n    \n      TR · EN\n      Interactive\n    \n  \n  \n    \n      Data Security — in Turkish\n      De-identification, hashing and encryption guide for clinical research data. HIPAA, GDPR and KVKK frameworks.\n    \n    \n      TR\n    \n  \n\n\n\n\n\n\n\nMost content on this site is in Turkish. The English version covers the homepage and CV; for English-language inquiries, please get in touch.\n\n\n\n\n\n\n Başa dön"
+  },
+  {
+    "objectID": "iletisim.html",
+    "href": "iletisim.html",
+    "title": "İletişim",
+    "section": "",
+    "text": "Akademik konularda görüş alışverişi, rehberlerle ilgili sorular ya da bir konuyu birlikte düşünmek istersen aşağıdaki kanallar açık."
+  },
+  {
+    "objectID": "iletisim.html#notlar",
+    "href": "iletisim.html#notlar",
+    "title": "İletişim",
+    "section": "Notlar",
+    "text": "Notlar\nAcil tıbbi destek değil. Bu site bilgi paylaşım kanalıdır; hasta için tıbbi karar almıyorum, hekiminize danışın.\nÖnce rehberlere bakmanı öneririm. Çoğu metodolojik soru zaten Projeler sayfasındaki rehberlerde ele alınmıştır. Daha özel bir durum varsa e-mail at.\nHata bildirimi. Bir rehberde yanlış, eksik ya da muğlak bilgi gördüysen, ilgili GitHub repo’sunda issue açabilirsin. Hem benim için takip kolaylığı, hem diğer okurlar için fayda olur."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Merhaba, ben Muammer.",
+    "section": "",
+    "text": "Saha epidemiyologu · Hekim\n\n\nMerhaba, ben Muammer.\nKlinik araştırma, biyoistatistik ve nedensel çıkarım üzerine çalışıyorum. Burada öğrendiklerimi belgeliyor, Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.\nÇalışmalarımda iki şey önemli: gözlemsel veriden geçerli nedensel çıkarım yapmak ve bu süreçte öğrendiklerimi paylaşmak. İkincisi olmadan birincisi steril bir egzersize dönüşüyor.\n\n  Şu sıralar\n  Üzerinde çalıştıklarım\n  \n    Nedensel çıkarım metodolojisinde Türkçe ders notları\n    Target trial emülasyonu örnek vakaları\n    Bayesçi klinik karar destek modelleri\n  \n\n\n  Açık kaynak\n  Rehberler\n  Klinik araştırmacılar için Türkçe, ücretsiz, atıflı kaynaklar. Her rehber kendi sayfasında yaşıyor — başlığa tıkla.\n  \n    \n      İstatistiksel Yöntem Seçimi\n      İnteraktif sihirbaz, karar haritası, D3 demoları. Tıbbi araştırmada doğru testin nasıl bulunacağı.\n    \n    \n      TR · EN\n      interaktif\n    \n  \n  \n    \n      Veri Güvenliği\n      Klinik araştırma verisinde kimliksizleştirme, hashleme ve şifreleme — HIPAA, GDPR, KVKK çerçevesinde.\n    \n    \n      TR\n    \n  \n  \n    \n      Veri Temizliği\n      Klinik araştırmacılar için Excel/CSV tabanlı pratik veri temizleme rehberi.\n    \n    \n      TR\n    \n  \n  \n    \n      OpenRefine Pratik\n      OpenRefine ile pratik veri temizliği — kümeleme, normalizasyon, GREL dönüşümleri.\n    \n    \n      TR\n    \n  \n  \n    \n      Zotero Rehberi\n      Akademisyenler için kapsamlı Zotero kılavuzu — kurulum, Word/LaTeX entegrasyonu, atıf stilleri.\n    \n    \n      TR\n    \n  \n\n\n  Yazılar\n  Son notlar\n\n\n\n\n\n\nHoş geldiniz: bu site nasıl kuruldu, neden kuruldu\n\n\nSitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.\n\n\n\n\n\n3 May 2026\n\n\n\n\n\nEşleşen öğe yok\n\n\n  Akademik bir konuda fikir alışverişi yapmak ister misin?\n  İletişime geç →\n\n\n\n\n Başa dön"
+  }
+]
