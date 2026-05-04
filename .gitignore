@@ -1,0 +1,10 @@
+# Quarto
+/.quarto/
+/_site/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.log
+node_modules/

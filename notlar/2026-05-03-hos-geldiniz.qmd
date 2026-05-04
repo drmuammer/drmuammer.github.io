@@ -1,0 +1,21 @@
+---
+title: "Hoş geldiniz: bu site nasıl kuruldu, neden kuruldu"
+description: "Sitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not."
+date: "2026-05-03"
+categories: [duyuru, açık-bilim]
+reading-time: true
+---
+
+Bu site uzun süre ertelediğim bir şeydi. GitHub'da rehberler birikti, kişisel notlar dağınık duruyordu, akademik özgeçmiş başka bir yerdeydi. **Tek bir adres**, ulaşılabilir bir vitrin lazımdı.
+
+Site [Quarto](https://quarto.org) ile yapıldı. Statik HTML üretiyor, GitHub Pages'ta yayımlanıyor, Cloudflare üzerinden `muammerbeslen.com` adresine bağlı. Yapı [Silvia Canelón](https://silviacanelon.com)'un sitesinden esinlendi — kendisinin hem yapı hem de açık kaynak kararlarına teşekkür ederim.
+
+Burada üç şeyi yapmaya çalışacağım:
+
+**Notları toparlamak.** Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler, sıkça karşılaştığım hatalar. Twitter'a yazmaktansa kalıcı bir yere yazmak istedim.
+
+**Rehberlere yön göstermek.** Veri temizliği, güvenliği, istatistik testi seçimi gibi kapsamlı çalışmalar kendi sayfalarında yaşamaya devam edecek; burada onlara işaret eden bir vitrin olacak.
+
+**Erişilebilir olmak.** Klinik araştırma metodolojisi konusunda Türkçe destek arayan akademisyen ve hekimlere kolay ulaşılır bir kanal.
+
+Soru, öneri veya katkı için iletişim sayfasından ulaşabilirsin.

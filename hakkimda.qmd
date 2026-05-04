@@ -1,0 +1,107 @@
+---
+title: "Hakkımda"
+description-meta: "Muammer Beslen — Saha epidemiyologu, hekim. Akademik geçmiş, ilgi alanları, çalışma şekli."
+about:
+  template: solana
+  image: assets/profile-placeholder.svg
+  image-width: "180px"
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/drmuammer
+    - icon: github
+      text: GitHub
+      href: https://github.com/drmuammer
+    - icon: envelope
+      text: E-mail
+      href: "mailto:contact@muammerbeslen.com"
+toc: true
+toc-location: right
+toc-title: "İçerik"
+---
+
+Tıp eğitimimi tamamladıktan sonra halk sağlığı, sürveyans ve klinik araştırma metodolojisi üzerine odaklandım. Sahada toplanan veriden geçerli kanıt çıkarmanın inceliklerini öğrenmek beni hâlâ heyecanlandırıyor.
+
+Çalışmalarımda iki şey önemli: gözlemsel veriden geçerli nedensel çıkarım yapmak ve bu süreçte öğrendiklerimi paylaşmak.
+
+Boş zamanlarımda dağ yürüyüşü, kâğıt kitap okumak ve eski plak dinlemek gibi düşük teknolojili eğlenceleri tercih ediyorum.
+
+## Şu an
+
+```{=html}
+<dl class="info-list">
+  <dt>Görev</dt><dd>[kurum adı] · saha epidemiyologu</dd>
+  <dt>Konum</dt><dd>Ankara, Türkiye</dd>
+  <dt>İlgi alanları</dt><dd>Nedensel çıkarım · target trial emülasyonu · sürveyans tasarımı · açık bilim</dd>
+</dl>
+```
+
+## Eğitim
+
+> **Not:** Bu bölüm yapım aşamasında — tarih, kurum ve program isimleri eklenecek.
+
+```{=html}
+<div class="cv-entry">
+  <div class="cv-row">
+    <div class="cv-title">Saha Epidemiyolojisi Eğitimi</div>
+    <div class="cv-date">YYYY — YYYY</div>
+  </div>
+  <div class="cv-meta">[Program adı]</div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-row">
+    <div class="cv-title">Tıp Doktoru</div>
+    <div class="cv-date">YYYY — YYYY</div>
+  </div>
+  <div class="cv-meta">[Üniversite adı]</div>
+</div>
+```
+
+## Yayınlar
+
+> **Not:** Tam liste eklenecek. Aşağıda iskelet duruyor.
+
+```{=html}
+<div class="pub-entry">
+  <p class="pub-cite"><strong>Beslen, M.</strong>, Author B. (2025). Article title that gives context to the subject. <em>Journal Name</em>, 12(3), 45–67.</p>
+  <div class="pub-tags"><span class="tag-sm">epidemiyoloji</span><span class="tag-sm tag-year">2025</span></div>
+</div>
+
+<div class="pub-entry">
+  <p class="pub-cite">Author A, <strong>Beslen, M.</strong> (2024). Another paper title. <em>Journal Name</em>, 8(2), 100–115.</p>
+  <div class="pub-tags"><span class="tag-sm">istatistik</span><span class="tag-sm tag-year">2024</span></div>
+</div>
+```
+
+## Konuşmalar & Sunumlar
+
+```{=html}
+<div class="talk-list">
+  <div class="talk-row">
+    <div class="talk-date">YYYY May</div>
+    <div class="talk-info">
+      <div class="talk-title">Açık kaynak rehberlerle Türkçe biyoistatistik öğretimi</div>
+      <div class="talk-venue">[Konferans adı], İstanbul</div>
+    </div>
+  </div>
+  <div class="talk-row">
+    <div class="talk-date">YYYY Eyl</div>
+    <div class="talk-info">
+      <div class="talk-title">Sürveyans verisinde nedensel çıkarım pratikleri</div>
+      <div class="talk-venue">[Etkinlik adı], Ankara</div>
+    </div>
+  </div>
+</div>
+```
+
+## Çalışma şekli
+
+Akademik bütünlüğün üç temel ilkesine bağlıyım:
+
+**Açık metodoloji.** Yapılan analiz şeffaftır — kod, sürüm geçmişi ve karar gerekçeleri belgelenir. Çoğu projede analiz adımları Quarto + Git ile takip edilir.
+
+**Dürüst raporlama.** Sonuç ne olursa olsun olduğu gibi raporlanır. Yöntem sonuca göre seçilmez.
+
+**Veri güvenliği.** Paylaşılan her veri kimliksizleştirilmiş ve şifrelenmiş olarak alınır. [Veri Güvenliği rehberinde](https://drmuammer.github.io/veri-seti-guvenligi/) standartlarımı açıkça yayınladım.

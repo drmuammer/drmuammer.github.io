@@ -1,0 +1,79 @@
+---
+title: "Projeler"
+description-meta: "Açık kaynak Türkçe rehberler ve araçlar. Hepsi GitHub'da, tamamı ücretsiz."
+toc: false
+---
+
+```{=html}
+<p class="lead-soft">
+Açık kaynak rehberler ve araçlar. Tamamı GitHub'da, ücretsiz, atıflıdır. Her başlık ilgili sitenin kendisine yönlendirir.
+</p>
+
+<a href="https://drmuammer.github.io/istatistik-yontem-secimi/" class="project-card">
+  <div class="project-head">
+    <h3>İstatistiksel Yöntem Seçimi</h3>
+    <span class="proj-status proj-active">Aktif</span>
+  </div>
+  <p class="project-desc">Tıbbi araştırmada doğru istatistiksel testi bulmak için interaktif rehber. Sihirbaz adımlarıyla soruları yanıtla, karar haritasını canlı vurgularla izle, her testin nasıl çalıştığını sürüklenebilir D3 demolarıyla keşfet.</p>
+  <div class="project-meta">
+    <span class="tag">TR · EN</span>
+    <span class="tag tag-accent">İnteraktif</span>
+    <span class="tag-muted">D3.js · Quarto</span>
+  </div>
+</a>
+
+<a href="https://drmuammer.github.io/veri-seti-guvenligi/" class="project-card">
+  <div class="project-head">
+    <h3>Veri Güvenliği</h3>
+    <span class="proj-status proj-active">Aktif</span>
+  </div>
+  <p class="project-desc">Klinik araştırma verisinde kimliksizleştirme, hashleme ve şifreleme rehberi. HIPAA, GDPR ve KVKK çerçevesinde 17 akademik kaynaklı kapsamlı doküman.</p>
+  <div class="project-meta">
+    <span class="tag">TR</span>
+    <span class="tag-muted">Akademik · Kaynaklı</span>
+  </div>
+</a>
+
+<a href="https://drmuammer.github.io/veri-temizligi/" class="project-card">
+  <div class="project-head">
+    <h3>Veri Temizliği</h3>
+    <span class="proj-status proj-active">Aktif</span>
+  </div>
+  <p class="project-desc">Klinik araştırmacılar için Excel/CSV tabanlı veri temizleme rehberi. Eksik veri, yinelenenler, format düzeltmeleri.</p>
+  <div class="project-meta">
+    <span class="tag">TR</span>
+    <span class="tag-muted">Pratik</span>
+  </div>
+</a>
+
+<a href="https://drmuammer.github.io/openrefine-pratik/" class="project-card">
+  <div class="project-head">
+    <h3>OpenRefine Pratik</h3>
+    <span class="proj-status proj-active">Aktif</span>
+  </div>
+  <p class="project-desc">OpenRefine ile pratik veri temizliği — kümeleme algoritmaları, normalizasyon, GREL dönüşümleri ve gerçek dünya örnekleri.</p>
+  <div class="project-meta">
+    <span class="tag">TR</span>
+    <span class="tag-muted">Pratik · Araç</span>
+  </div>
+</a>
+
+<a href="https://drmuammer.github.io/zotero-rehberi/" class="project-card">
+  <div class="project-head">
+    <h3>Zotero Rehberi</h3>
+    <span class="proj-status proj-active">Aktif</span>
+  </div>
+  <p class="project-desc">Akademisyenler için kapsamlı Zotero kılavuzu — kurulum, Word & LaTeX entegrasyonu, atıf stilleri, grup kütüphaneleri.</p>
+  <div class="project-meta">
+    <span class="tag">TR</span>
+    <span class="tag-muted">Akademik araç</span>
+  </div>
+</a>
+
+<a href="https://github.com/drmuammer" class="project-card project-card-more">
+  <div class="project-head">
+    <h3>Daha fazlası GitHub'da →</h3>
+  </div>
+  <p class="project-desc">Yeni rehberler ve mini araçlar GitHub profilinde yayınlanmaya devam ediyor.</p>
+</a>
+```

@@ -1,0 +1,33 @@
+---
+title: "İletişim"
+description-meta: "Muammer Beslen ile iletişim — e-mail ve LinkedIn üzerinden."
+toc: false
+---
+
+Akademik konularda görüş alışverişi, rehberlerle ilgili sorular ya da bir konuyu birlikte düşünmek istersen aşağıdaki kanallar açık.
+
+```{=html}
+<div class="contact-grid">
+  <a href="mailto:contact@muammerbeslen.com" class="contact-card">
+    <div class="contact-icon">✉</div>
+    <div class="contact-label">E-mail</div>
+    <div class="contact-value">contact@muammerbeslen.com</div>
+    <div class="contact-note">Detaylı bir konu, teknik soru veya proje açıklaması için.</div>
+  </a>
+
+  <a href="https://linkedin.com/in/drmuammer" class="contact-card">
+    <div class="contact-icon">in</div>
+    <div class="contact-label">LinkedIn</div>
+    <div class="contact-value">linkedin.com/in/drmuammer</div>
+    <div class="contact-note">Hızlı bir tanışma mesajı veya genel sorular için.</div>
+  </a>
+</div>
+```
+
+## Notlar
+
+**Acil tıbbi destek değil.** Bu site bilgi paylaşım kanalıdır; hasta için tıbbi karar almıyorum, hekiminize danışın.
+
+**Önce rehberlere bakmanı öneririm.** Çoğu metodolojik soru zaten [Projeler](projeler.qmd) sayfasındaki rehberlerde ele alınmıştır. Daha özel bir durum varsa e-mail at.
+
+**Hata bildirimi.** Bir rehberde yanlış, eksik ya da muğlak bilgi gördüysen, ilgili GitHub repo'sunda **issue** açabilirsin. Hem benim için takip kolaylığı, hem diğer okurlar için fayda olur.

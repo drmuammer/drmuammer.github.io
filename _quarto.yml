@@ -1,0 +1,69 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "CNAME"
+    - ".nojekyll"
+    - "assets/**"
+
+website:
+  title: "Muammer Beslen"
+  description: "Saha epidemiyologu ve hekim. Klinik araştırma, biyoistatistik, nedensel çıkarım üzerine notlar ve açık kaynak Türkçe rehberler."
+  site-url: https://muammerbeslen.com
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card: false
+  search: false
+  page-navigation: false
+  back-to-top-navigation: true
+  reader-mode: false
+
+  navbar:
+    background: "#FAF7F2"
+    foreground: "#2D2418"
+    pinned: true
+    collapse-below: lg
+    left:
+      - text: "Hakkımda"
+        href: hakkimda.qmd
+      - text: "Notlar"
+        href: notlar.qmd
+      - text: "Projeler"
+        href: projeler.qmd
+      - text: "İletişim"
+        href: iletisim.qmd
+    right:
+      - text: "EN"
+        href: en/index.qmd
+      - icon: github
+        href: https://github.com/drmuammer
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/drmuammer
+        aria-label: LinkedIn
+
+  page-footer:
+    background: "#2D2418"
+    foreground: "#C4B8A0"
+    border: false
+    left: |
+      © 2026 Muammer Beslen — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+    center: |
+      *Sitenin yapısı [Silvia Canelón](https://silviacanelon.com)'un Quarto sitesinden esinlendi.*
+    right: |
+      [GitHub](https://github.com/drmuammer) · [LinkedIn](https://linkedin.com/in/drmuammer)
+
+format:
+  html:
+    theme:
+      - cosmo
+      - assets/custom.scss
+    css: assets/custom.css
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    lang: tr
+    fontsize: "17px"
+    linkcolor: "#7A5C3A"
+    include-in-header:
+      - _includes/analytics.html

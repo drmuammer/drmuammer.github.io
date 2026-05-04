@@ -1,0 +1,18 @@
+---
+title: "Notlar"
+description-meta: "Klinik araştırma, biyoistatistik ve nedensel çıkarım üzerine kısa yazılar."
+listing:
+  contents: notlar
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories, reading-time]
+  page-size: 30
+  feed: true
+  date-format: "D MMM YYYY"
+  categories: true
+toc: false
+---
+
+Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler ve sıkça karşılaştığım hatalar.
+
+Daha kapsamlı içerikler için [Projeler](projeler.qmd) sayfasına bakabilirsin — orada GitHub'daki açık kaynak rehberlerin hepsi listeli.

@@ -1,0 +1,128 @@
+---
+pagetitle: "Muammer Beslen"
+description-meta: "Saha epidemiyologu ve hekim. Klinik araştırma, biyoistatistik ve nedensel çıkarım üzerine notlar."
+about:
+  template: trestles
+  image: assets/profile-placeholder.svg
+  image-width: "200px"
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/drmuammer
+    - icon: github
+      text: GitHub
+      href: https://github.com/drmuammer
+    - icon: envelope
+      text: E-mail
+      href: "mailto:contact@muammerbeslen.com"
+listing:
+  - id: latest-posts
+    contents: notlar
+    type: default
+    sort: "date desc"
+    fields: [date, title, description]
+    max-items: 3
+    feed: false
+toc: false
+---
+
+::: {.eyebrow-label}
+Saha epidemiyologu · Hekim
+:::
+
+# Merhaba, ben Muammer.
+
+Klinik araştırma, biyoistatistik ve nedensel çıkarım üzerine çalışıyorum.
+Burada öğrendiklerimi belgeliyor, Türkçe açık kaynak rehberler hazırlıyor,
+notlarımı paylaşıyorum.
+
+Çalışmalarımda iki şey önemli: **gözlemsel veriden geçerli nedensel çıkarım yapmak**
+ve **bu süreçte öğrendiklerimi paylaşmak**.
+İkincisi olmadan birincisi steril bir egzersize dönüşüyor.
+
+```{=html}
+<section class="section section-alt">
+  <div class="section-eyebrow">Şu sıralar</div>
+  <h2 class="section-title">Üzerinde çalıştıklarım</h2>
+  <ul class="arrow-list">
+    <li>Nedensel çıkarım metodolojisinde Türkçe ders notları</li>
+    <li>Target trial emülasyonu örnek vakaları</li>
+    <li>Bayesçi klinik karar destek modelleri</li>
+  </ul>
+</section>
+
+<section class="section">
+  <div class="section-eyebrow">Açık kaynak</div>
+  <h2 class="section-title">Rehberler</h2>
+  <p class="section-lead">Klinik araştırmacılar için Türkçe, ücretsiz, atıflı kaynaklar. Her rehber kendi sayfasında yaşıyor — başlığa tıkla.</p>
+
+  <a href="https://drmuammer.github.io/istatistik-yontem-secimi/" class="resource-row">
+    <div class="resource-info">
+      <div class="resource-title">İstatistiksel Yöntem Seçimi</div>
+      <div class="resource-desc">İnteraktif sihirbaz, karar haritası, D3 demoları. Tıbbi araştırmada doğru testin nasıl bulunacağı.</div>
+    </div>
+    <div class="resource-tags">
+      <span class="tag">TR · EN</span>
+      <span class="tag tag-accent">interaktif</span>
+    </div>
+  </a>
+
+  <a href="https://drmuammer.github.io/veri-seti-guvenligi/" class="resource-row">
+    <div class="resource-info">
+      <div class="resource-title">Veri Güvenliği</div>
+      <div class="resource-desc">Klinik araştırma verisinde kimliksizleştirme, hashleme ve şifreleme — HIPAA, GDPR, KVKK çerçevesinde.</div>
+    </div>
+    <div class="resource-tags">
+      <span class="tag">TR</span>
+    </div>
+  </a>
+
+  <a href="https://drmuammer.github.io/veri-temizligi/" class="resource-row">
+    <div class="resource-info">
+      <div class="resource-title">Veri Temizliği</div>
+      <div class="resource-desc">Klinik araştırmacılar için Excel/CSV tabanlı pratik veri temizleme rehberi.</div>
+    </div>
+    <div class="resource-tags">
+      <span class="tag">TR</span>
+    </div>
+  </a>
+
+  <a href="https://drmuammer.github.io/openrefine-pratik/" class="resource-row">
+    <div class="resource-info">
+      <div class="resource-title">OpenRefine Pratik</div>
+      <div class="resource-desc">OpenRefine ile pratik veri temizliği — kümeleme, normalizasyon, GREL dönüşümleri.</div>
+    </div>
+    <div class="resource-tags">
+      <span class="tag">TR</span>
+    </div>
+  </a>
+
+  <a href="https://drmuammer.github.io/zotero-rehberi/" class="resource-row">
+    <div class="resource-info">
+      <div class="resource-title">Zotero Rehberi</div>
+      <div class="resource-desc">Akademisyenler için kapsamlı Zotero kılavuzu — kurulum, Word/LaTeX entegrasyonu, atıf stilleri.</div>
+    </div>
+    <div class="resource-tags">
+      <span class="tag">TR</span>
+    </div>
+  </a>
+</section>
+```
+
+```{=html}
+<section class="section section-alt">
+  <div class="section-eyebrow">Yazılar</div>
+  <h2 class="section-title">Son notlar</h2>
+</section>
+```
+
+::: {#latest-posts}
+:::
+
+```{=html}
+<section class="section section-cta">
+  <p>Akademik bir konuda fikir alışverişi yapmak ister misin?</p>
+  <p><a href="iletisim.html" class="cta-link">İletişime geç →</a></p>
+</section>
+```

@@ -1,0 +1,65 @@
+---
+pagetitle: "Muammer Beslen, MD"
+description-meta: "Field epidemiologist & physician. Notes and open-source guides on clinical research methodology."
+about:
+  template: trestles
+  image: ../assets/profile-placeholder.svg
+  image-width: "200px"
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/drmuammer
+    - icon: github
+      text: GitHub
+      href: https://github.com/drmuammer
+    - icon: envelope
+      text: E-mail
+      href: "mailto:contact@muammerbeslen.com"
+toc: false
+---
+
+::: {.eyebrow-label}
+Field epidemiologist · Physician
+:::
+
+# Hi, I'm Muammer.
+
+I work on clinical research, biostatistics, and causal inference.
+Most of the content I produce is in Turkish — making methodological resources
+accessible to Turkish-speaking researchers is a personal priority.
+
+Two things matter in my work: **drawing valid causal conclusions from observational data**,
+and **sharing what I learn along the way**.
+
+```{=html}
+<section class="section">
+  <div class="section-eyebrow">Open-source</div>
+  <h2 class="section-title">Featured guides</h2>
+
+  <a href="https://drmuammer.github.io/istatistik-yontem-secimi/" class="resource-row">
+    <div class="resource-info">
+      <div class="resource-title">Statistical Method Selection</div>
+      <div class="resource-desc">Interactive guide for choosing the right statistical test in medical research. Wizard, decision map, draggable D3 demos.</div>
+    </div>
+    <div class="resource-tags">
+      <span class="tag">TR · EN</span>
+      <span class="tag tag-accent">Interactive</span>
+    </div>
+  </a>
+
+  <a href="https://drmuammer.github.io/veri-seti-guvenligi/" class="resource-row">
+    <div class="resource-info">
+      <div class="resource-title">Data Security <span class="muted-suffix">— in Turkish</span></div>
+      <div class="resource-desc">De-identification, hashing and encryption guide for clinical research data. HIPAA, GDPR and KVKK frameworks.</div>
+    </div>
+    <div class="resource-tags">
+      <span class="tag">TR</span>
+    </div>
+  </a>
+</section>
+```
+
+::: {.callout-note appearance="simple"}
+Most content on this site is in Turkish. The English version covers the homepage and CV; for English-language inquiries, [please get in touch](../iletisim.qmd).
+:::

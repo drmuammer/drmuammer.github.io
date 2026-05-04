@@ -1,0 +1,222 @@
+/*-- scss:defaults --*/
+
+// ============================================================
+//   Toprak / saman palet — saha epidemiyologu kimliği
+// ============================================================
+
+$earth-deep:   #2D2418;   // koyu kahve · ana metin
+$earth-mid:    #4A3C2A;   // orta kahve · alt başlık
+$earth-soft:   #6B5A42;   // yumuşak kahve · ikincil metin
+$earth-mute:   #9B8A6F;   // soluk kahve · etiket
+$earth-line:   #D9CDB6;   // border / ayraç
+$earth-card:   #F0E6D2;   // kart arka planı
+$earth-paper:  #F7F2E8;   // alternatif bölüm bg
+$earth-cream:  #FAF7F2;   // ana arka plan
+
+$accent-walnut: #7A5C3A;  // koyu accent · linkler / vurgu
+$accent-amber:  #B5945C;  // sıcak amber · etiket / tarih
+$accent-leaf:   #5C7A4A;  // yumuşak yeşil · ikincil accent
+
+// Bootstrap değişkenlerini overide et
+$body-bg:        $earth-cream;
+$body-color:     $earth-deep;
+$link-color:     $accent-walnut;
+$link-hover-color: $accent-amber;
+
+$primary:        $accent-walnut;
+$secondary:      $accent-amber;
+$dark:           $earth-deep;
+$light:          $earth-paper;
+
+// Tipografi — sıcak akademik
+$font-family-sans-serif: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-family-serif:      "Source Serif Pro", "Source Serif 4", Georgia, "Times New Roman", serif;
+$font-family-monospace:  "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+
+$headings-font-family:   $font-family-sans-serif;
+$headings-font-weight:   700;
+$headings-color:         $earth-deep;
+$headings-line-height:   1.2;
+
+$font-size-base:        1.0625rem;
+$line-height-base:      1.7;
+$paragraph-margin-bottom: 1.25rem;
+
+// Container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 800px,
+  xl: 800px,
+  xxl: 800px
+);
+
+// Component shapes
+$border-radius:     6px;
+$border-radius-lg:  10px;
+
+// Web font import
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+
+/*-- scss:rules --*/
+
+// Body genel
+body {
+  font-feature-settings: "kern", "liga", "calt";
+  -webkit-font-smoothing: antialiased;
+  background: $earth-cream;
+}
+
+// Tipografi rafine
+h1, h2, h3, h4 {
+  letter-spacing: -0.015em;
+  color: $earth-deep;
+}
+h2 { margin-top: 2.5rem; }
+h3 { margin-top: 1.75rem; }
+
+p, li {
+  color: $earth-mid;
+}
+
+em { color: $earth-deep; font-style: italic; }
+strong { color: $earth-deep; }
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba($accent-walnut, 0.4);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+a:hover {
+  text-decoration-color: $accent-amber;
+}
+
+// Inline kod
+code:not(pre code) {
+  background: $earth-card;
+  color: $accent-walnut;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-size: 0.92em;
+}
+
+pre {
+  background: $earth-deep !important;
+  color: $earth-cream;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.92rem;
+}
+
+// Navbar
+.navbar {
+  background: $earth-cream !important;
+  border-bottom: 1px solid $earth-line;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar-title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: $earth-deep !important;
+}
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: $earth-mid !important;
+}
+.navbar-nav .nav-link:hover {
+  color: $accent-walnut !important;
+}
+.navbar .nav-link.active {
+  color: $accent-walnut !important;
+  border-bottom: 2px solid $accent-walnut;
+}
+
+// Footer
+.nav-footer {
+  font-size: 0.85rem;
+  padding: 2rem 0;
+}
+.nav-footer a {
+  color: $earth-mute;
+  text-decoration: underline;
+}
+.nav-footer a:hover { color: $accent-amber; }
+
+// Callout — softer
+.callout {
+  border-left-width: 3px;
+  border-radius: 6px;
+  background: $earth-card;
+  border-color: $accent-amber;
+}
+.callout-note { background: $earth-paper; border-color: $accent-walnut; }
+
+// Quarto'nun about template'ini kişiselleştir
+.quarto-about-trestles {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.quarto-about-trestles .about-image {
+  border: 4px solid $earth-paper;
+  box-shadow: 0 0 0 1px $earth-line;
+}
+.quarto-about-jolla, .quarto-about-solana {
+  text-align: left;
+}
+.quarto-about-solana .about-image {
+  border: 4px solid $earth-paper;
+  box-shadow: 0 0 0 1px $earth-line;
+}
+
+// About sayfa link butonları
+.about-link {
+  background: $earth-card !important;
+  color: $earth-deep !important;
+  border: 1px solid $earth-line !important;
+  border-radius: 4px !important;
+  padding: 0.4rem 0.85rem !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+  transition: all 0.15s ease !important;
+}
+.about-link:hover {
+  background: $accent-walnut !important;
+  color: $earth-cream !important;
+  border-color: $accent-walnut !important;
+}
+
+// Listing — blog feed
+.quarto-listing-default {
+  margin-top: 1rem;
+}
+.list .listing-title a {
+  color: $earth-deep;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.list .listing-title a:hover { color: $accent-walnut; }
+.list .listing-description {
+  color: $earth-mid;
+  font-size: 0.95rem;
+}
+.list .listing-date,
+.list .listing-categories {
+  color: $accent-amber;
+  font-size: 0.85rem;
+}
+
+// Mobile tweaks
+@media (max-width: 768px) {
+  .quarto-about-trestles {
+    text-align: center;
+  }
+  .quarto-about-trestles .about-link {
+    display: inline-block;
+    margin: 0.25rem;
+  }
+}

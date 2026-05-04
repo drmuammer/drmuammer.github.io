@@ -1,0 +1,23 @@
+---
+title: "About"
+description-meta: "Muammer Beslen — field epidemiologist, physician. Background, interests."
+about:
+  template: solana
+  image: ../assets/profile-placeholder.svg
+  image-width: "180px"
+  image-shape: round
+  links:
+    - icon: linkedin
+      href: https://linkedin.com/in/drmuammer
+    - icon: github
+      href: https://github.com/drmuammer
+    - icon: envelope
+      href: "mailto:contact@muammerbeslen.com"
+toc: false
+---
+
+I'm a field epidemiologist and physician. After completing medical training I focused on public health, surveillance and clinical research methodology.
+
+My work centers on two axes: drawing valid causal inferences from observational data, and producing accessible Turkish-language methodological resources for academic researchers.
+
+> **Note:** Full CV is being added.
