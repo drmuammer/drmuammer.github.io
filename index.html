@@ -29,8 +29,6 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <link href="./assets/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -40,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-f4944451c6cd6988e4b85f6833c37ed5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1f41c5b95c7d07e124761741e6e77c50.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-bca7962de8254c5286d8ad8bd8f0fc5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "Sonuç yok",
@@ -56,35 +54,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Ara"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-latest-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-latest-posts'] = new List('listing-latest-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <!-- Analytics ve Pixel snippet'leri token al\u0131nca a\u00e7\u0131lacak. -->
 <!-- CLOUDFLARE WEB ANALYTICS:
@@ -98,35 +67,6 @@ fbq('track','PageView');
 </script>
 -->
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="assets/custom.css">
 <meta property="og:title" content="Muammer Beslen">
@@ -198,7 +138,7 @@ window.Quarto = {
 <div class="quarto-about-trestles">
   <div class="about-entity">
     <img src="assets/profile-placeholder.svg" class="about-image
-  round " style="height: 200px; width: 200px;">
+  round " style="height: 260px; width: 260px;">
 <header id="title-block-header" class="quarto-title-block"></header>
     <div class="about-links">
   <a href="https://linkedin.com/in/drmuammer" class="about-link" rel="" target="">
@@ -223,96 +163,6 @@ window.Quarto = {
 <h1>Merhaba, ben Muammer.</h1>
 <p>Klinik araştırma, biyoistatistik ve nedensel çıkarım üzerine çalışıyorum. Burada öğrendiklerimi belgeliyor, Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.</p>
 <p>Çalışmalarımda iki şey önemli: <strong>gözlemsel veriden geçerli nedensel çıkarım yapmak</strong> ve <strong>bu süreçte öğrendiklerimi paylaşmak</strong>. İkincisi olmadan birincisi steril bir egzersize dönüşüyor.</p>
-<section class="section section-alt">
-  <div class="section-eyebrow">Şu sıralar</div>
-  <h2 class="section-title" data-anchor-id="merhaba-ben-muammer.">Üzerinde çalıştıklarım</h2>
-  <ul class="arrow-list">
-    <li>Nedensel çıkarım metodolojisinde Türkçe ders notları</li>
-    <li>Target trial emülasyonu örnek vakaları</li>
-    <li>Bayesçi klinik karar destek modelleri</li>
-  </ul>
-</section>
-<section class="section">
-  <div class="section-eyebrow">Açık kaynak</div>
-  <h2 class="section-title">Rehberler</h2>
-  <p class="section-lead">Klinik araştırmacılar için Türkçe, ücretsiz, atıflı kaynaklar. Her rehber kendi sayfasında yaşıyor — başlığa tıkla.</p>
-  <a href="https://drmuammer.github.io/istatistik-yontem-secimi/" class="resource-row">
-    <div class="resource-info">
-      <div class="resource-title">İstatistiksel Yöntem Seçimi</div>
-      <div class="resource-desc">İnteraktif sihirbaz, karar haritası, D3 demoları. Tıbbi araştırmada doğru testin nasıl bulunacağı.</div>
-    </div>
-    <div class="resource-tags">
-      <span class="tag">TR · EN</span>
-      <span class="tag tag-accent">interaktif</span>
-    </div>
-  </a>
-  <a href="https://drmuammer.github.io/veri-seti-guvenligi/" class="resource-row">
-    <div class="resource-info">
-      <div class="resource-title">Veri Güvenliği</div>
-      <div class="resource-desc">Klinik araştırma verisinde kimliksizleştirme, hashleme ve şifreleme — HIPAA, GDPR, KVKK çerçevesinde.</div>
-    </div>
-    <div class="resource-tags">
-      <span class="tag">TR</span>
-    </div>
-  </a>
-  <a href="https://drmuammer.github.io/veri-temizligi/" class="resource-row">
-    <div class="resource-info">
-      <div class="resource-title">Veri Temizliği</div>
-      <div class="resource-desc">Klinik araştırmacılar için Excel/CSV tabanlı pratik veri temizleme rehberi.</div>
-    </div>
-    <div class="resource-tags">
-      <span class="tag">TR</span>
-    </div>
-  </a>
-  <a href="https://drmuammer.github.io/openrefine-pratik/" class="resource-row">
-    <div class="resource-info">
-      <div class="resource-title">OpenRefine Pratik</div>
-      <div class="resource-desc">OpenRefine ile pratik veri temizliği — kümeleme, normalizasyon, GREL dönüşümleri.</div>
-    </div>
-    <div class="resource-tags">
-      <span class="tag">TR</span>
-    </div>
-  </a>
-  <a href="https://drmuammer.github.io/zotero-rehberi/" class="resource-row">
-    <div class="resource-info">
-      <div class="resource-title">Zotero Rehberi</div>
-      <div class="resource-desc">Akademisyenler için kapsamlı Zotero kılavuzu — kurulum, Word/LaTeX entegrasyonu, atıf stilleri.</div>
-    </div>
-    <div class="resource-tags">
-      <span class="tag">TR</span>
-    </div>
-  </a>
-</section>
-<section class="section section-alt">
-  <div class="section-eyebrow">Yazılar</div>
-  <h2 class="section-title">Son notlar</h2>
-</section>
-<div id="listing-latest-posts" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="ZHV5dXJ1JTJDYSVDMyVBNyVDNCVCMWstYmlsaW0=" data-listing-date-sort="1777766400000" data-listing-file-modified-sort="1777902427439" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="125">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./notlar/2026-05-03-hos-geldiniz.html" class="no-external">Hoş geldiniz: bu site nasıl kuruldu, neden kuruldu</a>
-</h3>
-<div class="delink listing-description"><a href="./notlar/2026-05-03-hos-geldiniz.html" class="no-external">
-<p>Sitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./notlar/2026-05-03-hos-geldiniz.html" class="no-external">
-<div class="listing-date">
-3 May 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">Eşleşen öğe yok</div>
-</div>
-<section class="section section-cta">
-  <p>Akademik bir konuda fikir alışverişi yapmak ister misin?</p>
-  <p><a href="iletisim.html" class="cta-link">İletişime geç →</a></p>
-</section>
 
 
 </section>
@@ -716,13 +566,19 @@ window.Quarto = {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 Muammer Beslen — <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+<p><strong>Muammer Beslen, MD</strong><br>
+Saha epidemiyologu · Hekim<br>
+Ankara, Türkiye</p>
 </div>   
     <div class="nav-footer-center">
-<p><em>Sitenin yapısı <a href="https://silviacanelon.com">Silvia Canelón</a>’un Quarto sitesinden esinlendi.</em></p>
+<p><strong>Bağlantılar</strong><br>
+<a href="./hakkimda.html">Hakkımda</a> · <a href="./notlar.html">Notlar</a><br>
+<a href="./projeler.html">Projeler</a> · <a href="./iletisim.html">İletişim</a></p>
 </div>
     <div class="nav-footer-right">
-<p><a href="https://github.com/drmuammer">GitHub</a> · <a href="https://linkedin.com/in/drmuammer">LinkedIn</a></p>
+<p><strong>Sosyal</strong><br>
+<a href="https://github.com/drmuammer">GitHub</a> · <a href="https://linkedin.com/in/drmuammer">LinkedIn</a><br>
+<a href="mailto:contact@muammerbeslen.com">contact@muammerbeslen.com</a></p>
 </div>
   </div>
 </footer>

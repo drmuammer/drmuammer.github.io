@@ -150,14 +150,48 @@ pre {
 
 // Footer
 .nav-footer {
-  font-size: 0.85rem;
-  padding: 2rem 0;
+  font-size: 0.9rem;
+  padding: 3rem 1.5rem 2rem;
+  position: relative;
+}
+.nav-footer .nav-footer-left,
+.nav-footer .nav-footer-center,
+.nav-footer .nav-footer-right {
+  font-family: $font-family-sans-serif;
+  line-height: 1.7;
+}
+.nav-footer strong {
+  font-family: $font-family-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: $earth-cream;
+  display: block;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
 }
 .nav-footer a {
-  color: $earth-mute;
-  text-decoration: underline;
+  color: $earth-line;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
-.nav-footer a:hover { color: $accent-amber; }
+.nav-footer a:hover {
+  color: $accent-amber;
+  border-bottom-color: $accent-amber;
+}
+// Footer'ın altına ince bir hat ve mikro bilgi
+.nav-footer::after {
+  content: "© 2026 Muammer Beslen · CC BY 4.0 · Sitenin yapısı Silvia Canelón'un Quarto sitesinden esinlendi.";
+  display: block;
+  margin: 2rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(196, 184, 160, 0.15);
+  font-size: 0.78rem;
+  color: $earth-mute;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 800px;
+}
 
 // Callout
 .callout {
