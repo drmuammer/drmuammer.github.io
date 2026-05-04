@@ -44,20 +44,14 @@ website:
 
   page-footer:
     background: "#2D2418"
-    foreground: "#C4B8A0"
+    foreground: "#9B8A6F"
     border: false
     left: |
-      **Muammer Beslen, MD**  
-      Saha epidemiyologu · Hekim  
-      Ankara, Türkiye
+      © 2026 Muammer Beslen
     center: |
-      **Bağlantılar**  
-      [Hakkımda](/hakkimda.html) · [Notlar](/notlar.html)  
-      [Projeler](/projeler.html) · [İletişim](/iletisim.html)
+      [Hakkımda](/hakkimda.html) · [Notlar](/notlar.html) · [Projeler](/projeler.html) · [İletişim](/iletisim.html)
     right: |
-      **Sosyal**  
-      [GitHub](https://github.com/drmuammer) · [LinkedIn](https://linkedin.com/in/drmuammer)  
-      [contact@muammerbeslen.com](mailto:contact@muammerbeslen.com)
+      [GitHub](https://github.com/drmuammer) · [LinkedIn](https://linkedin.com/in/drmuammer)
 
 format:
   html:
