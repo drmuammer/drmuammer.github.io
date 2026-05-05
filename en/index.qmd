@@ -9,13 +9,13 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/in/drmuammer
+      href: https://www.linkedin.com/in/muammer-beslen-78a59622b
     - icon: github
       text: GitHub
       href: https://github.com/drmuammer
     - icon: envelope
       text: E-mail
-      href: "mailto:contact@muammerbeslen.com"
+      href: "mailto:muammer.beslen@gmail.com"
 toc: false
 ---
 

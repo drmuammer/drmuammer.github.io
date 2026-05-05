@@ -6,16 +6,6 @@ about:
   image: assets/profile.jpg
   image-width: "180px"
   image-shape: round
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/in/drmuammer
-    - icon: github
-      text: GitHub
-      href: https://github.com/drmuammer
-    - icon: envelope
-      text: E-mail
-      href: "mailto:contact@muammerbeslen.com"
 toc: true
 toc-location: right
 toc-title: "İçerik"

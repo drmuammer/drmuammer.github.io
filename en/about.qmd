@@ -8,11 +8,11 @@ about:
   image-shape: round
   links:
     - icon: linkedin
-      href: https://linkedin.com/in/drmuammer
+      href: https://www.linkedin.com/in/muammer-beslen-78a59622b
     - icon: github
       href: https://github.com/drmuammer
     - icon: envelope
-      href: "mailto:contact@muammerbeslen.com"
+      href: "mailto:muammer.beslen@gmail.com"
 toc: false
 ---
 
