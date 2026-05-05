@@ -70,13 +70,6 @@
     "text": "Süregelen ilgi alanlarım\n\nSaha epidemiyolojisi\nSu kaynaklı salgın incelemeleri, gastroenterit kümelenmeleri, vaka-kontrol metodolojisi\nSürveyans\nHepatit A, COVID-19 ve genel bulaşıcı hastalık sürveyansı; erken uyarı ve cevap sistemleri\nMetodoloji\nLojistik regresyon, çok değişkenli analiz, taraf tutma ve karıştırıcı kontrolü, nedensel çıkarım\nAraçlar\nR, Epi Info, Excel, ArcGIS / Coğrafi Bilgi Sistemleri, salgın modellemesi\nEğitim\nTürkçe açık kaynak rehberler; HSGM ve TSESEP eğitim programlarında eğitici rolü"
   },
   {
-    "objectID": "hakkimda.html#çalışma-şekli",
-    "href": "hakkimda.html#çalışma-şekli",
-    "title": "Hakkımda",
-    "section": "Çalışma şekli",
-    "text": "Çalışma şekli\nAkademik bütünlüğün üç temel ilkesine bağlıyım:\nAçık metodoloji. Yapılan analiz şeffaftır — kod, sürüm geçmişi ve karar gerekçeleri belgelenir. Çoğu projede analiz adımları Quarto + Git ile takip edilir.\nDürüst raporlama. Sonuç ne olursa olsun olduğu gibi raporlanır. Yöntem sonuca göre seçilmez.\nVeri güvenliği. Paylaşılan her veri kimliksizleştirilmiş ve şifrelenmiş olarak alınır. Veri Güvenliği rehberinde standartlarımı açıkça yayımladım."
-  },
-  {
     "objectID": "en/about.html",
     "href": "en/about.html",
     "title": "About",
@@ -116,6 +109,6 @@
     "href": "index.html",
     "title": "Muammer Beslen, MD",
     "section": "",
-    "text": "EST · MMXXVI · ANKARA · OPEN SCIENCE\n\n    \n      \n        001\n        \n          \n          \n        \n      \n\n      Field epidemiologist · Physician\n      Muammer Beslen, MD\n      \n        Klinik araştırma metodolojisi, nedensel çıkarım ve sürveyans verisi üzerine çalışıyorum. Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.\n      \n\n      \n        M. Beslen\n      \n    \n\n    \n      \n        LinkedIn\n        GitHub\n        E-mail\n      \n      № MB-001\n    \n  \n\n  \n    \n  \n\n\n\n\n\n Başa dön"
+    "text": "EST · MMXXVI · ANKARA · OPEN SCIENCE\n\n    \n      001\n      Field epidemiologist · Physician\n      Muammer Beslen, MD\n      \n        Klinik araştırma metodolojisi, nedensel çıkarım ve sürveyans verisi üzerine çalışıyorum. Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.\n      \n    \n\n    \n      LinkedIn\n      GitHub\n      E-mail\n    \n  \n\n  \n    \n  \n\n\n\n\n\n Başa dön"
   }
 ]
