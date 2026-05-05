@@ -1,34 +1,35 @@
 ---
 pagetitle: "Muammer Beslen"
 description-meta: "Saha epidemiyologu ve hekim. Klinik araştırma, biyoistatistik ve nedensel çıkarım üzerine notlar."
-about:
-  template: trestles
-  image: assets/profile-placeholder.svg
-  image-width: "260px"
-  image-shape: round
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/in/drmuammer
-    - icon: github
-      text: GitHub
-      href: https://github.com/drmuammer
-    - icon: envelope
-      text: E-mail
-      href: "mailto:contact@muammerbeslen.com"
+page-layout: full
 toc: false
 ---
 
-::: {.eyebrow-label}
-Saha epidemiyologu · Hekim
-:::
+```{=html}
+<section class="hero-banknote">
 
-# Merhaba, ben Muammer.
+  <div class="hero-left">
+    <div class="hero-side-label">EST · MMXXVI · ANKARA · OPEN SCIENCE</div>
 
-Klinik araştırma, biyoistatistik ve nedensel çıkarım üzerine çalışıyorum.
-Burada öğrendiklerimi belgeliyor, Türkçe açık kaynak rehberler hazırlıyor,
-notlarımı paylaşıyorum.
+    <div class="hero-content">
+      <div class="hero-numeral">001</div>
+      <div class="hero-eyebrow">Field epidemiologist · Physician</div>
+      <h1 class="hero-name">Muammer Beslen, MD</h1>
+      <p class="hero-desc">
+        Klinik araştırma metodolojisi, nedensel çıkarım ve sürveyans verisi üzerine çalışıyorum. Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.
+      </p>
+    </div>
 
-Çalışmalarımda iki şey önemli: **gözlemsel veriden geçerli nedensel çıkarım yapmak**
-ve **bu süreçte öğrendiklerimi paylaşmak**.
-İkincisi olmadan birincisi steril bir egzersize dönüşüyor.
+    <div class="hero-foot">
+      <a href="https://linkedin.com/in/drmuammer" class="hero-link">LinkedIn</a>
+      <a href="https://github.com/drmuammer" class="hero-link">GitHub</a>
+      <a href="mailto:contact@muammerbeslen.com" class="hero-link">E-mail</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="assets/profile.jpg" alt="Muammer Beslen — portre" class="hero-portrait"/>
+  </div>
+
+</section>
+```

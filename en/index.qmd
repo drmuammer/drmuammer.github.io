@@ -3,7 +3,7 @@ pagetitle: "Muammer Beslen, MD"
 description-meta: "Field epidemiologist & physician. Notes and open-source guides on clinical research methodology."
 about:
   template: trestles
-  image: ../assets/profile-placeholder.svg
+  image: ../assets/profile.jpg
   image-width: "200px"
   image-shape: round
   links:

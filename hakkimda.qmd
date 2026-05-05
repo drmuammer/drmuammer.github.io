@@ -3,7 +3,7 @@ title: "Hakkımda"
 description-meta: "Muammer Beslen — Saha epidemiyologu, hekim. Akademik geçmiş, ilgi alanları, çalışma şekli."
 about:
   template: solana
-  image: assets/profile-placeholder.svg
+  image: assets/profile.jpg
   image-width: "180px"
   image-shape: round
   links:
