@@ -30,7 +30,10 @@ page-layout: full
       <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
     </div>
     <div class="tm-cover">
-      <img src="assets/covers/istatistik-yontem-secimi.png" alt="İstatistik Yöntem Seçimi"/>
+      <picture>
+        <source srcset="assets/covers/istatistik-yontem-secimi.webp" type="image/webp"/>
+        <img src="assets/covers/istatistik-yontem-secimi.png" alt="İstatistik Yöntem Seçimi"/>
+      </picture>
     </div>
   </a>
 
@@ -52,7 +55,10 @@ page-layout: full
       <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
     </div>
     <div class="tm-cover">
-      <img src="assets/covers/veri-seti-guvenligi.png" alt="Veri Güvenliği"/>
+      <picture>
+        <source srcset="assets/covers/veri-seti-guvenligi.webp" type="image/webp"/>
+        <img src="assets/covers/veri-seti-guvenligi.png" alt="Veri Güvenliği"/>
+      </picture>
     </div>
   </a>
 
@@ -74,7 +80,10 @@ page-layout: full
       <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
     </div>
     <div class="tm-cover">
-      <img src="assets/covers/veri-temizligi.png" alt="Veri Temizliği"/>
+      <picture>
+        <source srcset="assets/covers/veri-temizligi.webp" type="image/webp"/>
+        <img src="assets/covers/veri-temizligi.png" alt="Veri Temizliği"/>
+      </picture>
     </div>
   </a>
 
@@ -96,7 +105,10 @@ page-layout: full
       <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
     </div>
     <div class="tm-cover">
-      <img src="assets/covers/openrefine-pratik.png" alt="OpenRefine Pratik"/>
+      <picture>
+        <source srcset="assets/covers/openrefine-pratik.webp" type="image/webp"/>
+        <img src="assets/covers/openrefine-pratik.png" alt="OpenRefine Pratik"/>
+      </picture>
     </div>
   </a>
 
@@ -118,7 +130,10 @@ page-layout: full
       <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
     </div>
     <div class="tm-cover">
-      <img src="assets/covers/zotero-rehberi.png" alt="Zotero Rehberi"/>
+      <picture>
+        <source srcset="assets/covers/zotero-rehberi.webp" type="image/webp"/>
+        <img src="assets/covers/zotero-rehberi.png" alt="Zotero Rehberi"/>
+      </picture>
     </div>
   </a>
 
@@ -135,8 +150,11 @@ page-layout: full
       <div class="tm-cell"><span class="tm-mini">Hesap</span><span class="tm-val">@drmuammer</span></div>
       <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">İncele</span></div>
     </div>
-    <div class="tm-cover tm-cover-empty">
-      <div class="tm-more-icon">→</div>
+    <div class="tm-cover">
+      <picture>
+        <source srcset="assets/covers/github-more.webp" type="image/webp"/>
+        <img src="assets/covers/github-more.png" alt="GitHub profili"/>
+      </picture>
     </div>
   </a>
 
