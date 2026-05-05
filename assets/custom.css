@@ -756,11 +756,11 @@ body.quarto-page-layout-full main.content:has(.hk-page) {
 
 .hk-title {
   font-family: 'Jost', sans-serif !important;
-  font-weight: 700 !important;
-  font-size: clamp(40px, 6vw, 64px) !important;
-  line-height: 0.95 !important;
+  font-weight: 600 !important;
+  font-size: clamp(2rem, 4.5vw, 3rem) !important;
+  line-height: 1.05 !important;
   color: #2D2418 !important;
-  letter-spacing: -0.04em !important;
+  letter-spacing: -0.03em !important;
   margin: 0 0 16px !important;
   border: none !important;
   padding: 0 !important;
