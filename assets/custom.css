@@ -61,6 +61,15 @@ body.quarto-page-layout-full main.content:has(.hero-banknote) {
   margin-bottom: auto;
 }
 
+/* Numeral + seal row */
+.hero-numeral-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
 .hero-numeral {
   font-family: 'Jost', sans-serif;
   font-weight: 700;
@@ -68,7 +77,24 @@ body.quarto-page-layout-full main.content:has(.hero-banknote) {
   line-height: 0.9;
   color: #2D2418;
   letter-spacing: -0.05em;
-  margin-bottom: 16px;
+  margin-bottom: 0;
+}
+
+/* FETP seal */
+.hero-seal {
+  display: block;
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  margin-top: -8px;
+  transform: rotate(-6deg);
+  opacity: 0.92;
+}
+.hero-seal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .hero-eyebrow {
@@ -96,7 +122,23 @@ body.quarto-page-layout-full main.content:has(.hero-banknote) {
   color: #4A3C2A;
   line-height: 1.65;
   max-width: 380px;
-  margin: 0;
+  margin: 0 0 28px;
+}
+
+/* İmza */
+.hero-signature {
+  display: inline-block;
+  border-bottom: 0.5px solid #2D2418;
+  padding-bottom: 2px;
+  min-width: 110px;
+  margin-top: 8px;
+}
+.hero-signature-text {
+  font-family: 'Jost', sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #2D2418;
+  font-weight: 400;
 }
 
 .hero-foot {
@@ -104,7 +146,23 @@ body.quarto-page-layout-full main.content:has(.hero-banknote) {
   padding-top: 18px;
   border-top: 0.5px solid #D9CDB6;
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.hero-links {
+  display: flex;
   gap: 22px;
+}
+
+.hero-serial {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.6rem;
+  color: #9B8A6F;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .hero-link {
@@ -163,6 +221,23 @@ body.quarto-page-layout-full main.content:has(.hero-banknote) {
   .hero-foot {
     margin-right: 0;
     margin-top: 32px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .hero-seal {
+    width: 100px;
+    height: 100px;
+  }
+  .hero-numeral {
+    font-size: clamp(56px, 16vw, 88px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-seal {
+    width: 80px;
+    height: 80px;
+    margin-top: 4px;
   }
 }
 
@@ -517,6 +592,58 @@ body.quarto-page-layout-full main.content:has(.hero-banknote) {
 .cv-meta {
   font-size: 0.9rem;
   color: #6B5A42;
+}
+
+/* CV detayı — salgın incelemeleri vs sürveyans */
+.cv-block {
+  margin: 1rem 0 2rem;
+  border-top: 0.5px solid #D9CDB6;
+}
+.cv-row-detail {
+  padding: 1rem 0;
+  border-bottom: 0.5px solid #D9CDB6;
+}
+.cv-row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+.cv-row-title {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #2D2418;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+}
+.cv-tag {
+  display: inline-block;
+  background: #F0E6D2;
+  color: #7A5C3A;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.cv-tag-lead {
+  background: #B5945C;
+  color: #FAF7F2;
+}
+
+/* Konuşma satırı — yıl + yer */
+.talk-loc {
+  display: block;
+  font-size: 0.7rem;
+  color: #9B8A6F;
+  font-weight: 500;
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .pub-entry {
