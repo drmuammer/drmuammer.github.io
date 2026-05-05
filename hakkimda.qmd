@@ -189,13 +189,3 @@ Toplam: **30+ eğitim modülü, 90+ ders saati**, beş ardışık Uygulamalı Ep
 <dd>Türkçe açık kaynak rehberler; HSGM ve TSESEP eğitim programlarında eğitici rolü</dd>
 </dl>
 ```
-
-## Çalışma şekli
-
-Akademik bütünlüğün üç temel ilkesine bağlıyım:
-
-**Açık metodoloji.** Yapılan analiz şeffaftır — kod, sürüm geçmişi ve karar gerekçeleri belgelenir. Çoğu projede analiz adımları Quarto + Git ile takip edilir.
-
-**Dürüst raporlama.** Sonuç ne olursa olsun olduğu gibi raporlanır. Yöntem sonuca göre seçilmez.
-
-**Veri güvenliği.** Paylaşılan her veri kimliksizleştirilmiş ve şifrelenmiş olarak alınır. [Veri Güvenliği rehberinde](https://drmuammer.github.io/veri-seti-guvenligi/) standartlarımı açıkça yayımladım.
