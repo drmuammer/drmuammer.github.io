@@ -10,98 +10,134 @@ page-layout: full
   <p>Bu portfolyo, oluşturduğum açık kaynak rehberleri, araçları ve katkıda bulunduğum çalışmaları içerir. Tamamı GitHub'da, ücretsiz, atıflıdır.</p>
 </div>
 
-<div class="projects-grid">
+<div class="tm-grid">
 
-  <a href="https://drmuammer.github.io/istatistik-yontem-secimi/" class="project-card">
-    <div class="project-cover">
+  <a href="https://drmuammer.github.io/istatistik-yontem-secimi/" class="tm-card">
+    <div class="tm-row tm-row-head">
+      <div class="tm-cell"><span class="tm-mini">Proje</span><span class="tm-num">001</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Durum</span><span class="tm-status">Aktif · 2025</span></div>
+    </div>
+    <div class="tm-row tm-row-title">
+      <h3 class="tm-title">İstatistiksel Yöntem Seçimi</h3>
+      <p class="tm-desc">Tıbbi araştırmada doğru istatistiksel testi bulmak için interaktif rehber. Sihirbaz, karar haritası, sürüklenebilir D3 demoları.</p>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Dil</span><span class="tm-val">TR · EN</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Tür</span><span class="tm-val">İnteraktif</span></div>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Yapıldı</span><span class="tm-val">D3.js · Quarto</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
+    </div>
+    <div class="tm-cover">
       <img src="assets/covers/istatistik-yontem-secimi.png" alt="İstatistik Yöntem Seçimi"/>
     </div>
-    <div class="project-body">
-      <h3>İstatistiksel Yöntem Seçimi</h3>
-      <p>Tıbbi araştırmada doğru istatistiksel testi bulmak için interaktif rehber. Sihirbaz, karar haritası, sürüklenebilir D3 demoları.</p>
-      <div class="project-tags">
-        <span class="ptag">tr · en</span>
-        <span class="ptag ptag-accent">interaktif</span>
-        <span class="ptag">d3.js</span>
-        <span class="ptag">quarto</span>
-      </div>
-    </div>
-    <div class="project-foot">aktif · 2025</div>
   </a>
 
-  <a href="https://drmuammer.github.io/veri-seti-guvenligi/" class="project-card">
-    <div class="project-cover">
+  <a href="https://drmuammer.github.io/veri-seti-guvenligi/" class="tm-card">
+    <div class="tm-row tm-row-head">
+      <div class="tm-cell"><span class="tm-mini">Proje</span><span class="tm-num">002</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Durum</span><span class="tm-status">Aktif · 2025</span></div>
+    </div>
+    <div class="tm-row tm-row-title">
+      <h3 class="tm-title">Veri Güvenliği</h3>
+      <p class="tm-desc">Klinik araştırma verisinde kimliksizleştirme, hashleme ve şifreleme. HIPAA, GDPR ve KVKK çerçevesinde 17 akademik kaynaklı kapsamlı doküman.</p>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Dil</span><span class="tm-val">TR</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Tür</span><span class="tm-val">Akademik</span></div>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Kaynak</span><span class="tm-val">17 referans</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
+    </div>
+    <div class="tm-cover">
       <img src="assets/covers/veri-seti-guvenligi.png" alt="Veri Güvenliği"/>
     </div>
-    <div class="project-body">
-      <h3>Veri Güvenliği</h3>
-      <p>Klinik araştırma verisinde kimliksizleştirme, hashleme ve şifreleme. HIPAA, GDPR ve KVKK çerçevesinde 17 akademik kaynaklı kapsamlı doküman.</p>
-      <div class="project-tags">
-        <span class="ptag">tr</span>
-        <span class="ptag">akademik</span>
-        <span class="ptag">kaynaklı</span>
-      </div>
-    </div>
-    <div class="project-foot">aktif · 2025</div>
   </a>
 
-  <a href="https://drmuammer.github.io/veri-temizligi/" class="project-card">
-    <div class="project-cover">
+  <a href="https://drmuammer.github.io/veri-temizligi/" class="tm-card">
+    <div class="tm-row tm-row-head">
+      <div class="tm-cell"><span class="tm-mini">Proje</span><span class="tm-num">003</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Durum</span><span class="tm-status">Aktif · 2025</span></div>
+    </div>
+    <div class="tm-row tm-row-title">
+      <h3 class="tm-title">Veri Temizliği</h3>
+      <p class="tm-desc">Klinik araştırmacılar için Excel/CSV tabanlı pratik veri temizleme rehberi. Eksik veri, yinelenenler, format düzeltmeleri.</p>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Dil</span><span class="tm-val">TR</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Tür</span><span class="tm-val">Pratik</span></div>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Yapıldı</span><span class="tm-val">Excel · CSV</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
+    </div>
+    <div class="tm-cover">
       <img src="assets/covers/veri-temizligi.png" alt="Veri Temizliği"/>
     </div>
-    <div class="project-body">
-      <h3>Veri Temizliği</h3>
-      <p>Klinik araştırmacılar için Excel/CSV tabanlı pratik veri temizleme rehberi. Eksik veri, yinelenenler, format düzeltmeleri.</p>
-      <div class="project-tags">
-        <span class="ptag">tr</span>
-        <span class="ptag">excel</span>
-        <span class="ptag">csv</span>
-      </div>
-    </div>
-    <div class="project-foot">aktif · 2025</div>
   </a>
 
-  <a href="https://drmuammer.github.io/openrefine-pratik/" class="project-card">
-    <div class="project-cover">
+  <a href="https://drmuammer.github.io/openrefine-pratik/" class="tm-card">
+    <div class="tm-row tm-row-head">
+      <div class="tm-cell"><span class="tm-mini">Proje</span><span class="tm-num">004</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Durum</span><span class="tm-status">Aktif · 2025</span></div>
+    </div>
+    <div class="tm-row tm-row-title">
+      <h3 class="tm-title">OpenRefine Pratik</h3>
+      <p class="tm-desc">OpenRefine ile pratik veri temizliği — kümeleme algoritmaları, normalizasyon, GREL dönüşümleri ve gerçek dünya örnekleri.</p>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Dil</span><span class="tm-val">TR</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Tür</span><span class="tm-val">Pratik</span></div>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Yapıldı</span><span class="tm-val">OpenRefine · GREL</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
+    </div>
+    <div class="tm-cover">
       <img src="assets/covers/openrefine-pratik.png" alt="OpenRefine Pratik"/>
     </div>
-    <div class="project-body">
-      <h3>OpenRefine Pratik</h3>
-      <p>OpenRefine ile pratik veri temizliği — kümeleme algoritmaları, normalizasyon, GREL dönüşümleri ve gerçek dünya örnekleri.</p>
-      <div class="project-tags">
-        <span class="ptag">tr</span>
-        <span class="ptag">openrefine</span>
-        <span class="ptag">grel</span>
-      </div>
-    </div>
-    <div class="project-foot">aktif · 2025</div>
   </a>
 
-  <a href="https://drmuammer.github.io/zotero-rehberi/" class="project-card">
-    <div class="project-cover">
+  <a href="https://drmuammer.github.io/zotero-rehberi/" class="tm-card">
+    <div class="tm-row tm-row-head">
+      <div class="tm-cell"><span class="tm-mini">Proje</span><span class="tm-num">005</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Durum</span><span class="tm-status">Aktif · 2025</span></div>
+    </div>
+    <div class="tm-row tm-row-title">
+      <h3 class="tm-title">Zotero Rehberi</h3>
+      <p class="tm-desc">Akademisyenler için kapsamlı Zotero kılavuzu — kurulum, Word & LaTeX entegrasyonu, atıf stilleri, grup kütüphaneleri.</p>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Dil</span><span class="tm-val">TR</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">Tür</span><span class="tm-val">Akademik</span></div>
+    </div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Yapıldı</span><span class="tm-val">Zotero · BibTeX</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">Aç</span></div>
+    </div>
+    <div class="tm-cover">
       <img src="assets/covers/zotero-rehberi.png" alt="Zotero Rehberi"/>
     </div>
-    <div class="project-body">
-      <h3>Zotero Rehberi</h3>
-      <p>Akademisyenler için kapsamlı Zotero kılavuzu — kurulum, Word & LaTeX entegrasyonu, atıf stilleri, grup kütüphaneleri.</p>
-      <div class="project-tags">
-        <span class="ptag">tr</span>
-        <span class="ptag">zotero</span>
-        <span class="ptag">akademik</span>
-      </div>
-    </div>
-    <div class="project-foot">aktif · 2025</div>
   </a>
 
-  <a href="https://github.com/drmuammer" class="project-card project-card-more">
-    <div class="project-cover project-cover-empty">
-      <div class="more-icon">→</div>
+  <a href="https://github.com/drmuammer" class="tm-card tm-card-more">
+    <div class="tm-row tm-row-head">
+      <div class="tm-cell"><span class="tm-mini">Daha</span><span class="tm-num">+</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">GitHub</span><span class="tm-status">Açık</span></div>
     </div>
-    <div class="project-body">
-      <h3>Daha fazlası GitHub'da</h3>
-      <p>Yeni rehberler ve mini araçlar GitHub profilinde yayınlanmaya devam ediyor. Notlar, dersler, mini analiz örnekleri.</p>
+    <div class="tm-row tm-row-title">
+      <h3 class="tm-title">Daha fazlası GitHub'da</h3>
+      <p class="tm-desc">Yeni rehberler ve mini araçlar GitHub profilinde yayınlanmaya devam ediyor. Notlar, dersler, mini analiz örnekleri.</p>
     </div>
-    <div class="project-foot">github.com/drmuammer</div>
+    <div class="tm-row tm-row-meta">
+      <div class="tm-cell"><span class="tm-mini">Hesap</span><span class="tm-val">@drmuammer</span></div>
+      <div class="tm-cell tm-right"><span class="tm-mini">→</span><span class="tm-val tm-cta">İncele</span></div>
+    </div>
+    <div class="tm-cover tm-cover-empty">
+      <div class="tm-more-icon">→</div>
+    </div>
   </a>
 
 </div>
