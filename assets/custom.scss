@@ -27,12 +27,12 @@ $secondary:      $accent-amber;
 $dark:           $earth-deep;
 $light:          $earth-paper;
 
-// Tipografi — havalı serif başlık + temiz sans gövde
-$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-$font-family-serif:      "Fraunces", "Source Serif Pro", Georgia, "Times New Roman", serif;
+// Tipografi — Jost her yerde (Futura ruhu)
+$font-family-sans-serif: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-family-serif:      "Jost", "Source Serif Pro", Georgia, "Times New Roman", serif;
 $font-family-monospace:  "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
 
-$headings-font-family:   $font-family-serif;
+$headings-font-family:   $font-family-sans-serif;
 $headings-font-weight:   500;
 $headings-color:         $earth-deep;
 $headings-line-height:   1.15;
@@ -48,7 +48,7 @@ $container-max-widths: (
 $border-radius:     6px;
 $border-radius-lg:  10px;
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
 /*-- scss:rules --*/
 
@@ -59,7 +59,7 @@ body {
   background: $earth-cream;
 }
 
-// Başlıklar Fraunces ile karakterli
+// Başlıklar Jost ile geometrik (Futura ruhu)
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-serif;
   font-weight: 500;
