@@ -1010,10 +1010,11 @@ body.quarto-page-layout-full .quarto-title-block .quarto-title {
 
 /* ============================================================
    İletişim sayfası — görsel kart ızgarası
-   3 sütun (desktop), 1 sütun (mobil). Kaynak görseller 1:1 kare.
-   align-self: start + height: auto ile grid'in dikey stretch
-   yapmasını engelliyoruz. Bu olmadan kartlar portre olup
-   görselin üstü kırpılıyor.
+   3 sütun (desktop), 1 sütun (mobil). Kartlar 2:3 portre
+   (klasik film posteri oranı). Kaynak görseller 1:1 kare;
+   object-fit: cover ile kenarlardan ~%17 kırpılır, dikey
+   içerik tam görünür. Yeni kuzgun ve diğer iki görsel hep
+   merkez-yarı kompozisyonlu olduğundan focal point güvende.
    ============================================================ */
 
 .contact-grid {
@@ -1031,8 +1032,8 @@ body.quarto-page-layout-full .quarto-title-block .quarto-title {
   background: #FAF7F2;
   text-decoration: none !important;
   overflow: hidden;
+  aspect-ratio: 2 / 3;
   align-self: start;
-  height: auto;
   line-height: 0;
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
@@ -1045,13 +1046,16 @@ body.quarto-page-layout-full .quarto-title-block .quarto-title {
 .contact-card picture {
   display: block;
   width: 100%;
+  height: 100%;
   line-height: 0;
 }
 
 .contact-card img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   vertical-align: top;
 }
 
