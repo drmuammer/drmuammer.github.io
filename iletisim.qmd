@@ -7,21 +7,16 @@ toc: false
 Akademik konularda görüş alışverişi, rehberlerle ilgili sorular ya da bir konuyu birlikte düşünmek istersen aşağıdaki kanallar açık.
 
 ```{=html}
-<div class="contact-grid">
-  <a href="mailto:muammer.beslen@gmail.com" class="contact-card">
-    <div class="contact-icon">✉</div>
-    <div class="contact-label">E-mail</div>
-    <div class="contact-value">muammer.beslen@gmail.com</div>
-    <div class="contact-note">Detaylı bir konu, teknik soru veya proje açıklaması için.</div>
-  </a>
+<dl class="contact-list">
+  <dt>E-mail</dt>
+  <dd><a href="mailto:muammer.beslen@gmail.com">muammer.beslen@gmail.com</a></dd>
 
-  <a href="https://www.linkedin.com/in/muammer-beslen-78a59622b" class="contact-card">
-    <div class="contact-icon">in</div>
-    <div class="contact-label">LinkedIn</div>
-    <div class="contact-value">linkedin.com/in/muammer-beslen-78a59622b</div>
-    <div class="contact-note">Hızlı bir tanışma mesajı veya genel sorular için.</div>
-  </a>
-</div>
+  <dt>LinkedIn</dt>
+  <dd><a href="https://www.linkedin.com/in/muammer-beslen-78a59622b">linkedin.com/in/muammer-beslen</a></dd>
+
+  <dt>GitHub</dt>
+  <dd><a href="https://github.com/drmuammer">github.com/drmuammer</a></dd>
+</dl>
 ```
 
 ## Notlar
