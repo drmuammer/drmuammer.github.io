@@ -1,22 +1,36 @@
 ---
 title: "İletişim"
-description-meta: "Muammer Beslen ile iletişim — e-mail ve LinkedIn üzerinden."
+description-meta: "Muammer Beslen ile iletişim — e-mail, LinkedIn ve GitHub üzerinden."
 toc: false
 ---
 
 Akademik konularda görüş alışverişi, rehberlerle ilgili sorular ya da bir konuyu birlikte düşünmek istersen aşağıdaki kanallar açık.
 
 ```{=html}
-<dl class="contact-list">
-  <dt>E-mail</dt>
-  <dd><a href="mailto:muammer.beslen@gmail.com">muammer.beslen@gmail.com</a></dd>
+<div class="contact-grid">
 
-  <dt>LinkedIn</dt>
-  <dd><a href="https://www.linkedin.com/in/muammer-beslen-78a59622b">linkedin.com/in/muammer-beslen</a></dd>
+  <a class="contact-card" href="mailto:muammer.beslen@gmail.com" aria-label="E-mail">
+    <picture>
+      <source srcset="assets/contact/email.webp" type="image/webp"/>
+      <img src="assets/contact/email.jpg" alt="E-mail" loading="lazy" width="700" height="700"/>
+    </picture>
+  </a>
 
-  <dt>GitHub</dt>
-  <dd><a href="https://github.com/drmuammer">github.com/drmuammer</a></dd>
-</dl>
+  <a class="contact-card" href="https://www.linkedin.com/in/muammer-beslen-78a59622b" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <picture>
+      <source srcset="assets/contact/linkedin.webp" type="image/webp"/>
+      <img src="assets/contact/linkedin.jpg" alt="LinkedIn" loading="lazy" width="700" height="700"/>
+    </picture>
+  </a>
+
+  <a class="contact-card" href="https://github.com/drmuammer" target="_blank" rel="noopener" aria-label="GitHub">
+    <picture>
+      <source srcset="assets/contact/github.webp" type="image/webp"/>
+      <img src="assets/contact/github.jpg" alt="GitHub" loading="lazy" width="700" height="700"/>
+    </picture>
+  </a>
+
+</div>
 ```
 
 ## Notlar
