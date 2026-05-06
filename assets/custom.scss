@@ -271,27 +271,43 @@ hr.footer-divider {
 }
 
 .note-entry {
+  position: relative;
   display: grid;
   grid-template-columns: 175px 1fr;
   gap: 2.25rem;
   align-items: start;
   padding: 2rem 0;
   border-bottom: 1px solid $earth-line;
-  text-decoration: none !important;
-  color: inherit !important;
   transition: opacity 0.18s ease;
 
   &:first-child { padding-top: 1rem; }
   &:last-child  { border-bottom: none; }
 
   &:hover {
-    .note-day   { color: $accent-walnut; }
-    .note-title { color: $accent-walnut !important; }
+    .note-day  { color: $accent-walnut; }
+    .note-link { color: $accent-walnut; }
   }
+}
+
+// Stretched link — sadece başlıkta <a>, ama ::after ile tüm
+// article'ı tıklanabilir kaplar.
+.note-link {
+  color: $earth-deep;
+  text-decoration: none;
+  transition: color 0.18s ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  &:hover { text-decoration: none; }
 
   &:focus-visible {
     outline: 2px solid $accent-walnut;
-    outline-offset: 6px;
+    outline-offset: 4px;
     border-radius: 2px;
   }
 }
@@ -341,11 +357,10 @@ hr.footer-divider {
   font-family: $font-family-serif;          // sitedeki Jost-serif
   font-size: 1.25rem;
   font-weight: 500;
-  color: $earth-deep !important;
+  color: $earth-deep;
   line-height: 1.3;
   margin: 0 0 0.75rem;
   letter-spacing: -0.01em;
-  transition: color 0.18s ease;
 }
 
 .note-tags {
