@@ -1,49 +1,47 @@
 <%
-// Notlar listesi — Swiss damga (Variant B) custom listing template.
-// Türkçe ay isimleri runtime locale'inden bağımsız çalışsın diye sabit.
-const months = [
-  'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran',
-  'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'
-];
-%>
-
+// Notlar listing — Swiss damga (Variant B) custom template.
+// Key constraints handled:
+//   1. Zero leading whitespace on HTML output lines.
+//   2. div instead of span everywhere (avoids p-wrapping inside HTML blocks).
+//   3. Stretched-link pattern: anchor only on title; CSS pseudo covers row.
+//   4. months array declared inside forEach (EJS scope safety).
+-%>
 <div class="note-list">
-<% items.forEach(function(item) { %>
-  <%
-    let d = null;
-    if (item.date) {
-      const tmp = new Date(item.date);
-      if (!isNaN(tmp.getTime())) d = tmp;
-    }
-    const day = d ? String(d.getDate()).padStart(2, '0') : '';
-    const monthYear = d ? months[d.getMonth()] + ' ' + d.getFullYear() : '';
-    const readingTime = item['reading-time'] || item.readingtime || '';
-    const hasCategories = item.categories && item.categories.length > 0;
-    const titleId = 'note-' + (item.path || '').replace(/[^a-z0-9]/gi, '-');
-  %>
-  <a class="note-entry" href="<%= item.path %>" aria-labelledby="<%= titleId %>">
-    <div class="note-stamp">
-      <% if (d) { %>
-        <span class="note-day"><%= day %></span>
-        <span class="note-monthyear"><%= monthYear %></span>
-      <% } %>
-      <% if (readingTime) { %>
-        <span class="note-readtime"><%= readingTime %></span>
-      <% } %>
-    </div>
-    <div class="note-content">
-      <h2 class="note-title" id="<%= titleId %>"><%= item.title %></h2>
-      <% if (hasCategories) { %>
-        <div class="note-tags">
-          <% item.categories.forEach(function(cat) { %>
-            <span class="note-tag"><%= cat %></span>
-          <% }) %>
-        </div>
-      <% } %>
-      <% if (item.description) { %>
-        <p class="note-desc"><%- item.description %></p>
-      <% } %>
-    </div>
-  </a>
-<% }) %>
+<% items.forEach(function(item) {
+const months = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+let d = null;
+if (item.date) {
+  const tmp = new Date(item.date);
+  if (!isNaN(tmp.getTime())) d = tmp;
+}
+const day = d ? String(d.getDate()).padStart(2, '0') : '';
+const monthYear = d ? months[d.getMonth()] + ' ' + d.getFullYear() : '';
+const readingTime = item['reading-time'] || item.readingtime || '';
+const hasCategories = item.categories && item.categories.length > 0;
+-%>
+<article class="note-entry">
+<div class="note-stamp">
+<% if (d) { -%>
+<div class="note-day"><%= day %></div>
+<div class="note-monthyear"><%= monthYear %></div>
+<% } -%>
+<% if (readingTime) { -%>
+<div class="note-readtime"><%= readingTime %></div>
+<% } -%>
+</div>
+<div class="note-content">
+<h2 class="note-title"><a class="note-link" href="<%= item.path %>"><%= item.title %></a></h2>
+<% if (hasCategories) { -%>
+<div class="note-tags">
+<% item.categories.forEach(function(cat) { -%>
+<div class="note-tag"><%= cat %></div>
+<% }); -%>
+</div>
+<% } -%>
+<% if (item.description) { -%>
+<div class="note-desc"><%- item.description %></div>
+<% } -%>
+</div>
+</article>
+<% }); -%>
 </div>
