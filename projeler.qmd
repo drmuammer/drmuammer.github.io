@@ -32,7 +32,7 @@ page-layout: full
     <div class="tm-cover">
       <picture>
         <source srcset="assets/covers/istatistik-yontem-secimi.webp" type="image/webp"/>
-        <img src="assets/covers/istatistik-yontem-secimi.png" alt="İstatistik Yöntem Seçimi"/>
+        <img src="assets/covers/istatistik-yontem-secimi.jpg" alt="İstatistik Yöntem Seçimi"/>
       </picture>
     </div>
   </a>
@@ -57,7 +57,7 @@ page-layout: full
     <div class="tm-cover">
       <picture>
         <source srcset="assets/covers/veri-seti-guvenligi.webp" type="image/webp"/>
-        <img src="assets/covers/veri-seti-guvenligi.png" alt="Veri Güvenliği"/>
+        <img src="assets/covers/veri-seti-guvenligi.jpg" alt="Veri Güvenliği"/>
       </picture>
     </div>
   </a>
@@ -82,7 +82,7 @@ page-layout: full
     <div class="tm-cover">
       <picture>
         <source srcset="assets/covers/veri-temizligi.webp" type="image/webp"/>
-        <img src="assets/covers/veri-temizligi.png" alt="Veri Temizliği"/>
+        <img src="assets/covers/veri-temizligi.jpg" alt="Veri Temizliği"/>
       </picture>
     </div>
   </a>
@@ -107,7 +107,7 @@ page-layout: full
     <div class="tm-cover">
       <picture>
         <source srcset="assets/covers/openrefine-pratik.webp" type="image/webp"/>
-        <img src="assets/covers/openrefine-pratik.png" alt="OpenRefine Pratik"/>
+        <img src="assets/covers/openrefine-pratik.jpg" alt="OpenRefine Pratik"/>
       </picture>
     </div>
   </a>
@@ -132,7 +132,7 @@ page-layout: full
     <div class="tm-cover">
       <picture>
         <source srcset="assets/covers/zotero-rehberi.webp" type="image/webp"/>
-        <img src="assets/covers/zotero-rehberi.png" alt="Zotero Rehberi"/>
+        <img src="assets/covers/zotero-rehberi.jpg" alt="Zotero Rehberi"/>
       </picture>
     </div>
   </a>
@@ -153,7 +153,7 @@ page-layout: full
     <div class="tm-cover">
       <picture>
         <source srcset="assets/covers/github-more.webp" type="image/webp"/>
-        <img src="assets/covers/github-more.png" alt="GitHub profili"/>
+        <img src="assets/covers/github-more.jpg" alt="GitHub profili"/>
       </picture>
     </div>
   </a>

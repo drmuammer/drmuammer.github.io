@@ -400,6 +400,8 @@ body.quarto-page-layout-full main.content:has(.hero-banknote) {
   flex-direction: column;
   padding: 12px 0;
   gap: 6px;
+  flex-grow: 1;          /* Boşluğu doldur — kartların alt hizası eşitlenir */
+  align-items: stretch;
 }
 .tm-row-meta {
   font-size: 0.72rem;
