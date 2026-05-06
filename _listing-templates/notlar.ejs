@@ -1,47 +1,34 @@
-<%
-// Notlar listing — Swiss damga (Variant B) custom template.
-// Key constraints handled:
-//   1. Zero leading whitespace on HTML output lines.
-//   2. div instead of span everywhere (avoids p-wrapping inside HTML blocks).
-//   3. Stretched-link pattern: anchor only on title; CSS pseudo covers row.
-//   4. months array declared inside forEach (EJS scope safety).
--%>
 <div class="note-list">
-<% items.forEach(function(item) {
-const months = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
-let d = null;
-if (item.date) {
-  const tmp = new Date(item.date);
-  if (!isNaN(tmp.getTime())) d = tmp;
-}
-const day = d ? String(d.getDate()).padStart(2, '0') : '';
-const monthYear = d ? months[d.getMonth()] + ' ' + d.getFullYear() : '';
-const readingTime = item['reading-time'] || item.readingtime || '';
-const hasCategories = item.categories && item.categories.length > 0;
--%>
+<% for (const item of items) { %>
 <article class="note-entry">
 <div class="note-stamp">
-<% if (d) { -%>
+<% if (item.date) { %>
+<%
+const months = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+const d = new Date(item.date);
+const day = String(d.getDate()).padStart(2, '0');
+const monthYear = months[d.getMonth()] + ' ' + d.getFullYear();
+%>
 <div class="note-day"><%= day %></div>
 <div class="note-monthyear"><%= monthYear %></div>
-<% } -%>
-<% if (readingTime) { -%>
-<div class="note-readtime"><%= readingTime %></div>
-<% } -%>
+<% } %>
+<% if (item['reading-time']) { %>
+<div class="note-readtime"><%= item['reading-time'] %></div>
+<% } %>
 </div>
 <div class="note-content">
 <h2 class="note-title"><a class="note-link" href="<%= item.path %>"><%= item.title %></a></h2>
-<% if (hasCategories) { -%>
+<% if (item.categories && item.categories.length > 0) { %>
 <div class="note-tags">
-<% item.categories.forEach(function(cat) { -%>
+<% for (const cat of item.categories) { %>
 <div class="note-tag"><%= cat %></div>
-<% }); -%>
+<% } %>
 </div>
-<% } -%>
-<% if (item.description) { -%>
+<% } %>
+<% if (item.description) { %>
 <div class="note-desc"><%- item.description %></div>
-<% } -%>
+<% } %>
 </div>
 </article>
-<% }); -%>
+<% } %>
 </div>
