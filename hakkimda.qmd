@@ -1,19 +1,16 @@
 ---
-pagetitle: "Hakkımda — Muammer Beslen"
+title: "Hakkımda"
 description-meta: "Muammer Beslen — Saha epidemiyologu, hekim. Salgın incelemeleri, sürveyans, eğitim ve akademik çalışmalar."
 page-layout: full
 toc: false
 ---
 
 ```{=html}
-<section class="hk-page">
-
-<header class="hk-header">
-  <h1 class="hk-title">Hakkımda</h1>
-  <p class="hk-lead">
+<div class="hk-intro">
+  <p>
     Hekim ve saha epidemiyologuyum. Türkiye'de Halk Sağlığı Genel Müdürlüğü bünyesinde saha araştırmaları, sürveyans değerlendirmesi ve uygulamalı epidemiyoloji eğitimleri alanlarında çalışıyorum.
   </p>
-</header>
+</div>
 
 <div class="hk-sections">
 
@@ -272,6 +269,4 @@ toc: false
   </section>
 
 </div>
-
-</section>
 ```
