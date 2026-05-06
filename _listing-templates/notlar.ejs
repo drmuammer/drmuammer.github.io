@@ -1,0 +1,49 @@
+<%
+// Notlar listesi — Swiss damga (Variant B) custom listing template.
+// Türkçe ay isimleri runtime locale'inden bağımsız çalışsın diye sabit.
+const months = [
+  'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran',
+  'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'
+];
+%>
+
+<div class="note-list">
+<% items.forEach(function(item) { %>
+  <%
+    let d = null;
+    if (item.date) {
+      const tmp = new Date(item.date);
+      if (!isNaN(tmp.getTime())) d = tmp;
+    }
+    const day = d ? String(d.getDate()).padStart(2, '0') : '';
+    const monthYear = d ? months[d.getMonth()] + ' ' + d.getFullYear() : '';
+    const readingTime = item['reading-time'] || item.readingtime || '';
+    const hasCategories = item.categories && item.categories.length > 0;
+    const titleId = 'note-' + (item.path || '').replace(/[^a-z0-9]/gi, '-');
+  %>
+  <a class="note-entry" href="<%= item.path %>" aria-labelledby="<%= titleId %>">
+    <div class="note-stamp">
+      <% if (d) { %>
+        <span class="note-day"><%= day %></span>
+        <span class="note-monthyear"><%= monthYear %></span>
+      <% } %>
+      <% if (readingTime) { %>
+        <span class="note-readtime"><%= readingTime %></span>
+      <% } %>
+    </div>
+    <div class="note-content">
+      <h2 class="note-title" id="<%= titleId %>"><%= item.title %></h2>
+      <% if (hasCategories) { %>
+        <div class="note-tags">
+          <% item.categories.forEach(function(cat) { %>
+            <span class="note-tag"><%= cat %></span>
+          <% }) %>
+        </div>
+      <% } %>
+      <% if (item.description) { %>
+        <p class="note-desc"><%- item.description %></p>
+      <% } %>
+    </div>
+  </a>
+<% }) %>
+</div>
