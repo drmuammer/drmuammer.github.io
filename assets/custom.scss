@@ -130,11 +130,18 @@ pre {
   border-bottom: none !important;
 }
 
-// Navbar layout — title sol, nav linkler sağ (klasik editorial split)
-// Quarto/Bootstrap navbar'da container içeriği flex'liyor;
-// .navbar-collapse'i sağa itmek için ml-auto/justify-content-end gerekiyor.
+// Navbar layout — title gerçek sol uca, nav linkler gerçek sağ uca
+// (Silvia Canelón tarzı edge-to-edge editorial split).
+// Quarto'nun container'ını full-width yapıyoruz, side padding ile
+// sayfa kenarından nefes payı bırakıyoruz.
 .navbar > .container,
 .navbar > .container-fluid {
+  max-width: none !important;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
   justify-content: space-between !important;
 }
 .navbar .navbar-collapse {
@@ -143,6 +150,14 @@ pre {
 }
 .navbar .navbar-nav {
   margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar > .container,
+  .navbar > .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .navbar-title {
   font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif !important;
