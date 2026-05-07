@@ -23,6 +23,8 @@ website:
     foreground: "#2D2418"
     pinned: true
     collapse-below: lg
+    logo: assets/brand/tulumba-deep.svg
+    logo-alt: "Muammer Beslen"
     left:
       - text: "Hakkımda"
         href: hakkimda.qmd
