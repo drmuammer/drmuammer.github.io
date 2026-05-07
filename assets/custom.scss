@@ -132,16 +132,17 @@ pre {
 
 // Navbar layout — title gerçek sol uca, nav linkler gerçek sağ uca
 // (Silvia Canelón tarzı edge-to-edge editorial split).
-// Quarto'nun container'ını full-width yapıyoruz, side padding ile
-// sayfa kenarından nefes payı bırakıyoruz.
+// Side padding hero-banknote'un .hero-left padding'i (56px) ile eşleşiyor,
+// böylece title hero'nun "1854"üyle, son nav link de hero fotoğrafının
+// sağ kenarıyla aynı dikey çizgide oturuyor.
 .navbar > .container,
 .navbar > .container-fluid {
   max-width: none !important;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 56px;
+  padding-right: 56px;
   justify-content: space-between !important;
 }
 .navbar .navbar-collapse {
@@ -155,8 +156,8 @@ pre {
 @media (max-width: 768px) {
   .navbar > .container,
   .navbar > .container-fluid {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 .navbar-title {
