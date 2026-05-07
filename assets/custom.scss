@@ -130,46 +130,35 @@ pre {
   border-bottom: none !important;
 }
 
-// Navbar layout — title gerçek sol uca, nav linkler gerçek sağ uca
-// (Silvia Canelón tarzı edge-to-edge editorial split).
-// Quarto/Bootstrap birden çok sarmalayıcı katmanı (container, container-fluid,
-// quarto-navbar-tools) iç padding ve max-width uygulayabiliyor. Bunların
-// hepsini sıfırlayıp sadece .navbar'ın kendi padding'ini kontrol ediyoruz.
-.navbar {
-  padding-left: 56px !important;
-  padding-right: 56px !important;
-}
+// Navbar layout — title sol, nav linkler sağ.
+// Quarto'nun container'ındaki max-width'i kaldırıyoruz ki navbar
+// içeriği sayfa kenarına kadar yayılabilsin. Side padding 56px
+// hero-banknote'un .hero-left padding'iyle eşleşiyor.
 .navbar > .container,
-.navbar > .container-fluid,
-.navbar .quarto-navbar-tools,
-.navbar > div {
+.navbar > .container-fluid {
   max-width: none !important;
-  width: 100%;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 56px;
+  padding-right: 56px;
   justify-content: space-between !important;
 }
 .navbar .navbar-collapse {
   flex-grow: 0 !important;
   justify-content: flex-end;
-  padding-right: 0 !important;
 }
 .navbar .navbar-nav {
   margin-left: auto;
-  padding-right: 0 !important;
 }
-// Son nav link'in sağ margin'ini sıfırla — sağ kenara tam dayansın
-.navbar .navbar-nav .nav-item:last-child .nav-link,
+// Son nav link'in sağ margin'ini sıfırla — sağa biraz daha dayansın
+.navbar .navbar-nav > .nav-item:last-child .nav-link,
 .navbar .navbar-nav > .nav-link:last-child {
   margin-right: 0 !important;
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+  .navbar > .container,
+  .navbar > .container-fluid {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 .navbar-title {
