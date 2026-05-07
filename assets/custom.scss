@@ -129,6 +129,21 @@ pre {
 .navbar-expand-lg {
   border-bottom: none !important;
 }
+
+// Navbar layout — title sol, nav linkler sağ (klasik editorial split)
+// Quarto/Bootstrap navbar'da container içeriği flex'liyor;
+// .navbar-collapse'i sağa itmek için ml-auto/justify-content-end gerekiyor.
+.navbar > .container,
+.navbar > .container-fluid {
+  justify-content: space-between !important;
+}
+.navbar .navbar-collapse {
+  flex-grow: 0 !important;
+  justify-content: flex-end;
+}
+.navbar .navbar-nav {
+  margin-left: auto;
+}
 .navbar-title {
   font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-weight: 600;
