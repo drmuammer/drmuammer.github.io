@@ -12,8 +12,8 @@ toc: false
     <div class="hero-side-label">EST · MMXXVI · ANKARA · OPEN SCIENCE</div>
 
     <div class="hero-content">
-      <div class="hero-numeral">001</div>
-      <div class="hero-eyebrow">Field epidemiologist · Physician</div>
+      <div class="hero-numeral">1854</div>
+      <div class="hero-eyebrow">Field epidemiologist · Doctor of Medicine</div>
       <h1 class="hero-name">Muammer Beslen, MD</h1>
       <p class="hero-desc">
         Klinik araştırma metodolojisi, nedensel çıkarım ve sürveyans verisi üzerine çalışıyorum. Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.
