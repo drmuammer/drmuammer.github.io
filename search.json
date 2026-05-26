@@ -4,7 +4,7 @@
     "href": "notlar.html",
     "title": "Notlar",
     "section": "",
-    "text": "Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler ve sıkça karşılaştığım hatalar.\nDaha kapsamlı içerikler için Projeler sayfasına bakabilirsin — orada GitHub’daki açık kaynak rehberlerin hepsi listeli.\n\n\n\n\n\n\n\n\n\n26\n\n\nMayıs 2026\n\n\n6 dakika\n\n\n\n\nR’de Açık Kaynak WMS ile Choropleth ve Cartogram\n\n\n\nR\n\n\nGIS\n\n\ngörselleştirme\n\n\naçık-veri\n\n\n\nHiçbir izne tabi olmayan açık WMS servisleri ve vektör veri kaynaklarıyla Türkiye haritası üretmek — adım adım.\n\n\n\n\n\n\n03\n\n\nMayıs 2026\n\n\n1 dakika\n\n\n\n\nHoş geldiniz: bu site nasıl kuruldu, neden kuruldu\n\n\n\nduyuru\n\n\naçık-bilim\n\n\n\nSitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.\n\n\n\n\nEşleşen öğe yok\n Başa dön"
+    "text": "Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler ve sıkça karşılaştığım hatalar.\nDaha kapsamlı içerikler için Projeler sayfasına bakabilirsin — orada GitHub’daki açık kaynak rehberlerin hepsi listeli.\n\n\n\n\n\n\n\n\n\n03\n\n\nMayıs 2026\n\n\n1 dakika\n\n\n\n\nHoş geldiniz: bu site nasıl kuruldu, neden kuruldu\n\n\n\nduyuru\n\n\naçık-bilim\n\n\n\nSitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.\n\n\n\n\nEşleşen öğe yok\n Başa dön"
   },
   {
     "objectID": "notlar/2026-05-03-hos-geldiniz.html",
@@ -12,34 +12,6 @@
     "title": "Hoş geldiniz: bu site nasıl kuruldu, neden kuruldu",
     "section": "",
     "text": "Bu site uzun süre ertelediğim bir şeydi. GitHub’da rehberler birikti, kişisel notlar dağınık duruyordu, akademik özgeçmiş başka bir yerdeydi. Tek bir adres, ulaşılabilir bir vitrin lazımdı.\nSite Quarto ile yapıldı. Statik HTML üretiyor, GitHub Pages’ta yayımlanıyor, Cloudflare üzerinden muammerbeslen.com adresine bağlı. Yapı Silvia Canelón’un sitesinden esinlendi — kendisinin hem yapı hem de açık kaynak kararlarına teşekkür ederim.\nBurada üç şeyi yapmaya çalışacağım:\nNotları toparlamak. Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler, sıkça karşılaştığım hatalar. Twitter’a yazmaktansa kalıcı bir yere yazmak istedim.\nRehberlere yön göstermek. Veri temizliği, güvenliği, istatistik testi seçimi gibi kapsamlı çalışmalar kendi sayfalarında yaşamaya devam edecek; burada onlara işaret eden bir vitrin olacak.\nErişilebilir olmak. Klinik araştırma metodolojisi konusunda Türkçe destek arayan akademisyen ve hekimlere kolay ulaşılır bir kanal.\nSoru, öneri veya katkı için iletişim sayfasından ulaşabilirsin.\n\n\n\n Başa dön"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Muammer Beslen, MD",
-    "section": "",
-    "text": "EST · MMXXVI · ANKARA · OPEN SCIENCE\n\n    \n      1854\n      Field epidemiologist · Doctor of Medicine\n      Muammer Beslen, MD\n      \n        Klinik araştırma metodolojisi, nedensel çıkarım ve sürveyans verisi üzerine çalışıyorum. Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.\n      \n    \n\n    \n      LinkedIn\n      GitHub\n      E-mail\n    \n  \n\n  \n    \n  \n\n\n\n\n\n Başa dön"
-  },
-  {
-    "objectID": "projeler.html",
-    "href": "projeler.html",
-    "title": "Projeler",
-    "section": "",
-    "text": "Bu portfolyo, oluşturduğum açık kaynak rehberleri, araçları ve katkıda bulunduğum çalışmaları içerir. Tamamı GitHub'da, ücretsiz, atıflıdır.\n\n\n\n\n  \n    \n      Proje001\n      DurumAktif · 2025\n    \n    \n      İstatistiksel Yöntem Seçimi\n      Tıbbi araştırmada doğru istatistiksel testi bulmak için interaktif rehber. Sihirbaz, karar haritası, sürüklenebilir D3 demoları.\n    \n    \n      DilTR · EN\n      Türİnteraktif\n    \n    \n      YapıldıD3.js · Quarto\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Proje002\n      DurumAktif · 2025\n    \n    \n      Veri Güvenliği\n      Klinik araştırma verisinde kimliksizleştirme, hashleme ve şifreleme. HIPAA, GDPR ve KVKK çerçevesinde 17 akademik kaynaklı kapsamlı doküman.\n    \n    \n      DilTR\n      TürAkademik\n    \n    \n      Kaynak17 referans\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Proje003\n      DurumAktif · 2025\n    \n    \n      Veri Temizliği\n      Klinik araştırmacılar için Excel/CSV tabanlı pratik veri temizleme rehberi. Eksik veri, yinelenenler, format düzeltmeleri.\n    \n    \n      DilTR\n      TürPratik\n    \n    \n      YapıldıExcel · CSV\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Proje004\n      DurumAktif · 2025\n    \n    \n      OpenRefine Pratik\n      OpenRefine ile pratik veri temizliği — kümeleme algoritmaları, normalizasyon, GREL dönüşümleri ve gerçek dünya örnekleri.\n    \n    \n      DilTR\n      TürPratik\n    \n    \n      YapıldıOpenRefine · GREL\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Proje005\n      DurumAktif · 2025\n    \n    \n      Zotero Rehberi\n      Akademisyenler için kapsamlı Zotero kılavuzu — kurulum, Word & LaTeX entegrasyonu, atıf stilleri, grup kütüphaneleri.\n    \n    \n      DilTR\n      TürAkademik\n    \n    \n      YapıldıZotero · BibTeX\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Daha+\n      GitHubAçık\n    \n    \n      Daha fazlası GitHub'da\n      Yeni rehberler ve mini araçlar GitHub profilinde yayınlanmaya devam ediyor. Notlar, dersler, mini analiz örnekleri.\n    \n    \n      Hesap@drmuammer\n      →İncele\n    \n    \n      \n        \n        \n      \n    \n  \n\n\n\n\n\n Başa dön"
-  },
-  {
-    "objectID": "en/index.html",
-    "href": "en/index.html",
-    "title": "Hi, I’m Muammer.",
-    "section": "",
-    "text": "Field epidemiologist · Physician\n\n\nHi, I’m Muammer.\nI work on clinical research, biostatistics, and causal inference. Most of the content I produce is in Turkish — making methodological resources accessible to Turkish-speaking researchers is a personal priority.\nTwo things matter in my work: drawing valid causal conclusions from observational data, and sharing what I learn along the way.\n\n  Open-source\n  Featured guides\n  \n    \n      Statistical Method Selection\n      Interactive guide for choosing the right statistical test in medical research. Wizard, decision map, draggable D3 demos.\n    \n    \n      TR · EN\n      Interactive\n    \n  \n  \n    \n      Data Security — in Turkish\n      De-identification, hashing and encryption guide for clinical research data. HIPAA, GDPR and KVKK frameworks.\n    \n    \n      TR\n    \n  \n\n\n\n\n\n\n\nMost content on this site is in Turkish. The English version covers the homepage and CV; for English-language inquiries, please get in touch.\n\n\n\n\n\n\n Başa dön"
-  },
-  {
-    "objectID": "en/about.html",
-    "href": "en/about.html",
-    "title": "About",
-    "section": "",
-    "text": "I’m a field epidemiologist and physician. After completing medical training I focused on public health, surveillance and clinical research methodology.\nMy work centers on two axes: drawing valid causal inferences from observational data, and producing accessible Turkish-language methodological resources for academic researchers.\n\nNote: Full CV is being added.\n\n\n\n Başa dön"
   },
   {
     "objectID": "iletisim.html",
@@ -56,67 +28,32 @@
     "text": "Notlar\nÖnce rehberlere bakmanı öneririm. Çoğu metodolojik soru zaten Projeler sayfasındaki rehberlerde ele alınmıştır. Daha özel bir durum varsa e-mail at.\nHata bildirimi. Bir rehberde yanlış, eksik ya da muğlak bilgi gördüysen, ilgili GitHub repo’sunda issue açabilirsin. Hem benim için takip kolaylığı, hem diğer okurlar için fayda olur."
   },
   {
-    "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html",
-    "href": "notlar/2026-05-26-r-cartogram-acik-wms.html",
-    "title": "R’de Açık Kaynak WMS ile Choropleth ve Cartogram",
+    "objectID": "en/about.html",
+    "href": "en/about.html",
+    "title": "About",
     "section": "",
-    "text": "R’de Türkiye haritasına istatistik veri bindirmek istediğinde önündeki seçim hangi sınır kaynağını ve hangi arka plan servisini kullanacağın oluyor. Bu yazı, ücretsiz ve açık lisanslı kaynaklarla il seviyesinde choropleth ve cartogram üretmenin pratik yolunu adım adım anlatıyor."
+    "text": "I’m a field epidemiologist and physician. After completing medical training I focused on public health, surveillance and clinical research methodology.\nMy work centers on two axes: drawing valid causal inferences from observational data, and producing accessible Turkish-language methodological resources for academic researchers.\n\nNote: Full CV is being added.\n\n\n\n Başa dön"
   },
   {
-    "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html#önce-kavramları-ayır-wms-vs-vektör",
-    "href": "notlar/2026-05-26-r-cartogram-acik-wms.html#önce-kavramları-ayır-wms-vs-vektör",
-    "title": "R’de Açık Kaynak WMS ile Choropleth ve Cartogram",
-    "section": "Önce kavramları ayır: WMS vs Vektör",
-    "text": "Önce kavramları ayır: WMS vs Vektör\nBir sınırı renklendirmek için o sınırın poligon koordinatlarına — yani vektör veriye — ihtiyacın var. WMS sana hazır PNG karoları gönderir; sınırı görürsün ama veriye bağlayamazsın.\n\nChoropleth ve cartogram vektör tabanlıdır. WMS sadece arka plan / referans rolünde devreye girer.\n\nİkili akış:\nWMS (raster)  →  Arka plan (yol, yerleşim, topografya)\nVektör (sf)   →  Veriyle eşleştirilip renklendirilen ana katman"
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Hi, I’m Muammer.",
+    "section": "",
+    "text": "Field epidemiologist · Physician\n\n\nHi, I’m Muammer.\nI work on clinical research, biostatistics, and causal inference. Most of the content I produce is in Turkish — making methodological resources accessible to Turkish-speaking researchers is a personal priority.\nTwo things matter in my work: drawing valid causal conclusions from observational data, and sharing what I learn along the way.\n\n  Open-source\n  Featured guides\n  \n    \n      Statistical Method Selection\n      Interactive guide for choosing the right statistical test in medical research. Wizard, decision map, draggable D3 demos.\n    \n    \n      TR · EN\n      Interactive\n    \n  \n  \n    \n      Data Security — in Turkish\n      De-identification, hashing and encryption guide for clinical research data. HIPAA, GDPR and KVKK frameworks.\n    \n    \n      TR\n    \n  \n\n\n\n\n\n\n\nMost content on this site is in Turkish. The English version covers the homepage and CV; for English-language inquiries, please get in touch.\n\n\n\n\n\n\n Başa dön"
   },
   {
-    "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html#açık-wms-servisleri-arka-plan-için",
-    "href": "notlar/2026-05-26-r-cartogram-acik-wms.html#açık-wms-servisleri-arka-plan-için",
-    "title": "R’de Açık Kaynak WMS ile Choropleth ve Cartogram",
-    "section": "Açık WMS servisleri (arka plan için)",
-    "text": "Açık WMS servisleri (arka plan için)\nAşağıdaki dört servis de OGC standardında, kimlik doğrulaması istemeden açık; tek koşul veri sahibine atıf vermek.\nterrestris OSM WMS Dünya, 1:1.000.000 – 1:25.000. OSM + Natural Earth + GEBCO birleştirilmiş tematik harita. ODbL — atıf zorunlu, ücretsiz.\nNASA GIBS Dünya. Uydu, iklim, yangın, kar gibi günlük güncellenen tematik katmanlar. Public domain.\nEOX Maps Sentinel-2 cloudless dünya kompoziti. CC BY 4.0 — atıfla serbest.\nmundialis TOPO OSM + SRTM topografik. OSM atıfı."
+    "objectID": "projeler.html",
+    "href": "projeler.html",
+    "title": "Projeler",
+    "section": "",
+    "text": "Bu portfolyo, oluşturduğum açık kaynak rehberleri, araçları ve katkıda bulunduğum çalışmaları içerir. Tamamı GitHub'da, ücretsiz, atıflıdır.\n\n\n\n\n  \n    \n      Proje001\n      DurumAktif · 2025\n    \n    \n      İstatistiksel Yöntem Seçimi\n      Tıbbi araştırmada doğru istatistiksel testi bulmak için interaktif rehber. Sihirbaz, karar haritası, sürüklenebilir D3 demoları.\n    \n    \n      DilTR · EN\n      Türİnteraktif\n    \n    \n      YapıldıD3.js · Quarto\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Proje002\n      DurumAktif · 2025\n    \n    \n      Veri Güvenliği\n      Klinik araştırma verisinde kimliksizleştirme, hashleme ve şifreleme. HIPAA, GDPR ve KVKK çerçevesinde 17 akademik kaynaklı kapsamlı doküman.\n    \n    \n      DilTR\n      TürAkademik\n    \n    \n      Kaynak17 referans\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Proje003\n      DurumAktif · 2025\n    \n    \n      Veri Temizliği\n      Klinik araştırmacılar için Excel/CSV tabanlı pratik veri temizleme rehberi. Eksik veri, yinelenenler, format düzeltmeleri.\n    \n    \n      DilTR\n      TürPratik\n    \n    \n      YapıldıExcel · CSV\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Proje004\n      DurumAktif · 2025\n    \n    \n      OpenRefine Pratik\n      OpenRefine ile pratik veri temizliği — kümeleme algoritmaları, normalizasyon, GREL dönüşümleri ve gerçek dünya örnekleri.\n    \n    \n      DilTR\n      TürPratik\n    \n    \n      YapıldıOpenRefine · GREL\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Proje005\n      DurumAktif · 2025\n    \n    \n      Zotero Rehberi\n      Akademisyenler için kapsamlı Zotero kılavuzu — kurulum, Word & LaTeX entegrasyonu, atıf stilleri, grup kütüphaneleri.\n    \n    \n      DilTR\n      TürAkademik\n    \n    \n      YapıldıZotero · BibTeX\n      →Aç\n    \n    \n      \n        \n        \n      \n    \n  \n\n  \n    \n      Daha+\n      GitHubAçık\n    \n    \n      Daha fazlası GitHub'da\n      Yeni rehberler ve mini araçlar GitHub profilinde yayınlanmaya devam ediyor. Notlar, dersler, mini analiz örnekleri.\n    \n    \n      Hesap@drmuammer\n      →İncele\n    \n    \n      \n        \n        \n      \n    \n  \n\n\n\n\n\n Başa dön"
   },
   {
-    "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html#açık-vektör-veri-kaynakları-asıl-katman-için",
-    "href": "notlar/2026-05-26-r-cartogram-acik-wms.html#açık-vektör-veri-kaynakları-asıl-katman-için",
-    "title": "R’de Açık Kaynak WMS ile Choropleth ve Cartogram",
-    "section": "Açık vektör veri kaynakları (asıl katman için)",
-    "text": "Açık vektör veri kaynakları (asıl katman için)\n\n\n\nKaynak\nSeviye\nR paketi\nLisans\n\n\n\n\nGADM\nİl, ilçe\ngeodata::gadm()\nAkademik ücretsiz\n\n\ngeoBoundaries\nİl, ilçe\nrgeoboundaries\nCC BY 4.0\n\n\nNatural Earth\nYalnız il\nrnaturalearth\nPublic domain\n\n\nOpenStreetMap\nHer seviye\nosmdata\nODbL\n\n\n\nPratik tercih sırası:\n\nHızlı çalışmak — geodata::gadm()\nAçık lisans gerekli — geoBoundaries (CC BY)\nBelirli bölgeyi detaylı çekmek — osmdata"
-  },
-  {
-    "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html#tam-örnek-il-bazında-nüfus-choropleth-cartogram",
-    "href": "notlar/2026-05-26-r-cartogram-acik-wms.html#tam-örnek-il-bazında-nüfus-choropleth-cartogram",
-    "title": "R’de Açık Kaynak WMS ile Choropleth ve Cartogram",
-    "section": "Tam örnek: il bazında nüfus choropleth + cartogram",
-    "text": "Tam örnek: il bazında nüfus choropleth + cartogram\n\nAdım 1 — Paketler\ninstall.packages(c(\n  \"sf\", \"dplyr\", \"leaflet\", \"tmap\",\n  \"geodata\",   # GADM sınırları\n  \"cartogram\"  # Cartogram için\n))\n\n\nAdım 2 — Sınırları indir\nlibrary(sf)\nlibrary(dplyr)\n\ntr &lt;- geodata::gadm(\"TUR\", level = 1, path = tempdir()) |&gt;\n  sf::st_as_sf()\n# NAME_1 = il adı; geometry = poligon\n\n\nAdım 3 — Örnek istatistik veri\nKendi verin yerine elindeki herhangi bir CSV çalışır:\nnufus &lt;- tibble::tribble(\n  ~il,        ~nufus,\n  \"İstanbul\", 15655924,\n  \"Ankara\",    5782285,\n  \"İzmir\",     4462056,\n  \"Bursa\",     3194720,\n  \"Antalya\",   2688004\n  # ... 81 il için TÜİK 2023\n)\n\nTam tabloyu TÜİK ADNKS sayfasından indirip okuyabilirsin.\n\n\n\nAdım 4 — İsim normalizasyonu ve birleştirme\nGADM’in NAME_1’i ile kendi CSV’nin il adı her zaman birebir uyuşmaz (Afyonkarahisar / Afyon, Şanlıurfa / Urfa, Türkçe karakter). Önce normalleştir:\nnorm_ad &lt;- function(x) {\n  x |&gt;\n    chartr(\"çğıöşüÇĞİÖŞÜ\",\n           \"cgiosuCGIOSU\", x = _) |&gt;\n    tolower() |&gt;\n    trimws()\n}\n\ntr$key    &lt;- norm_ad(tr$NAME_1)\nnufus$key &lt;- norm_ad(nufus$il)\n\nharita &lt;- tr |&gt; left_join(nufus, by = \"key\")\n\n# Uymayanları gör\nharita |&gt;\n  filter(is.na(nufus)) |&gt;\n  pull(NAME_1)\n\n\nAdım 5 — Choropleth (Leaflet + WMS arka planı)\nlibrary(leaflet)\n\npal &lt;- colorBin(\n  palette = \"YlOrRd\",\n  domain  = harita$nufus,\n  bins    = c(0, 250e3, 500e3,\n              1e6, 2e6, 5e6, 20e6)\n)\n\nlabels &lt;- sprintf(\n  \"&lt;b&gt;%s&lt;/b&gt;&lt;br/&gt;Nüfus: %s\",\n  harita$NAME_1,\n  format(harita$nufus, big.mark = \".\")\n) |&gt; lapply(htmltools::HTML)\n\nosm_attr &lt;- paste0(\n  '&copy; ',\n  '&lt;a href=\"https://www.openstreetmap.org/copyright\"&gt;',\n  'OpenStreetMap&lt;/a&gt; katkıda bulunanları ',\n  '| terrestris'\n)\n\nleaflet(harita) |&gt;\n  setView(lng = 35, lat = 39, zoom = 6) |&gt;\n  addWMSTiles(\n    \"https://ows.terrestris.de/osm/service\",\n    layers  = \"OSM-WMS\",\n    options = WMSTileOptions(\n      format = \"image/png\",\n      transparent = FALSE\n    ),\n    attribution = osm_attr\n  ) |&gt;\n  addPolygons(\n    fillColor   = ~pal(nufus),\n    weight      = 1,\n    color       = \"white\",\n    fillOpacity = 0.7,\n    highlightOptions = highlightOptions(\n      weight = 3, color = \"#333\",\n      bringToFront = TRUE\n    ),\n    label = labels\n  ) |&gt;\n  addLegend(\n    pal = pal, values = ~nufus,\n    position = \"bottomright\",\n    title = \"Nüfus (2023)\"\n  )\n\n\nAdım 6 — Statik (yayın kalitesi) tmap ile\nlibrary(tmap)\ntmap_mode(\"plot\")\n\ntm_shape(harita) +\n  tm_polygons(\n    col = \"nufus\",\n    style = \"quantile\",\n    n = 6,\n    palette = \"YlOrRd\",\n    title = \"Nüfus (2023)\",\n    border.col = \"white\",\n    lwd = 0.4\n  ) +\n  tm_layout(\n    frame = FALSE,\n    legend.outside = TRUE,\n    main.title = \"Türkiye İl Bazında Nüfus\"\n  )\n\n\nAdım 7 — Gerçek cartogram (alan çarpıtma)\n“Cartogram” iki anlamda kullanılıyor:\n\nChoropleth — renkli istatistik haritası (yukarıdaki örnekler).\nCartogram sensu stricto — il alanı değere göre büyür/küçülür.\n\nBu yazıda “cartogram” ikinci anlam:\nlibrary(cartogram)\n\n# Cartogram metrik bir CRS ister\ntr_proj &lt;- sf::st_transform(harita, crs = 3857)\n\n# Dougenik cartogram — alanlar nüfusla\n# orantılı olacak şekilde çekilir\ntr_cart &lt;- cartogram_cont(\n  tr_proj,\n  weight  = \"nufus\",\n  itermax = 7\n)\n\ntm_shape(tr_cart) +\n  tm_polygons(\n    \"nufus\",\n    palette = \"YlOrRd\",\n    style   = \"quantile\",\n    title   = \"Nüfus\"\n  ) +\n  tm_layout(\n    frame = FALSE,\n    legend.outside = TRUE,\n    main.title =\n      \"Nüfusa göre boyutlandırılmış iller\"\n  )\nAlternatifler: cartogram_dorling() her ili daire yapar — küçük iller yamulmaz; cartogram_ncont() alan korumacı, kaymaz."
-  },
-  {
-    "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html#hangisi-ne-zaman",
-    "href": "notlar/2026-05-26-r-cartogram-acik-wms.html#hangisi-ne-zaman",
-    "title": "R’de Açık Kaynak WMS ile Choropleth ve Cartogram",
-    "section": "Hangisi ne zaman?",
-    "text": "Hangisi ne zaman?\n\n\n\nİhtiyaç\nDoğru kombinasyon\n\n\n\n\nHızlı interaktif harita\nleaflet + gadm() + terrestris\n\n\nYayın için statik figür\ntmap + gadm()\n\n\nTamamen açık lisans\ntmap + geoBoundaries\n\n\nUydu üstüne sınır\nleaflet + EOX + GADM\n\n\nCartogram (gerçek)\ncartogram + EPSG:3857"
-  },
-  {
-    "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html#sık-karşılaşılan-tuzaklar",
-    "href": "notlar/2026-05-26-r-cartogram-acik-wms.html#sık-karşılaşılan-tuzaklar",
-    "title": "R’de Açık Kaynak WMS ile Choropleth ve Cartogram",
-    "section": "Sık karşılaşılan tuzaklar",
-    "text": "Sık karşılaşılan tuzaklar\n\nİsim eşleşmesi tutmaz. dplyr::anti_join() ile uymayanları listele, manuel düzelt.\nCRS hatası. Leaflet WGS84 (EPSG:4326) bekler; cartogram metrik (EPSG:3857) ister. st_transform() doğru yerde olsun.\nCartogram aşırı yamulttu. itermax artır (10–15), ya da cartogram_dorling’a geç.\nWMS yavaş. terrestris ücretsiz paylaşımlı kaynaktır; büyük zoom’larda watermark çıkar. Üretim için Premium servis ya da self-host."
-  },
-  {
-    "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html#atıf-ve-lisans",
-    "href": "notlar/2026-05-26-r-cartogram-acik-wms.html#atıf-ve-lisans",
-    "title": "R’de Açık Kaynak WMS ile Choropleth ve Cartogram",
-    "section": "Atıf ve lisans",
-    "text": "Atıf ve lisans\n\nOSM verisi (terrestris): “© OpenStreetMap katkıda bulunanları” notu haritada görünmeli (ODbL gerektirir).\nGADM: akademik kullanım serbest; ticari için lisans şartları.\ngeoBoundaries: CC BY 4.0 — yayında atıf yeterli.\nTÜİK verisi: kaynak gösterimi yeterli."
-  },
-  {
-    "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html#kaynaklar",
-    "href": "notlar/2026-05-26-r-cartogram-acik-wms.html#kaynaklar",
-    "title": "R’de Açık Kaynak WMS ile Choropleth ve Cartogram",
-    "section": "Kaynaklar",
-    "text": "Kaynaklar\n\nsf paketi\nleaflet for R\ntmap v4\ncartogram paketi (CRAN)\nterrestris OSM WMS\ngeoBoundaries\nGADM\nNASA GIBS"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Muammer Beslen, MD",
+    "section": "",
+    "text": "EST · MMXXVI · ANKARA · OPEN SCIENCE\n\n    \n      1854\n      Field epidemiologist · Doctor of Medicine\n      Muammer Beslen, MD\n      \n        Klinik araştırma metodolojisi, nedensel çıkarım ve sürveyans verisi üzerine çalışıyorum. Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.\n      \n    \n\n    \n      LinkedIn\n      GitHub\n      E-mail\n    \n  \n\n  \n    \n  \n\n\n\n\n\n Başa dön"
   },
   {
     "objectID": "hakkimda.html",
