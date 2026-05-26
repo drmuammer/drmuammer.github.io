@@ -1,0 +1,251 @@
+---
+title: "R'de açık WMS ile choropleth ve cartogram"
+description: "Hiçbir izne tabi olmayan açık WMS servisleri ve vektör veri kaynaklarıyla Türkiye haritası üretmek — adım adım."
+date: "2026-05-26"
+categories: [R, GIS, görselleştirme, açık-veri]
+image: r-cartogram-acik-wms-cover.png
+image-alt: "Türkiye il sınırlarının nüfusa göre renklendirildiği choropleth haritası"
+reading-time: true
+---
+
+R'de Türkiye haritasına istatistik veri bindirmek istediğinde önündeki seçim, hangi sınır kaynağını ve hangi arka plan servisini kullanacağın oluyor. Bu yazı, ücretsiz ve açık lisanslı kaynaklarla il seviyesinde **choropleth** ve **cartogram** üretmenin pratik yolunu adım adım anlatıyor.
+
+## Önce kavramları ayır: WMS vs vektör
+
+Bir sınırı renklendirmek için o sınırın **poligon koordinatlarına** — yani vektör veriye — ihtiyacın var. **WMS** sana hazır PNG karoları gönderir; sınırı görürsün ama veriye bağlayamazsın.
+
+Yani choropleth ve cartogram **vektör tabanlıdır**. WMS sadece **arka plan / referans** rolünde devreye girer. İkili akış şöyle olur: WMS raster katmanı altta arka plan görevi görür, vektör katman üstte veriyle eşleştirilip renklendirilir.
+
+## Açık WMS servisleri (arka plan için)
+
+Aşağıdaki dört servis de OGC standardında, kimlik doğrulaması istemeden açık. Tek koşul veri sahibine atıf vermek.
+
+**[terrestris OSM WMS](https://ows.terrestris.de/osm/service)** — Dünya çapında, ölçek 1:1.000.000 ile 1:25.000 arası. OSM, Natural Earth ve GEBCO birleştirilmiş tematik harita. ODbL lisansı, atıf zorunlu.
+
+**[NASA GIBS](https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi)** — Dünya çapında. Uydu, iklim, yangın, kar gibi günlük güncellenen tematik katmanlar. Public domain.
+
+**[EOX Maps](https://tiles.maps.eox.at/wms)** — Sentinel-2 cloudless dünya kompoziti. CC BY 4.0, atıfla serbest.
+
+**[mundialis TOPO](https://ows.mundialis.de/services/service?)** — OSM ve SRTM birleştirilmiş topografik. OSM atıfı.
+
+## Açık vektör veri kaynakları (asıl katman için)
+
+İl ve ilçe sınırı için pratik tercih sırası:
+
+- **[GADM](https://gadm.org/)** — R'den tek satırda iner: `geodata::gadm("TUR", level = 1)`. Akademik kullanım ücretsiz.
+- **[geoBoundaries](https://www.geoboundaries.org/)** — CC BY 4.0 lisansla yayımlanan açık kaynak. Yayın/tez/ticari kullanımda en az sürtünme.
+- **[Natural Earth](https://www.naturalearthdata.com/)** — `rnaturalearth` paketinden çekilir. Yalnızca il seviyesi, görece kaba ama public domain.
+- **OpenStreetMap** — `osmdata` paketiyle istediğin idari seviyeyi ve detayı çekebilirsin. ODbL lisansı.
+
+Hızlı çalışmak istiyorsan GADM, açık lisans gerekiyorsa geoBoundaries, belirli bir bölgeyi detaylı çekmek için OSM iyi seçenekler.
+
+## Tam örnek: il bazında nüfus choropleth
+
+### Adım 1 — Paketler
+
+```r
+install.packages(c(
+  "sf", "dplyr", "leaflet", "tmap",
+  "geodata",
+  "cartogram"
+))
+```
+
+### Adım 2 — Sınırları indir
+
+```r
+library(sf)
+library(dplyr)
+
+tr <- geodata::gadm(
+  "TUR",
+  level = 1,
+  path = tempdir()
+) |> sf::st_as_sf()
+```
+
+`tr` artık 81 ili içeren bir `sf` nesnesi; il adları `NAME_1` sütununda.
+
+### Adım 3 — Örnek istatistik veri
+
+Kendi verin yerine elindeki herhangi bir CSV çalışır:
+
+```r
+nufus <- tibble::tribble(
+  ~il,        ~nufus,
+  "İstanbul", 15655924,
+  "Ankara",    5782285,
+  "İzmir",     4462056,
+  "Bursa",     3194720,
+  "Antalya",   2688004
+  # ... 81 il için TÜİK 2023
+)
+```
+
+Tam tabloyu [TÜİK ADNKS](https://data.tuik.gov.tr/) sayfasından indirip okuyabilirsin.
+
+### Adım 4 — İsim normalizasyonu ve birleştirme
+
+GADM'in `NAME_1` sütunu ile kendi CSV'nin il adı her zaman birebir uyuşmaz: Afyonkarahisar/Afyon, Şanlıurfa/Urfa, Türkçe karakter farkı gibi tuzaklar var. Önce normalleştir:
+
+```r
+norm_ad <- function(x) {
+  x |>
+    chartr(
+      "çğıöşüÇĞİÖŞÜ",
+      "cgiosuCGIOSU",
+      x = _
+    ) |>
+    tolower() |>
+    trimws()
+}
+
+tr$key    <- norm_ad(tr$NAME_1)
+nufus$key <- norm_ad(nufus$il)
+
+harita <- tr |> left_join(nufus, by = "key")
+
+# Uymayanları gör
+harita |>
+  filter(is.na(nufus)) |>
+  pull(NAME_1)
+```
+
+### Adım 5 — Choropleth (Leaflet + WMS arka planı)
+
+```r
+library(leaflet)
+
+pal <- colorBin(
+  palette = "YlOrRd",
+  domain  = harita$nufus,
+  bins    = c(
+    0, 250e3, 500e3,
+    1e6, 2e6, 5e6, 20e6
+  )
+)
+
+labels <- sprintf(
+  "<b>%s</b><br/>Nüfus: %s",
+  harita$NAME_1,
+  format(harita$nufus, big.mark = ".")
+) |> lapply(htmltools::HTML)
+
+osm_attr <- paste0(
+  '&copy; OpenStreetMap ',
+  'katkıda bulunanları | ',
+  'terrestris'
+)
+
+leaflet(harita) |>
+  setView(lng = 35, lat = 39, zoom = 6) |>
+  addWMSTiles(
+    "https://ows.terrestris.de/osm/service",
+    layers  = "OSM-WMS",
+    options = WMSTileOptions(
+      format = "image/png",
+      transparent = FALSE
+    ),
+    attribution = osm_attr
+  ) |>
+  addPolygons(
+    fillColor   = ~pal(nufus),
+    weight      = 1,
+    color       = "white",
+    fillOpacity = 0.7,
+    label = labels
+  ) |>
+  addLegend(
+    pal = pal,
+    values = ~nufus,
+    position = "bottomright",
+    title = "Nüfus"
+  )
+```
+
+### Adım 6 — Statik harita için tmap
+
+İnteraktif değil, ama makaleye/rapora koymaya uygun çıktı:
+
+```r
+library(tmap)
+tmap_mode("plot")
+
+tm_shape(harita) +
+  tm_polygons(
+    col = "nufus",
+    style = "quantile",
+    n = 6,
+    palette = "YlOrRd",
+    title = "Nüfus",
+    border.col = "white",
+    lwd = 0.4
+  ) +
+  tm_layout(
+    frame = FALSE,
+    legend.outside = TRUE
+  )
+```
+
+### Adım 7 — Gerçek cartogram (alan çarpıtma)
+
+"Cartogram" kelimesi iki anlamda kullanılıyor. **Choropleth** renkli istatistik haritasıdır — yukarıdaki örneklerin yaptığı. **Cartogram** *sensu stricto* ise il alanını değere göre büyüten/küçülten harita türüdür. Bu adımda ikincisini üreteceğiz.
+
+```r
+library(cartogram)
+
+# Cartogram metrik bir CRS ister
+tr_proj <- sf::st_transform(
+  harita,
+  crs = 3857
+)
+
+# Dougenik cartogram — alanlar nüfusla
+# orantılı olacak şekilde çekilir
+tr_cart <- cartogram_cont(
+  tr_proj,
+  weight  = "nufus",
+  itermax = 7
+)
+
+tm_shape(tr_cart) +
+  tm_polygons(
+    "nufus",
+    palette = "YlOrRd",
+    style   = "quantile",
+    title   = "Nüfus"
+  ) +
+  tm_layout(
+    frame = FALSE,
+    legend.outside = TRUE
+  )
+```
+
+Dougenik dışında alternatifler de var. `cartogram_dorling` her ili daire yapar, küçük iller yamulmaz. `cartogram_ncont` alan korumacıdır, kaymaz.
+
+## Sık karşılaşılan tuzaklar
+
+**İsim eşleşmesi tutmaz.** `dplyr::anti_join` ile uymayanları listele, manuel düzelt.
+
+**CRS hatası.** Leaflet WGS84 (EPSG:4326) bekler; cartogram metrik CRS (EPSG:3857) ister. `st_transform` doğru yerde olsun.
+
+**Cartogram aşırı yamulttu.** `itermax` değerini artır (10 veya 15), ya da `cartogram_dorling`'a geç.
+
+**WMS yavaş.** terrestris ücretsiz ve paylaşımlı bir kaynak — büyük zoom seviyelerinde watermark çıkar. Üretim sistemleri için premium servis ya da self-host gerekir.
+
+## Atıf ve lisans
+
+Kullandığın her veri kaynağı için minimum bir atıf notu haritada veya yazıda görünmeli.
+
+OSM verisi (terrestris üzerinden alındığında) için "© OpenStreetMap katkıda bulunanları" notu zorunludur — ODbL lisansı bunu şart koşar. GADM'in akademik kullanımı serbest ama ticari kullanım için [şartlara bakman gerekir](https://gadm.org/license.html). geoBoundaries CC BY 4.0 lisanslıdır, atıf yeterli. TÜİK verisi için de kaynak gösterimi yeterlidir.
+
+## Kaynaklar
+
+- [sf paketi](https://r-spatial.github.io/sf/)
+- [leaflet for R](https://rstudio.github.io/leaflet/)
+- [tmap v4](https://r-tmap.github.io/tmap/)
+- [cartogram paketi (CRAN)](https://cran.r-project.org/package=cartogram)
+- [terrestris OSM WMS](https://terrestris.de/en/products/free-osm-wms/)
+- [geoBoundaries](https://www.geoboundaries.org/)
+- [GADM](https://gadm.org/)
+- [NASA GIBS](https://nasa-gibs.github.io/gibs-api-docs/)
