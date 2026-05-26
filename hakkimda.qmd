@@ -84,10 +84,19 @@ toc: false
   <section class="hk-section">
     <div class="hk-side">
       <h2 class="hk-side-title">Bilimsel sunumlar</h2>
-      <div class="hk-side-period">2023—2025</div>
-      <div class="hk-side-meta">3 sözlü sunum</div>
+      <div class="hk-side-period">2023—2026</div>
+      <div class="hk-side-meta">4 sözlü sunum</div>
     </div>
     <div class="hk-content">
+
+    <div class="hk-row">
+        <div class="hk-row-info">
+          <div class="hk-row-title">Multi-pathogen Waterborne Outbreak Associated with Tap Water Infrastructure Reconstruction — Niksar, Türkiye</div>
+          <div class="hk-row-sub">2026 FETP International Night · TEPHINET · Atlanta (sanal sunum)</div>
+        </div>
+        <div class="hk-row-tag">US</div>
+        <div class="hk-row-date">2026</div>
+      </div>
 
       <div class="hk-row">
         <div class="hk-row-info">
