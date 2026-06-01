@@ -1,0 +1,189 @@
+---
+title: "GitHub'da gizlilik, güvenlik ve lisanslar"
+description: "Repoya dosya yüklerken hasta verisini ve sırları sızdırmamak, doğru lisansı seçmek ve güvenle paylaşmak için pratik bir kontrol listesi."
+date: "2026-05-31"
+categories: [github, gizlilik, güvenlik, lisans, açık-bilim]
+reading-time: true
+format:
+  html:
+    code-overflow: wrap
+---
+
+GitHub kodu paylaşmak için harika bir yer; ama epidemiyolojide çalışıyorsan paylaştığın şeyin yanında **paylaşmaman gereken** şeyler de var: hasta verisi, kimliklendirilebilir bilgiler, API anahtarları, parolalar. Bu yazı, bir repoya dosya yüklerken nelere dikkat edeceğini, hangi lisansı seçeceğini ve çalışmanı nasıl güvenle paylaşacağını adım adım anlatıyor.
+
+İşin özü tek cümlede: **GitHub kod içindir, veri için değil.** Geri kalan her şey bu cümlenin pratiğe dökülmüş halidir.
+
+## Önce kavramları ayır: gizlilik, güvenlik, lisans
+
+Üçü karıştırılıyor ama farklı sorulara cevap veriyorlar.
+
+**Gizlilik** — "Bu dosyayı *koymalı mıyım*?" Hasta verisi, kişisel veri, etik kurul kapsamındaki ham veri repoya hiç girmemeli. Bu, dosyayı yükledikten sonra "private" yapmakla çözülmez; en baştan hariç tutma meselesidir.
+
+**Güvenlik** — "Bu dosyada *sızması tehlikeli bir şey* var mı?" Token, parola, bağlantı dizesi (connection string), `.env` dosyaları. Bunlar koda gömülü kalırsa, repo public olduğu anda dünyaya açılır.
+
+**Lisans** — "Başkaları bunu *nasıl kullanabilir*?" Lisans, izin verme mekanizmasıdır. Lisans koymazsan kodun teknik olarak "tüm hakları saklı" sayılır ve kimse yasal olarak kullanamaz.
+
+## En kritik kural: public repo herkese açıktır
+
+Public bir repoda her şey görünür — sadece dosyaların güncel hali değil, **tüm geçmiş** de. Yanlışlıkla yüklenip sonra silinen bir dosya, commit geçmişinde durmaya devam eder. "Sildim, gitti" yanılgısı en sık yapılan hatadır.
+
+::: callout-warning
+Private bir repo bile mutlak güvence değildir: erişim yetkisi olan herkes görür, repoyu kopyalayabilir, ve bir gün "yanlışlıkla public yapılabilir." Hasta verisi için doğru cevap "private repo" değil, **repoya hiç koymamak**.
+:::
+
+## Repoya hangi dosyalar girmemeli
+
+Pratik bir kara liste:
+
+- Kimliklendirilebilir hasta/kişi verisi (isim, TC, dosya no, adres, nadir tanı kombinasyonları).
+- Ham veri setleri — `.csv`, `.xlsx`, `.dta`, `.sav`, `.rds` gibi. Kimliksizleştirilmiş olsa bile etik izin ve veri paylaşım sözleşmesi netleşmeden koyma.
+- Kimlik bilgileri: API anahtarları, parolalar, token'lar, `.env`, kişisel SSH anahtarları.
+- Büyük çıktı dosyaları: render edilmiş raporlar, devasa figürler, ara çıktılar (bunlar gizlilik değil ama repoyu şişirir).
+- Sistem çöpleri: `.DS_Store`, `.Rhistory`, `.RData`.
+
+## `.gitignore`: en baştan kurulması gereken kalkan
+
+İstenmeyen dosyaların **hiç yüklenmemesini** sağlayan dosya budur. Repo köküne `.gitignore` adıyla koyarsın; içine yazdığın kalıplara uyan dosyalar Git tarafından görmezden gelinir.
+
+```{.bash filename=".gitignore"}
+# --- VERİ (hasta verisi buraya asla gelmesin) ---
+data/
+*.csv
+*.xlsx
+*.dta
+*.sav
+*.rds
+
+# --- Kimlik bilgileri / sırlar ---
+.env
+*.pem
+*_secret*
+config_local.*
+
+# --- R / RStudio geçici dosyaları ---
+.Rhistory
+.RData
+.Rproj.user/
+
+# --- Çıktılar ---
+/_site/
+/docs/
+*.html
+
+# --- İşletim sistemi çöpleri ---
+.DS_Store
+Thumbs.db
+```
+
+::: callout-important
+`.gitignore` yalnızca **henüz hiç commit edilmemiş** dosyalarda çalışır. Yani projeyi açar açmaz, ilk commit'ten önce kurman gerekir. Bir dosyayı bir kez yükledikten sonra `.gitignore`'a eklemek onu geçmişten silmez.
+:::
+
+## Güvenli dosya yükleme akışı (adım adım)
+
+Her commit öncesi şu mini-rutin, kazaların çoğunu önler.
+
+**1. Önce `.gitignore` hazır mı bak.** Yoksa yukarıdaki şablonu koy.
+
+**2. Neyin yükleneceğini commit'ten ÖNCE gör.** Terminalde:
+
+```bash
+git status
+```
+
+Listede beklemediğin bir veri dosyası ya da `.env` görüyorsan, **dur** — commit'leme. Önce `.gitignore`'a ekle.
+
+**3. Veri klasörü yerine örnek/sahte veri koy.** Kodun çalıştığını göstermek için gerçek veri yerine birkaç satırlık uydurma bir `ornek_veri.csv` koyabilir, README'de "gerçek veri etik izinle paylaşılır" notu düşebilirsin.
+
+**4. Commit'le ve gönder.**
+
+```bash
+git add .
+git commit -m "Analiz scriptleri eklendi"
+git push
+```
+
+GitHub Desktop kullanıyorsan aynı kontrol "Changes" sekmesinde gözle yapılır: yüklenecek dosyaları işaretlemeden önce listeyi tara, veri/sır görürsen kutusunu işaretleme.
+
+## GitHub'ın otomatik koruması: ne yapar, ne yapmaz
+
+Açık (public) depolarda GitHub, bilinen birçok **gizli anahtar/token türünü** ücretsiz ve varsayılan olarak tarar; tanıdığı bir sırrı push etmeye çalıştığında push'u **engelleyebilir** (push protection). Bu güzel bir güvenlik ağıdır.
+
+Ama sınırları net olsun: bu tarama yalnızca **tanıdığı belirli token biçimlerini** yakalar. **Hasta verisini, isim listesini, genel parolaları ya da rastgele gizli metni tanımaz.** Yani bu mekanizma seni veri sızıntısından korumaz — o iş tamamen senin `.gitignore` disiplinine kalmıştır.
+
+## Yanlışlıkla hassas dosya yüklediysen
+
+Sırayla:
+
+**Daha güncel commit'lerdeyse ve henüz push etmediysen** en kolayı. Dosyayı sil, `.gitignore`'a ekle, takibi durdur:
+
+```bash
+git rm --cached gizli_dosya.csv
+echo "gizli_dosya.csv" >> .gitignore
+git commit -m "Hassas dosya takipten cikarildi"
+```
+
+**Zaten push ettiysen ve geçmişte kaldıysa**, dosyayı silmek yetmez — commit geçmişinde durmaya devam eder. Geçmişi temizlemek gerekir (`git filter-repo` gibi araçlarla), ki bu geçmişi yeniden yazar ve ortak çalışılan repolarda dikkat ister. Bu noktada acele etme, deneyimli biriyle birlikte yap.
+
+::: callout-warning
+Bir **kimlik bilgisi** (token/parola) sızdıysa, temizlik yetmez: o anahtarı **derhal iptal et / yenile**. Sızan saniyeden itibaren geçerli kabul et — public repolardaki anahtarlar dakikalar içinde taranıp kötüye kullanılabiliyor.
+:::
+
+## Lisans seçimi: kodun kaderini sen belirle
+
+Lisans olmadan yüklenen kod "tüm hakları saklı" sayılır; başkaları görebilir ama yasal olarak kullanamaz, türetemez. Açık bilimde amaç paylaşmaksa, bilinçli bir lisans koy.
+
+Araştırma bağlamında en sık görülenler:
+
+- **MIT** — En serbest ve basit. "Kullan, değiştir, dağıt; sadece adımı ve lisans metnini koru." Çoğu R/Python paketinin ve analiz kodunun tercihi.
+- **Apache-2.0** — MIT'e benzer serbestlikte, ek olarak patent koruması içerir. Kurumsal/daha büyük projelerde tercih edilir.
+- **GPL-3.0** — "Copyleft": senin kodundan türetilen çalışmaların da açık kaynak kalmasını **zorunlu** kılar. Açıklığı yaymak istiyorsan güçlü bir seçim, ama türev çalışmaları kısıtladığı için herkese uymaz.
+- **CC-BY-4.0** — Kod için değil; **veri, doküman, figür, eğitim materyali** için uygundur. Atıf şartıyla serbest kullanım. (Yazılım lisansı olarak kullanma; kod için MIT/Apache/GPL tarafına bak.)
+- **CC0** — "Kamuya bırakıyorum, atıf bile şart değil." Maksimum yeniden kullanım istediğin veri setleri için.
+
+Pratik özet: **kod için MIT** (basit ve yaygın), **veri/doküman için CC-BY**, **açıklığı zorunlu kılmak istiyorsan GPL**.
+
+Lisansı eklemek kolay: repoda **Add file → Create new file** de, dosya adını `LICENSE` yaz; GitHub sana hazır şablon listesini sunar, seçtiğini doldurur.
+
+## Paylaşırken: atıf ve alıntılanabilirlik
+
+Çalışmanın paylaşıldığında **doğru atıf alması** için iki şey ekle:
+
+- **`CITATION.cff`** — Repo köküne koyduğun küçük bir dosya; GitHub bunu okuyup repo sayfasında "Cite this repository" düğmesi gösterir. İçinde yazarlar, başlık, sürüm, yıl bulunur.
+- **Zenodo + DOI** — Repoyu Zenodo'ya bağlayıp bir "release" yayımladığında çalışmana **atıf verilebilir bir DOI** atanır. Makalende "analiz kodu şu DOI'de" diyebilmen için ideal yol budur.
+
+Bir de README'de net bir **veri erişim notu** bulunsun: verinin nereden geldiği, neden repoda olmadığı, isteyenin nasıl/hangi izinle erişebileceği.
+
+## Sık karşılaşılan tuzaklar
+
+**"Sildim ama hâlâ görünüyor."** Dosya commit geçmişinde duruyor. Güncel halden silmek geçmişi temizlemez; geçmiş düzenlemesi ayrı bir iştir.
+
+**"Private yaptım, güvendeyim."** Private mutlak değil; erişimi olan kopyalayabilir, ileride yanlışlıkla public olabilir. Hasta verisi için tek doğru karar: koymamak.
+
+**"Kimliksizleştirdim, sorun yok."** Küçük örneklemlerde nadir değişken kombinasyonları (yaş + ilçe + nadir tanı) yeniden kimliklendirmeye yol açabilir. Etik izin ve kurum politikası netleşmeden ham veriyi paylaşma.
+
+**"Lisans koymaya gerek yok, zaten public."** Public olması kullanım izni vermez. Lisanssız kod yasal olarak kullanılamaz; paylaşmak istiyorsan lisans şart.
+
+**`.gitignore` koydum ama dosya yine yüklendi.** Büyük ihtimalle dosya `.gitignore`'dan önce zaten commit edilmişti. `git rm --cached` ile takipten çıkar.
+
+## Hızlı kontrol listesi
+
+Repoyu paylaşmadan önce:
+
+- [ ] `.gitignore` ilk commit'ten önce kuruldu mu?
+- [ ] `git status` çıktısında veri/sır dosyası yok mu?
+- [ ] Gerçek veri yerine örnek/sahte veri mi var?
+- [ ] Hiçbir token/parola koda gömülü değil mi?
+- [ ] Uygun bir `LICENSE` eklendi mi?
+- [ ] README'de veri erişim ve atıf notu var mı?
+- [ ] (Yayın için) `CITATION.cff` ve/veya Zenodo DOI hazır mı?
+
+## Kaynaklar
+
+- [GitHub: gizli anahtar taraması hakkında](https://docs.github.com/code-security/secret-scanning/about-secret-scanning)
+- [GitHub: push koruması hakkında](https://docs.github.com/en/code-security/concepts/secret-security/about-push-protection)
+- [GitHub: hassas veriyi depodan kaldırma](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
+- [choosealicense.com — lisans seçme rehberi](https://choosealicense.com/)
+- [Creative Commons lisansları](https://creativecommons.org/share-your-work/)
+- [Citation File Format (CFF)](https://citation-file-format.github.io/)
+- [Zenodo — GitHub entegrasyonu](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
