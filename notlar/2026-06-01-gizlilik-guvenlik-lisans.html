@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Sitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.">
+<meta name="description" content="Repoya dosya yüklerken hasta verisini ve sırları sızdırmamak, doğru lisansı seçmek ve güvenle paylaşmak için pratik bir kontrol listesi.">
 
-<title>Hoş geldiniz: bu site nasıl kuruldu, neden kuruldu – Muammer Beslen</title>
+<title>GitHub’da gizlilik, güvenlik ve lisanslar – Muammer Beslen</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,6 +24,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -38,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-36360039eae95a2a2654540b661c1020.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-54ea2ebc0f35d7e29ba0fe5085337a2f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1579a253c4a82920504ed41736f96b58.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "Sonuç yok",
@@ -72,8 +107,8 @@ fbq('track','PageView');
 
 
 <link rel="stylesheet" href="../assets/custom.css">
-<meta property="og:title" content="Hoş geldiniz: bu site nasıl kuruldu, neden kuruldu – Muammer Beslen">
-<meta property="og:description" content="Sitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.">
+<meta property="og:title" content="GitHub’da gizlilik, güvenlik ve lisanslar – Muammer Beslen">
+<meta property="og:description" content="Repoya dosya yüklerken hasta verisini ve sırları sızdırmamak, doğru lisansı seçmek ve güvenle paylaşmak için pratik bir kontrol listesi.">
 <meta property="og:site_name" content="Muammer Beslen">
 </head>
 
@@ -130,16 +165,19 @@ fbq('track','PageView');
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hoş geldiniz: bu site nasıl kuruldu, neden kuruldu</h1>
+<h1 class="title">GitHub’da gizlilik, güvenlik ve lisanslar</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">duyuru</div>
+    <div class="quarto-category">github</div>
+    <div class="quarto-category">gizlilik</div>
+    <div class="quarto-category">güvenlik</div>
+    <div class="quarto-category">lisans</div>
     <div class="quarto-category">açık-bilim</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Sitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.
+    Repoya dosya yüklerken hasta verisini ve sırları sızdırmamak, doğru lisansı seçmek ve güvenle paylaşmak için pratik bir kontrol listesi.
   </div>
 </div>
 
@@ -150,7 +188,7 @@ fbq('track','PageView');
     <div>
     <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">3 Mayıs 2026</p>
+      <p class="date">31 Mayıs 2026</p>
     </div>
   </div>
   
@@ -162,15 +200,191 @@ fbq('track','PageView');
 </header>
 
 
-<p>Bu site uzun süre ertelediğim bir şeydi. GitHub’da rehberler birikti, kişisel notlar dağınık duruyordu, akademik özgeçmiş başka bir yerdeydi. <strong>Tek bir adres</strong>, ulaşılabilir bir vitrin lazımdı.</p>
-<p>Site <a href="https://quarto.org">Quarto</a> ile yapıldı. Statik HTML üretiyor, GitHub Pages’ta yayımlanıyor, Cloudflare üzerinden <code>muammerbeslen.com</code> adresine bağlı. Yapı <a href="https://silviacanelon.com">Silvia Canelón</a>’un sitesinden esinlendi — kendisinin hem yapı hem de açık kaynak kararlarına teşekkür ederim.</p>
-<p>Burada üç şeyi yapmaya çalışacağım:</p>
-<p><strong>Notları toparlamak.</strong> Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler, sıkça karşılaştığım hatalar. Twitter’a yazmaktansa kalıcı bir yere yazmak istedim.</p>
-<p><strong>Rehberlere yön göstermek.</strong> Veri temizliği, güvenliği, istatistik testi seçimi gibi kapsamlı çalışmalar kendi sayfalarında yaşamaya devam edecek; burada onlara işaret eden bir vitrin olacak.</p>
-<p><strong>Erişilebilir olmak.</strong> Klinik araştırma metodolojisi konusunda Türkçe destek arayan akademisyen ve hekimlere kolay ulaşılır bir kanal.</p>
-<p>Soru, öneri veya katkı için iletişim sayfasından ulaşabilirsin.</p>
+<p>GitHub kodu paylaşmak için harika bir yer; ama epidemiyolojide çalışıyorsan paylaştığın şeyin yanında <strong>paylaşmaman gereken</strong> şeyler de var: hasta verisi, kimliklendirilebilir bilgiler, API anahtarları, parolalar. Bu yazı, bir repoya dosya yüklerken nelere dikkat edeceğini, hangi lisansı seçeceğini ve çalışmanı nasıl güvenle paylaşacağını adım adım anlatıyor.</p>
+<p>İşin özü tek cümlede: <strong>GitHub kod içindir, veri için değil.</strong> Geri kalan her şey bu cümlenin pratiğe dökülmüş halidir.</p>
+<section id="önce-kavramları-ayır-gizlilik-güvenlik-lisans" class="level2">
+<h2 data-anchor-id="önce-kavramları-ayır-gizlilik-güvenlik-lisans">Önce kavramları ayır: gizlilik, güvenlik, lisans</h2>
+<p>Üçü karıştırılıyor ama farklı sorulara cevap veriyorlar.</p>
+<p><strong>Gizlilik</strong> — “Bu dosyayı <em>koymalı mıyım</em>?” Hasta verisi, kişisel veri, etik kurul kapsamındaki ham veri repoya hiç girmemeli. Bu, dosyayı yükledikten sonra “private” yapmakla çözülmez; en baştan hariç tutma meselesidir.</p>
+<p><strong>Güvenlik</strong> — “Bu dosyada <em>sızması tehlikeli bir şey</em> var mı?” Token, parola, bağlantı dizesi (connection string), <code>.env</code> dosyaları. Bunlar koda gömülü kalırsa, repo public olduğu anda dünyaya açılır.</p>
+<p><strong>Lisans</strong> — “Başkaları bunu <em>nasıl kullanabilir</em>?” Lisans, izin verme mekanizmasıdır. Lisans koymazsan kodun teknik olarak “tüm hakları saklı” sayılır ve kimse yasal olarak kullanamaz.</p>
+</section>
+<section id="en-kritik-kural-public-repo-herkese-açıktır" class="level2">
+<h2 data-anchor-id="en-kritik-kural-public-repo-herkese-açıktır">En kritik kural: public repo herkese açıktır</h2>
+<p>Public bir repoda her şey görünür — sadece dosyaların güncel hali değil, <strong>tüm geçmiş</strong> de. Yanlışlıkla yüklenip sonra silinen bir dosya, commit geçmişinde durmaya devam eder. “Sildim, gitti” yanılgısı en sık yapılan hatadır.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Uyarı
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Private bir repo bile mutlak güvence değildir: erişim yetkisi olan herkes görür, repoyu kopyalayabilir, ve bir gün “yanlışlıkla public yapılabilir.” Hasta verisi için doğru cevap “private repo” değil, <strong>repoya hiç koymamak</strong>.</p>
+</div>
+</div>
+</section>
+<section id="repoya-hangi-dosyalar-girmemeli" class="level2">
+<h2 data-anchor-id="repoya-hangi-dosyalar-girmemeli">Repoya hangi dosyalar girmemeli</h2>
+<p>Pratik bir kara liste:</p>
+<ul>
+<li>Kimliklendirilebilir hasta/kişi verisi (isim, TC, dosya no, adres, nadir tanı kombinasyonları).</li>
+<li>Ham veri setleri — <code>.csv</code>, <code>.xlsx</code>, <code>.dta</code>, <code>.sav</code>, <code>.rds</code> gibi. Kimliksizleştirilmiş olsa bile etik izin ve veri paylaşım sözleşmesi netleşmeden koyma.</li>
+<li>Kimlik bilgileri: API anahtarları, parolalar, token’lar, <code>.env</code>, kişisel SSH anahtarları.</li>
+<li>Büyük çıktı dosyaları: render edilmiş raporlar, devasa figürler, ara çıktılar (bunlar gizlilik değil ama repoyu şişirir).</li>
+<li>Sistem çöpleri: <code>.DS_Store</code>, <code>.Rhistory</code>, <code>.RData</code>.</li>
+</ul>
+</section>
+<section id="gitignore-en-baştan-kurulması-gereken-kalkan" class="level2">
+<h2 data-anchor-id="gitignore-en-baştan-kurulması-gereken-kalkan"><code>.gitignore</code>: en baştan kurulması gereken kalkan</h2>
+<p>İstenmeyen dosyaların <strong>hiç yüklenmemesini</strong> sağlayan dosya budur. Repo köküne <code>.gitignore</code> adıyla koyarsın; içine yazdığın kalıplara uyan dosyalar Git tarafından görmezden gelinir.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>.gitignore</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename=".gitignore"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- VERİ (hasta verisi buraya asla gelmesin) ---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">data/</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">*.csv</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">*.xlsx</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">*.dta</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">*.sav</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">*.rds</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Kimlik bilgileri / sırlar ---</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">.env</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">*.pem</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">*_secret*</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ex">config_local.*</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># --- R / RStudio geçici dosyaları ---</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ex">.Rhistory</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ex">.RData</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ex">.Rproj.user/</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Çıktılar ---</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ex">/_site/</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ex">/docs/</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ex">*.html</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># --- İşletim sistemi çöpleri ---</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ex">.DS_Store</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ex">Thumbs.db</span></span></code></pre></div><button title="Panoya Kopyala" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Önemli
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>.gitignore</code> yalnızca <strong>henüz hiç commit edilmemiş</strong> dosyalarda çalışır. Yani projeyi açar açmaz, ilk commit’ten önce kurman gerekir. Bir dosyayı bir kez yükledikten sonra <code>.gitignore</code>’a eklemek onu geçmişten silmez.</p>
+</div>
+</div>
+</section>
+<section id="güvenli-dosya-yükleme-akışı-adım-adım" class="level2">
+<h2 data-anchor-id="güvenli-dosya-yükleme-akışı-adım-adım">Güvenli dosya yükleme akışı (adım adım)</h2>
+<p>Her commit öncesi şu mini-rutin, kazaların çoğunu önler.</p>
+<p><strong>1. Önce <code>.gitignore</code> hazır mı bak.</strong> Yoksa yukarıdaki şablonu koy.</p>
+<p><strong>2. Neyin yükleneceğini commit’ten ÖNCE gör.</strong> Terminalde:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Panoya Kopyala" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Listede beklemediğin bir veri dosyası ya da <code>.env</code> görüyorsan, <strong>dur</strong> — commit’leme. Önce <code>.gitignore</code>’a ekle.</p>
+<p><strong>3. Veri klasörü yerine örnek/sahte veri koy.</strong> Kodun çalıştığını göstermek için gerçek veri yerine birkaç satırlık uydurma bir <code>ornek_veri.csv</code> koyabilir, README’de “gerçek veri etik izinle paylaşılır” notu düşebilirsin.</p>
+<p><strong>4. Commit’le ve gönder.</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Analiz scriptleri eklendi"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Panoya Kopyala" class="code-copy-button"><i class="bi"></i></button></div>
+<p>GitHub Desktop kullanıyorsan aynı kontrol “Changes” sekmesinde gözle yapılır: yüklenecek dosyaları işaretlemeden önce listeyi tara, veri/sır görürsen kutusunu işaretleme.</p>
+</section>
+<section id="githubın-otomatik-koruması-ne-yapar-ne-yapmaz" class="level2">
+<h2 data-anchor-id="githubın-otomatik-koruması-ne-yapar-ne-yapmaz">GitHub’ın otomatik koruması: ne yapar, ne yapmaz</h2>
+<p>Açık (public) depolarda GitHub, bilinen birçok <strong>gizli anahtar/token türünü</strong> ücretsiz ve varsayılan olarak tarar; tanıdığı bir sırrı push etmeye çalıştığında push’u <strong>engelleyebilir</strong> (push protection). Bu güzel bir güvenlik ağıdır.</p>
+<p>Ama sınırları net olsun: bu tarama yalnızca <strong>tanıdığı belirli token biçimlerini</strong> yakalar. <strong>Hasta verisini, isim listesini, genel parolaları ya da rastgele gizli metni tanımaz.</strong> Yani bu mekanizma seni veri sızıntısından korumaz — o iş tamamen senin <code>.gitignore</code> disiplinine kalmıştır.</p>
+</section>
+<section id="yanlışlıkla-hassas-dosya-yüklediysen" class="level2">
+<h2 data-anchor-id="yanlışlıkla-hassas-dosya-yüklediysen">Yanlışlıkla hassas dosya yüklediysen</h2>
+<p>Sırayla:</p>
+<p><strong>Daha güncel commit’lerdeyse ve henüz push etmediysen</strong> en kolayı. Dosyayı sil, <code>.gitignore</code>’a ekle, takibi durdur:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rm <span class="at">--cached</span> gizli_dosya.csv</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"gizli_dosya.csv"</span> <span class="op">&gt;&gt;</span> .gitignore</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Hassas dosya takipten cikarildi"</span></span></code></pre></div><button title="Panoya Kopyala" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Zaten push ettiysen ve geçmişte kaldıysa</strong>, dosyayı silmek yetmez — commit geçmişinde durmaya devam eder. Geçmişi temizlemek gerekir (<code>git filter-repo</code> gibi araçlarla), ki bu geçmişi yeniden yazar ve ortak çalışılan repolarda dikkat ister. Bu noktada acele etme, deneyimli biriyle birlikte yap.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Uyarı
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bir <strong>kimlik bilgisi</strong> (token/parola) sızdıysa, temizlik yetmez: o anahtarı <strong>derhal iptal et / yenile</strong>. Sızan saniyeden itibaren geçerli kabul et — public repolardaki anahtarlar dakikalar içinde taranıp kötüye kullanılabiliyor.</p>
+</div>
+</div>
+</section>
+<section id="lisans-seçimi-kodun-kaderini-sen-belirle" class="level2">
+<h2 data-anchor-id="lisans-seçimi-kodun-kaderini-sen-belirle">Lisans seçimi: kodun kaderini sen belirle</h2>
+<p>Lisans olmadan yüklenen kod “tüm hakları saklı” sayılır; başkaları görebilir ama yasal olarak kullanamaz, türetemez. Açık bilimde amaç paylaşmaksa, bilinçli bir lisans koy.</p>
+<p>Araştırma bağlamında en sık görülenler:</p>
+<ul>
+<li><strong>MIT</strong> — En serbest ve basit. “Kullan, değiştir, dağıt; sadece adımı ve lisans metnini koru.” Çoğu R/Python paketinin ve analiz kodunun tercihi.</li>
+<li><strong>Apache-2.0</strong> — MIT’e benzer serbestlikte, ek olarak patent koruması içerir. Kurumsal/daha büyük projelerde tercih edilir.</li>
+<li><strong>GPL-3.0</strong> — “Copyleft”: senin kodundan türetilen çalışmaların da açık kaynak kalmasını <strong>zorunlu</strong> kılar. Açıklığı yaymak istiyorsan güçlü bir seçim, ama türev çalışmaları kısıtladığı için herkese uymaz.</li>
+<li><strong>CC-BY-4.0</strong> — Kod için değil; <strong>veri, doküman, figür, eğitim materyali</strong> için uygundur. Atıf şartıyla serbest kullanım. (Yazılım lisansı olarak kullanma; kod için MIT/Apache/GPL tarafına bak.)</li>
+<li><strong>CC0</strong> — “Kamuya bırakıyorum, atıf bile şart değil.” Maksimum yeniden kullanım istediğin veri setleri için.</li>
+</ul>
+<p>Pratik özet: <strong>kod için MIT</strong> (basit ve yaygın), <strong>veri/doküman için CC-BY</strong>, <strong>açıklığı zorunlu kılmak istiyorsan GPL</strong>.</p>
+<p>Lisansı eklemek kolay: repoda <strong>Add file → Create new file</strong> de, dosya adını <code>LICENSE</code> yaz; GitHub sana hazır şablon listesini sunar, seçtiğini doldurur.</p>
+</section>
+<section id="paylaşırken-atıf-ve-alıntılanabilirlik" class="level2">
+<h2 data-anchor-id="paylaşırken-atıf-ve-alıntılanabilirlik">Paylaşırken: atıf ve alıntılanabilirlik</h2>
+<p>Çalışmanın paylaşıldığında <strong>doğru atıf alması</strong> için iki şey ekle:</p>
+<ul>
+<li><strong><code>CITATION.cff</code></strong> — Repo köküne koyduğun küçük bir dosya; GitHub bunu okuyup repo sayfasında “Cite this repository” düğmesi gösterir. İçinde yazarlar, başlık, sürüm, yıl bulunur.</li>
+<li><strong>Zenodo + DOI</strong> — Repoyu Zenodo’ya bağlayıp bir “release” yayımladığında çalışmana <strong>atıf verilebilir bir DOI</strong> atanır. Makalende “analiz kodu şu DOI’de” diyebilmen için ideal yol budur.</li>
+</ul>
+<p>Bir de README’de net bir <strong>veri erişim notu</strong> bulunsun: verinin nereden geldiği, neden repoda olmadığı, isteyenin nasıl/hangi izinle erişebileceği.</p>
+</section>
+<section id="sık-karşılaşılan-tuzaklar" class="level2">
+<h2 data-anchor-id="sık-karşılaşılan-tuzaklar">Sık karşılaşılan tuzaklar</h2>
+<p><strong>“Sildim ama hâlâ görünüyor.”</strong> Dosya commit geçmişinde duruyor. Güncel halden silmek geçmişi temizlemez; geçmiş düzenlemesi ayrı bir iştir.</p>
+<p><strong>“Private yaptım, güvendeyim.”</strong> Private mutlak değil; erişimi olan kopyalayabilir, ileride yanlışlıkla public olabilir. Hasta verisi için tek doğru karar: koymamak.</p>
+<p><strong>“Kimliksizleştirdim, sorun yok.”</strong> Küçük örneklemlerde nadir değişken kombinasyonları (yaş + ilçe + nadir tanı) yeniden kimliklendirmeye yol açabilir. Etik izin ve kurum politikası netleşmeden ham veriyi paylaşma.</p>
+<p><strong>“Lisans koymaya gerek yok, zaten public.”</strong> Public olması kullanım izni vermez. Lisanssız kod yasal olarak kullanılamaz; paylaşmak istiyorsan lisans şart.</p>
+<p><strong><code>.gitignore</code> koydum ama dosya yine yüklendi.</strong> Büyük ihtimalle dosya <code>.gitignore</code>’dan önce zaten commit edilmişti. <code>git rm --cached</code> ile takipten çıkar.</p>
+</section>
+<section id="hızlı-kontrol-listesi" class="level2">
+<h2 data-anchor-id="hızlı-kontrol-listesi">Hızlı kontrol listesi</h2>
+<p>Repoyu paylaşmadan önce:</p>
+<ul class="task-list">
+<li><label><input type="checkbox"><code>.gitignore</code> ilk commit’ten önce kuruldu mu?</label></li>
+<li><label><input type="checkbox"><code>git status</code> çıktısında veri/sır dosyası yok mu?</label></li>
+<li><label><input type="checkbox">Gerçek veri yerine örnek/sahte veri mi var?</label></li>
+<li><label><input type="checkbox">Hiçbir token/parola koda gömülü değil mi?</label></li>
+<li><label><input type="checkbox">Uygun bir <code>LICENSE</code> eklendi mi?</label></li>
+<li><label><input type="checkbox">README’de veri erişim ve atıf notu var mı?</label></li>
+<li><label><input type="checkbox">(Yayın için) <code>CITATION.cff</code> ve/veya Zenodo DOI hazır mı?</label></li>
+</ul>
+</section>
+<section id="kaynaklar" class="level2">
+<h2 data-anchor-id="kaynaklar">Kaynaklar</h2>
+<ul>
+<li><a href="https://docs.github.com/code-security/secret-scanning/about-secret-scanning">GitHub: gizli anahtar taraması hakkında</a></li>
+<li><a href="https://docs.github.com/en/code-security/concepts/secret-security/about-push-protection">GitHub: push koruması hakkında</a></li>
+<li><a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">GitHub: hassas veriyi depodan kaldırma</a></li>
+<li><a href="https://choosealicense.com/">choosealicense.com — lisans seçme rehberi</a></li>
+<li><a href="https://creativecommons.org/share-your-work/">Creative Commons lisansları</a></li>
+<li><a href="https://citation-file-format.github.io/">Citation File Format (CFF)</a></li>
+<li><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">Zenodo — GitHub entegrasyonu</a></li>
+</ul>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

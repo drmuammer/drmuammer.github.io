@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "notlar.html",
-    "href": "notlar.html",
-    "title": "Notlar",
-    "section": "",
-    "text": "Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler ve sıkça karşılaştığım hatalar.\nDaha kapsamlı içerikler için Projeler sayfasına bakabilirsin — orada GitHub’daki açık kaynak rehberlerin hepsi listeli.\n\n\n\n\n\n\n\n\n\n26\n\n\nMayıs 2026\n\n\n6 dakika\n\n\n\n\nR’de açık WMS ile choropleth\n\n\n\nR\n\n\nGIS\n\n\ngörselleştirme\n\n\naçık-veri\n\n\n\nAçık lisanslı WMS servisleri ve vektör verilerle Türkiye haritası üretmenin pratik yolu.\n\n\n\n\n\n\n03\n\n\nMayıs 2026\n\n\n1 dakika\n\n\n\n\nHoş geldiniz: bu site nasıl kuruldu, neden kuruldu\n\n\n\nduyuru\n\n\naçık-bilim\n\n\n\nSitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.\n\n\n\n\nEşleşen öğe yok\n Başa dön"
-  },
-  {
-    "objectID": "notlar/2026-05-03-hos-geldiniz.html",
-    "href": "notlar/2026-05-03-hos-geldiniz.html",
-    "title": "Hoş geldiniz: bu site nasıl kuruldu, neden kuruldu",
-    "section": "",
-    "text": "Bu site uzun süre ertelediğim bir şeydi. GitHub’da rehberler birikti, kişisel notlar dağınık duruyordu, akademik özgeçmiş başka bir yerdeydi. Tek bir adres, ulaşılabilir bir vitrin lazımdı.\nSite Quarto ile yapıldı. Statik HTML üretiyor, GitHub Pages’ta yayımlanıyor, Cloudflare üzerinden muammerbeslen.com adresine bağlı. Yapı Silvia Canelón’un sitesinden esinlendi — kendisinin hem yapı hem de açık kaynak kararlarına teşekkür ederim.\nBurada üç şeyi yapmaya çalışacağım:\nNotları toparlamak. Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler, sıkça karşılaştığım hatalar. Twitter’a yazmaktansa kalıcı bir yere yazmak istedim.\nRehberlere yön göstermek. Veri temizliği, güvenliği, istatistik testi seçimi gibi kapsamlı çalışmalar kendi sayfalarında yaşamaya devam edecek; burada onlara işaret eden bir vitrin olacak.\nErişilebilir olmak. Klinik araştırma metodolojisi konusunda Türkçe destek arayan akademisyen ve hekimlere kolay ulaşılır bir kanal.\nSoru, öneri veya katkı için iletişim sayfasından ulaşabilirsin.\n\n\n\n Başa dön"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Muammer Beslen, MD",
-    "section": "",
-    "text": "EST · MMXXVI · ANKARA · OPEN SCIENCE\n\n    \n      1854\n      Field epidemiologist · Doctor of Medicine\n      Muammer Beslen, MD\n      \n        Klinik araştırma metodolojisi, nedensel çıkarım ve sürveyans verisi üzerine çalışıyorum. Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.\n      \n    \n\n    \n      LinkedIn\n      GitHub\n      E-mail\n    \n  \n\n  \n    \n  \n\n\n\n\n\n Başa dön"
-  },
-  {
     "objectID": "projeler.html",
     "href": "projeler.html",
     "title": "Projeler",
@@ -35,11 +14,102 @@
     "text": "Field epidemiologist · Physician\n\n\nHi, I’m Muammer.\nI work on clinical research, biostatistics, and causal inference. Most of the content I produce is in Turkish — making methodological resources accessible to Turkish-speaking researchers is a personal priority.\nTwo things matter in my work: drawing valid causal conclusions from observational data, and sharing what I learn along the way.\n\n  Open-source\n  Featured guides\n  \n    \n      Statistical Method Selection\n      Interactive guide for choosing the right statistical test in medical research. Wizard, decision map, draggable D3 demos.\n    \n    \n      TR · EN\n      Interactive\n    \n  \n  \n    \n      Data Security — in Turkish\n      De-identification, hashing and encryption guide for clinical research data. HIPAA, GDPR and KVKK frameworks.\n    \n    \n      TR\n    \n  \n\n\n\n\n\n\n\nMost content on this site is in Turkish. The English version covers the homepage and CV; for English-language inquiries, please get in touch.\n\n\n\n\n\n\n Başa dön"
   },
   {
-    "objectID": "en/about.html",
-    "href": "en/about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Muammer Beslen, MD",
     "section": "",
-    "text": "I’m a field epidemiologist and physician. After completing medical training I focused on public health, surveillance and clinical research methodology.\nMy work centers on two axes: drawing valid causal inferences from observational data, and producing accessible Turkish-language methodological resources for academic researchers.\n\nNote: Full CV is being added.\n\n\n\n Başa dön"
+    "text": "EST · MMXXVI · ANKARA · OPEN SCIENCE\n\n    \n      1854\n      Field epidemiologist · Doctor of Medicine\n      Muammer Beslen, MD\n      \n        Klinik araştırma metodolojisi, nedensel çıkarım ve sürveyans verisi üzerine çalışıyorum. Türkçe açık kaynak rehberler hazırlıyor, notlarımı paylaşıyorum.\n      \n    \n\n    \n      LinkedIn\n      GitHub\n      E-mail\n    \n  \n\n  \n    \n  \n\n\n\n\n\n Başa dön"
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "",
+    "text": "GitHub kodu paylaşmak için harika bir yer; ama epidemiyolojide çalışıyorsan paylaştığın şeyin yanında paylaşmaman gereken şeyler de var: hasta verisi, kimliklendirilebilir bilgiler, API anahtarları, parolalar. Bu yazı, bir repoya dosya yüklerken nelere dikkat edeceğini, hangi lisansı seçeceğini ve çalışmanı nasıl güvenle paylaşacağını adım adım anlatıyor.\nİşin özü tek cümlede: GitHub kod içindir, veri için değil. Geri kalan her şey bu cümlenin pratiğe dökülmüş halidir."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#önce-kavramları-ayır-gizlilik-güvenlik-lisans",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#önce-kavramları-ayır-gizlilik-güvenlik-lisans",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "Önce kavramları ayır: gizlilik, güvenlik, lisans",
+    "text": "Önce kavramları ayır: gizlilik, güvenlik, lisans\nÜçü karıştırılıyor ama farklı sorulara cevap veriyorlar.\nGizlilik — “Bu dosyayı koymalı mıyım?” Hasta verisi, kişisel veri, etik kurul kapsamındaki ham veri repoya hiç girmemeli. Bu, dosyayı yükledikten sonra “private” yapmakla çözülmez; en baştan hariç tutma meselesidir.\nGüvenlik — “Bu dosyada sızması tehlikeli bir şey var mı?” Token, parola, bağlantı dizesi (connection string), .env dosyaları. Bunlar koda gömülü kalırsa, repo public olduğu anda dünyaya açılır.\nLisans — “Başkaları bunu nasıl kullanabilir?” Lisans, izin verme mekanizmasıdır. Lisans koymazsan kodun teknik olarak “tüm hakları saklı” sayılır ve kimse yasal olarak kullanamaz."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#en-kritik-kural-public-repo-herkese-açıktır",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#en-kritik-kural-public-repo-herkese-açıktır",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "En kritik kural: public repo herkese açıktır",
+    "text": "En kritik kural: public repo herkese açıktır\nPublic bir repoda her şey görünür — sadece dosyaların güncel hali değil, tüm geçmiş de. Yanlışlıkla yüklenip sonra silinen bir dosya, commit geçmişinde durmaya devam eder. “Sildim, gitti” yanılgısı en sık yapılan hatadır.\n\n\n\n\n\n\nUyarı\n\n\n\nPrivate bir repo bile mutlak güvence değildir: erişim yetkisi olan herkes görür, repoyu kopyalayabilir, ve bir gün “yanlışlıkla public yapılabilir.” Hasta verisi için doğru cevap “private repo” değil, repoya hiç koymamak."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#repoya-hangi-dosyalar-girmemeli",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#repoya-hangi-dosyalar-girmemeli",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "Repoya hangi dosyalar girmemeli",
+    "text": "Repoya hangi dosyalar girmemeli\nPratik bir kara liste:\n\nKimliklendirilebilir hasta/kişi verisi (isim, TC, dosya no, adres, nadir tanı kombinasyonları).\nHam veri setleri — .csv, .xlsx, .dta, .sav, .rds gibi. Kimliksizleştirilmiş olsa bile etik izin ve veri paylaşım sözleşmesi netleşmeden koyma.\nKimlik bilgileri: API anahtarları, parolalar, token’lar, .env, kişisel SSH anahtarları.\nBüyük çıktı dosyaları: render edilmiş raporlar, devasa figürler, ara çıktılar (bunlar gizlilik değil ama repoyu şişirir).\nSistem çöpleri: .DS_Store, .Rhistory, .RData."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#gitignore-en-baştan-kurulması-gereken-kalkan",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#gitignore-en-baştan-kurulması-gereken-kalkan",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": ".gitignore: en baştan kurulması gereken kalkan",
+    "text": ".gitignore: en baştan kurulması gereken kalkan\nİstenmeyen dosyaların hiç yüklenmemesini sağlayan dosya budur. Repo köküne .gitignore adıyla koyarsın; içine yazdığın kalıplara uyan dosyalar Git tarafından görmezden gelinir.\n\n\n.gitignore\n\n# --- VERİ (hasta verisi buraya asla gelmesin) ---\ndata/\n*.csv\n*.xlsx\n*.dta\n*.sav\n*.rds\n\n# --- Kimlik bilgileri / sırlar ---\n.env\n*.pem\n*_secret*\nconfig_local.*\n\n# --- R / RStudio geçici dosyaları ---\n.Rhistory\n.RData\n.Rproj.user/\n\n# --- Çıktılar ---\n/_site/\n/docs/\n*.html\n\n# --- İşletim sistemi çöpleri ---\n.DS_Store\nThumbs.db\n\n\n\n\n\n\n\nÖnemli\n\n\n\n.gitignore yalnızca henüz hiç commit edilmemiş dosyalarda çalışır. Yani projeyi açar açmaz, ilk commit’ten önce kurman gerekir. Bir dosyayı bir kez yükledikten sonra .gitignore’a eklemek onu geçmişten silmez."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#güvenli-dosya-yükleme-akışı-adım-adım",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#güvenli-dosya-yükleme-akışı-adım-adım",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "Güvenli dosya yükleme akışı (adım adım)",
+    "text": "Güvenli dosya yükleme akışı (adım adım)\nHer commit öncesi şu mini-rutin, kazaların çoğunu önler.\n1. Önce .gitignore hazır mı bak. Yoksa yukarıdaki şablonu koy.\n2. Neyin yükleneceğini commit’ten ÖNCE gör. Terminalde:\ngit status\nListede beklemediğin bir veri dosyası ya da .env görüyorsan, dur — commit’leme. Önce .gitignore’a ekle.\n3. Veri klasörü yerine örnek/sahte veri koy. Kodun çalıştığını göstermek için gerçek veri yerine birkaç satırlık uydurma bir ornek_veri.csv koyabilir, README’de “gerçek veri etik izinle paylaşılır” notu düşebilirsin.\n4. Commit’le ve gönder.\ngit add .\ngit commit -m \"Analiz scriptleri eklendi\"\ngit push\nGitHub Desktop kullanıyorsan aynı kontrol “Changes” sekmesinde gözle yapılır: yüklenecek dosyaları işaretlemeden önce listeyi tara, veri/sır görürsen kutusunu işaretleme."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#githubın-otomatik-koruması-ne-yapar-ne-yapmaz",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#githubın-otomatik-koruması-ne-yapar-ne-yapmaz",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "GitHub’ın otomatik koruması: ne yapar, ne yapmaz",
+    "text": "GitHub’ın otomatik koruması: ne yapar, ne yapmaz\nAçık (public) depolarda GitHub, bilinen birçok gizli anahtar/token türünü ücretsiz ve varsayılan olarak tarar; tanıdığı bir sırrı push etmeye çalıştığında push’u engelleyebilir (push protection). Bu güzel bir güvenlik ağıdır.\nAma sınırları net olsun: bu tarama yalnızca tanıdığı belirli token biçimlerini yakalar. Hasta verisini, isim listesini, genel parolaları ya da rastgele gizli metni tanımaz. Yani bu mekanizma seni veri sızıntısından korumaz — o iş tamamen senin .gitignore disiplinine kalmıştır."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#yanlışlıkla-hassas-dosya-yüklediysen",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#yanlışlıkla-hassas-dosya-yüklediysen",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "Yanlışlıkla hassas dosya yüklediysen",
+    "text": "Yanlışlıkla hassas dosya yüklediysen\nSırayla:\nDaha güncel commit’lerdeyse ve henüz push etmediysen en kolayı. Dosyayı sil, .gitignore’a ekle, takibi durdur:\ngit rm --cached gizli_dosya.csv\necho \"gizli_dosya.csv\" &gt;&gt; .gitignore\ngit commit -m \"Hassas dosya takipten cikarildi\"\nZaten push ettiysen ve geçmişte kaldıysa, dosyayı silmek yetmez — commit geçmişinde durmaya devam eder. Geçmişi temizlemek gerekir (git filter-repo gibi araçlarla), ki bu geçmişi yeniden yazar ve ortak çalışılan repolarda dikkat ister. Bu noktada acele etme, deneyimli biriyle birlikte yap.\n\n\n\n\n\n\nUyarı\n\n\n\nBir kimlik bilgisi (token/parola) sızdıysa, temizlik yetmez: o anahtarı derhal iptal et / yenile. Sızan saniyeden itibaren geçerli kabul et — public repolardaki anahtarlar dakikalar içinde taranıp kötüye kullanılabiliyor."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#lisans-seçimi-kodun-kaderini-sen-belirle",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#lisans-seçimi-kodun-kaderini-sen-belirle",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "Lisans seçimi: kodun kaderini sen belirle",
+    "text": "Lisans seçimi: kodun kaderini sen belirle\nLisans olmadan yüklenen kod “tüm hakları saklı” sayılır; başkaları görebilir ama yasal olarak kullanamaz, türetemez. Açık bilimde amaç paylaşmaksa, bilinçli bir lisans koy.\nAraştırma bağlamında en sık görülenler:\n\nMIT — En serbest ve basit. “Kullan, değiştir, dağıt; sadece adımı ve lisans metnini koru.” Çoğu R/Python paketinin ve analiz kodunun tercihi.\nApache-2.0 — MIT’e benzer serbestlikte, ek olarak patent koruması içerir. Kurumsal/daha büyük projelerde tercih edilir.\nGPL-3.0 — “Copyleft”: senin kodundan türetilen çalışmaların da açık kaynak kalmasını zorunlu kılar. Açıklığı yaymak istiyorsan güçlü bir seçim, ama türev çalışmaları kısıtladığı için herkese uymaz.\nCC-BY-4.0 — Kod için değil; veri, doküman, figür, eğitim materyali için uygundur. Atıf şartıyla serbest kullanım. (Yazılım lisansı olarak kullanma; kod için MIT/Apache/GPL tarafına bak.)\nCC0 — “Kamuya bırakıyorum, atıf bile şart değil.” Maksimum yeniden kullanım istediğin veri setleri için.\n\nPratik özet: kod için MIT (basit ve yaygın), veri/doküman için CC-BY, açıklığı zorunlu kılmak istiyorsan GPL.\nLisansı eklemek kolay: repoda Add file → Create new file de, dosya adını LICENSE yaz; GitHub sana hazır şablon listesini sunar, seçtiğini doldurur."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#paylaşırken-atıf-ve-alıntılanabilirlik",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#paylaşırken-atıf-ve-alıntılanabilirlik",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "Paylaşırken: atıf ve alıntılanabilirlik",
+    "text": "Paylaşırken: atıf ve alıntılanabilirlik\nÇalışmanın paylaşıldığında doğru atıf alması için iki şey ekle:\n\nCITATION.cff — Repo köküne koyduğun küçük bir dosya; GitHub bunu okuyup repo sayfasında “Cite this repository” düğmesi gösterir. İçinde yazarlar, başlık, sürüm, yıl bulunur.\nZenodo + DOI — Repoyu Zenodo’ya bağlayıp bir “release” yayımladığında çalışmana atıf verilebilir bir DOI atanır. Makalende “analiz kodu şu DOI’de” diyebilmen için ideal yol budur.\n\nBir de README’de net bir veri erişim notu bulunsun: verinin nereden geldiği, neden repoda olmadığı, isteyenin nasıl/hangi izinle erişebileceği."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#sık-karşılaşılan-tuzaklar",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#sık-karşılaşılan-tuzaklar",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "Sık karşılaşılan tuzaklar",
+    "text": "Sık karşılaşılan tuzaklar\n“Sildim ama hâlâ görünüyor.” Dosya commit geçmişinde duruyor. Güncel halden silmek geçmişi temizlemez; geçmiş düzenlemesi ayrı bir iştir.\n“Private yaptım, güvendeyim.” Private mutlak değil; erişimi olan kopyalayabilir, ileride yanlışlıkla public olabilir. Hasta verisi için tek doğru karar: koymamak.\n“Kimliksizleştirdim, sorun yok.” Küçük örneklemlerde nadir değişken kombinasyonları (yaş + ilçe + nadir tanı) yeniden kimliklendirmeye yol açabilir. Etik izin ve kurum politikası netleşmeden ham veriyi paylaşma.\n“Lisans koymaya gerek yok, zaten public.” Public olması kullanım izni vermez. Lisanssız kod yasal olarak kullanılamaz; paylaşmak istiyorsan lisans şart.\n.gitignore koydum ama dosya yine yüklendi. Büyük ihtimalle dosya .gitignore’dan önce zaten commit edilmişti. git rm --cached ile takipten çıkar."
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#hızlı-kontrol-listesi",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#hızlı-kontrol-listesi",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "Hızlı kontrol listesi",
+    "text": "Hızlı kontrol listesi\nRepoyu paylaşmadan önce:\n\n.gitignore ilk commit’ten önce kuruldu mu?\ngit status çıktısında veri/sır dosyası yok mu?\nGerçek veri yerine örnek/sahte veri mi var?\nHiçbir token/parola koda gömülü değil mi?\nUygun bir LICENSE eklendi mi?\nREADME’de veri erişim ve atıf notu var mı?\n(Yayın için) CITATION.cff ve/veya Zenodo DOI hazır mı?"
+  },
+  {
+    "objectID": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#kaynaklar",
+    "href": "notlar/2026-06-01-gizlilik-guvenlik-lisans.html#kaynaklar",
+    "title": "GitHub’da gizlilik, güvenlik ve lisanslar",
+    "section": "Kaynaklar",
+    "text": "Kaynaklar\n\nGitHub: gizli anahtar taraması hakkında\nGitHub: push koruması hakkında\nGitHub: hassas veriyi depodan kaldırma\nchoosealicense.com — lisans seçme rehberi\nCreative Commons lisansları\nCitation File Format (CFF)\nZenodo — GitHub entegrasyonu"
   },
   {
     "objectID": "iletisim.html",
@@ -54,6 +124,13 @@
     "title": "İletişim",
     "section": "Notlar",
     "text": "Notlar\nÖnce rehberlere bakmanı öneririm. Çoğu metodolojik soru zaten Projeler sayfasındaki rehberlerde ele alınmıştır. Daha özel bir durum varsa e-mail at.\nHata bildirimi. Bir rehberde yanlış, eksik ya da muğlak bilgi gördüysen, ilgili GitHub repo’sunda issue açabilirsin. Hem benim için takip kolaylığı, hem diğer okurlar için fayda olur."
+  },
+  {
+    "objectID": "hakkimda.html",
+    "href": "hakkimda.html",
+    "title": "Hakkımda",
+    "section": "",
+    "text": "Hekim ve saha epidemiyologuyum. Türkiye'de Halk Sağlığı Genel Müdürlüğü bünyesinde saha araştırmaları, sürveyans değerlendirmesi ve uygulamalı epidemiyoloji eğitimleri alanlarında çalışıyorum.\n  \n\n\n\n\n  \n    \n      Salgın incelemeleri\n      2022—2023\n      4 araştırma · 1 lider\n    \n    \n\n      \n        \n          Su Kaynaklı Salgın İncelemesi\n          Vaka-kontrol araştırması · Karadeniz Bölgesi\n        \n        Lider\n        2023\n      \n\n      \n        \n          Su Kaynaklı Salgın İncelemesi\n          Vaka-kontrol araştırması · Karadeniz Bölgesi\n        \n        Katkı\n        2023\n      \n\n      \n        \n          Akut Gastroenterit Vaka Kümelenmesi\n          Kohort araştırması · Karadeniz Bölgesi\n        \n        Katkı\n        2023\n      \n\n      \n        \n          Akut Gastroenterit Vaka Kümelenmesi\n          Tanımlayıcı araştırma · Ege Bölgesi\n        \n        Katkı\n        2022\n      \n\n    \n  \n\n  \n    \n      Sürveyans\n      2022\n      1 ulusal rapor\n    \n    \n\n      \n        \n          Hepatit A Sürveyansı Değerlendirme Raporu, Türkiye\n          Ulusal sürveyans değerlendirmesi\n        \n        Ulusal\n        2022\n      \n\n    \n  \n\n  \n    \n      Bilimsel sunumlar\n      2023—2026\n      4 sözlü sunum\n    \n    \n\n    \n        \n          Multi-pathogen Waterborne Outbreak Associated with Tap Water Infrastructure Reconstruction — Niksar, Türkiye\n          2026 FETP International Night · TEPHINET · Atlanta (sanal sunum)\n        \n        US\n        2026\n      \n\n      \n        \n          Multi-Pathogen Waterborne Outbreak — Vaka-Kontrol Çalışması\n          12th TEPHINET Conference · Berlin · Sözlü sunum (kabul edildi, ertelendi)\n        \n        DE\n        2025\n      \n\n      \n        \n          Su Kaynaklı Salgın — Vaka-Kontrol Çalışması\n          Ulusal Saha Epidemiyolojisi Bilimsel Konferansı · Ankara\n        \n        TR\n        2025\n      \n\n      \n        \n          Su Kaynaklı Salgın — Vaka-Kontrol Çalışması\n          7. Uluslararası 25. Ulusal Halk Sağlığı Kongresi · Antalya\n        \n        TR\n        2023\n      \n\n    \n  \n\n  \n    \n      Yayınlar\n      Süregelen\n      2 çalışma\n    \n    \n\n      \n        \n          Su Kaynaklı Salgın — Vaka-Kontrol Çalışması\n          Hazırlanmakta · Makale\n        \n        Makale\n        —\n      \n\n      \n        \n          COVID-19 Pandemi Sürecinde Acil Servis Başvurularının Değerlendirilmesi\n          Epidemiyolojik araştırma raporu\n        \n        Rapor\n        —\n      \n\n    \n  \n\n  \n    \n      Eğitici rolü\n      2022—2025\n      30+ modül · 90+ saat\n    \n    \n      \n        HSGM ve TSESEP bünyesinde IX—XIII. Uygulamalı Epidemiyoloji Eğitimleri ve Saha Epidemiyolojisi Kohort programlarında eğitici / kolaylaştırıcı olarak yer aldım.\n        Konular\n        \n          Bulaşıcı hastalıkların epidemiyolojisi\n          Salgın inceleme\n          Bilgisayar Excel\n          Epi Info\n          Lojistik regresyon\n          Taraf tutma & karıştırıcı faktörler\n          Hepatit B aşılaması\n          HİA hazırlığı\n          Oswego vaka çalışması\n          EUCS\n          Tablo & grafik hazırlama\n        \n      \n    \n  \n\n  \n    \n      Uluslararası katılım\n      2021—2024\n      6+ program\n    \n    \n\n      \n        \n          MEDIPIET Multivariable Analiz Modülü\n          Berlin · Yüz yüze eğitim\n        \n        DE\n        2023.02\n      \n\n      \n        \n          Genomik ve Moleküler Epidemiyoloji Eğitimi\n          AB ve DSÖ ortaklığı · Çevrimiçi\n        \n        EU\n        2024\n      \n\n      \n        \n          GenEpi-BioTrain — Genetik Epidemiyoloji ve Biyoenformatik\n          MEDIPIET Online programı\n        \n        EU\n        2023\n      \n\n      \n        \n          R ile Bulaşıcı Hastalık Modellemesi\n          Eğitmen: Juan F. Vesga (LSHTM)\n        \n        UK\n        2021, 2023\n      \n\n      \n        \n          TEPHINET Kongre & FETP International Night\n          Atlanta · Çevrimiçi katılım\n        \n        US\n        2024\n      \n\n      \n        \n          DSÖ Bilimsel Yazım Çalıştayı\n          Eğitmen: Priyakanta Nayek\n        \n        WHO\n        2021.02\n      \n\n    \n  \n\n  \n    \n      İlgi alanları\n      Süregelen\n      5 ana eksen\n    \n    \n      \n        \n          Saha epidemiyolojisi\n          Su kaynaklı salgın incelemeleri, gastroenterit kümelenmeleri, vaka-kontrol metodolojisi.\n\n          Sürveyans\n          Hepatit A, COVID-19 ve genel bulaşıcı hastalık sürveyansı; erken uyarı ve cevap sistemleri.\n\n          Metodoloji\n          Lojistik regresyon, çok değişkenli analiz, taraf tutma ve karıştırıcı kontrolü, nedensel çıkarım.\n\n          Araçlar\n          R, Epi Info, Excel, ArcGIS / Coğrafi Bilgi Sistemleri, salgın modellemesi.\n\n          Eğitim\n          Türkçe açık kaynak rehberler; HSGM ve TSESEP eğitim programlarında eğitici rolü.\n        \n      \n    \n  \n\n\n\n\n\n Başa dön"
   },
   {
     "objectID": "notlar/2026-05-26-r-cartogram-acik-wms.html",
@@ -112,10 +189,24 @@
     "text": "Kaynaklar\n\nsf paketi\nleaflet for R\ntmap v4\ncartogram paketi (CRAN)\nterrestris OSM WMS\ngeoBoundaries\nGADM\nNASA GIBS"
   },
   {
-    "objectID": "hakkimda.html",
-    "href": "hakkimda.html",
-    "title": "Hakkımda",
+    "objectID": "notlar/2026-05-03-hos-geldiniz.html",
+    "href": "notlar/2026-05-03-hos-geldiniz.html",
+    "title": "Hoş geldiniz: bu site nasıl kuruldu, neden kuruldu",
     "section": "",
-    "text": "Hekim ve saha epidemiyologuyum. Türkiye'de Halk Sağlığı Genel Müdürlüğü bünyesinde saha araştırmaları, sürveyans değerlendirmesi ve uygulamalı epidemiyoloji eğitimleri alanlarında çalışıyorum.\n  \n\n\n\n\n  \n    \n      Salgın incelemeleri\n      2022—2023\n      4 araştırma · 1 lider\n    \n    \n\n      \n        \n          Su Kaynaklı Salgın İncelemesi\n          Vaka-kontrol araştırması · Karadeniz Bölgesi\n        \n        Lider\n        2023\n      \n\n      \n        \n          Su Kaynaklı Salgın İncelemesi\n          Vaka-kontrol araştırması · Karadeniz Bölgesi\n        \n        Katkı\n        2023\n      \n\n      \n        \n          Akut Gastroenterit Vaka Kümelenmesi\n          Kohort araştırması · Karadeniz Bölgesi\n        \n        Katkı\n        2023\n      \n\n      \n        \n          Akut Gastroenterit Vaka Kümelenmesi\n          Tanımlayıcı araştırma · Ege Bölgesi\n        \n        Katkı\n        2022\n      \n\n    \n  \n\n  \n    \n      Sürveyans\n      2022\n      1 ulusal rapor\n    \n    \n\n      \n        \n          Hepatit A Sürveyansı Değerlendirme Raporu, Türkiye\n          Ulusal sürveyans değerlendirmesi\n        \n        Ulusal\n        2022\n      \n\n    \n  \n\n  \n    \n      Bilimsel sunumlar\n      2023—2026\n      4 sözlü sunum\n    \n    \n\n    \n        \n          Multi-pathogen Waterborne Outbreak Associated with Tap Water Infrastructure Reconstruction — Niksar, Türkiye\n          2026 FETP International Night · TEPHINET · Atlanta (sanal sunum)\n        \n        US\n        2026\n      \n\n      \n        \n          Multi-Pathogen Waterborne Outbreak — Vaka-Kontrol Çalışması\n          12th TEPHINET Conference · Berlin · Sözlü sunum (kabul edildi, ertelendi)\n        \n        DE\n        2025\n      \n\n      \n        \n          Su Kaynaklı Salgın — Vaka-Kontrol Çalışması\n          Ulusal Saha Epidemiyolojisi Bilimsel Konferansı · Ankara\n        \n        TR\n        2025\n      \n\n      \n        \n          Su Kaynaklı Salgın — Vaka-Kontrol Çalışması\n          7. Uluslararası 25. Ulusal Halk Sağlığı Kongresi · Antalya\n        \n        TR\n        2023\n      \n\n    \n  \n\n  \n    \n      Yayınlar\n      Süregelen\n      2 çalışma\n    \n    \n\n      \n        \n          Su Kaynaklı Salgın — Vaka-Kontrol Çalışması\n          Hazırlanmakta · Makale\n        \n        Makale\n        —\n      \n\n      \n        \n          COVID-19 Pandemi Sürecinde Acil Servis Başvurularının Değerlendirilmesi\n          Epidemiyolojik araştırma raporu\n        \n        Rapor\n        —\n      \n\n    \n  \n\n  \n    \n      Eğitici rolü\n      2022—2025\n      30+ modül · 90+ saat\n    \n    \n      \n        HSGM ve TSESEP bünyesinde IX—XIII. Uygulamalı Epidemiyoloji Eğitimleri ve Saha Epidemiyolojisi Kohort programlarında eğitici / kolaylaştırıcı olarak yer aldım.\n        Konular\n        \n          Bulaşıcı hastalıkların epidemiyolojisi\n          Salgın inceleme\n          Bilgisayar Excel\n          Epi Info\n          Lojistik regresyon\n          Taraf tutma & karıştırıcı faktörler\n          Hepatit B aşılaması\n          HİA hazırlığı\n          Oswego vaka çalışması\n          EUCS\n          Tablo & grafik hazırlama\n        \n      \n    \n  \n\n  \n    \n      Uluslararası katılım\n      2021—2024\n      6+ program\n    \n    \n\n      \n        \n          MEDIPIET Multivariable Analiz Modülü\n          Berlin · Yüz yüze eğitim\n        \n        DE\n        2023.02\n      \n\n      \n        \n          Genomik ve Moleküler Epidemiyoloji Eğitimi\n          AB ve DSÖ ortaklığı · Çevrimiçi\n        \n        EU\n        2024\n      \n\n      \n        \n          GenEpi-BioTrain — Genetik Epidemiyoloji ve Biyoenformatik\n          MEDIPIET Online programı\n        \n        EU\n        2023\n      \n\n      \n        \n          R ile Bulaşıcı Hastalık Modellemesi\n          Eğitmen: Juan F. Vesga (LSHTM)\n        \n        UK\n        2021, 2023\n      \n\n      \n        \n          TEPHINET Kongre & FETP International Night\n          Atlanta · Çevrimiçi katılım\n        \n        US\n        2024\n      \n\n      \n        \n          DSÖ Bilimsel Yazım Çalıştayı\n          Eğitmen: Priyakanta Nayek\n        \n        WHO\n        2021.02\n      \n\n    \n  \n\n  \n    \n      İlgi alanları\n      Süregelen\n      5 ana eksen\n    \n    \n      \n        \n          Saha epidemiyolojisi\n          Su kaynaklı salgın incelemeleri, gastroenterit kümelenmeleri, vaka-kontrol metodolojisi.\n\n          Sürveyans\n          Hepatit A, COVID-19 ve genel bulaşıcı hastalık sürveyansı; erken uyarı ve cevap sistemleri.\n\n          Metodoloji\n          Lojistik regresyon, çok değişkenli analiz, taraf tutma ve karıştırıcı kontrolü, nedensel çıkarım.\n\n          Araçlar\n          R, Epi Info, Excel, ArcGIS / Coğrafi Bilgi Sistemleri, salgın modellemesi.\n\n          Eğitim\n          Türkçe açık kaynak rehberler; HSGM ve TSESEP eğitim programlarında eğitici rolü.\n        \n      \n    \n  \n\n\n\n\n\n Başa dön"
+    "text": "Bu site uzun süre ertelediğim bir şeydi. GitHub’da rehberler birikti, kişisel notlar dağınık duruyordu, akademik özgeçmiş başka bir yerdeydi. Tek bir adres, ulaşılabilir bir vitrin lazımdı.\nSite Quarto ile yapıldı. Statik HTML üretiyor, GitHub Pages’ta yayımlanıyor, Cloudflare üzerinden muammerbeslen.com adresine bağlı. Yapı Silvia Canelón’un sitesinden esinlendi — kendisinin hem yapı hem de açık kaynak kararlarına teşekkür ederim.\nBurada üç şeyi yapmaya çalışacağım:\nNotları toparlamak. Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler, sıkça karşılaştığım hatalar. Twitter’a yazmaktansa kalıcı bir yere yazmak istedim.\nRehberlere yön göstermek. Veri temizliği, güvenliği, istatistik testi seçimi gibi kapsamlı çalışmalar kendi sayfalarında yaşamaya devam edecek; burada onlara işaret eden bir vitrin olacak.\nErişilebilir olmak. Klinik araştırma metodolojisi konusunda Türkçe destek arayan akademisyen ve hekimlere kolay ulaşılır bir kanal.\nSoru, öneri veya katkı için iletişim sayfasından ulaşabilirsin.\n\n\n\n Başa dön"
+  },
+  {
+    "objectID": "en/about.html",
+    "href": "en/about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a field epidemiologist and physician. After completing medical training I focused on public health, surveillance and clinical research methodology.\nMy work centers on two axes: drawing valid causal inferences from observational data, and producing accessible Turkish-language methodological resources for academic researchers.\n\nNote: Full CV is being added.\n\n\n\n Başa dön"
+  },
+  {
+    "objectID": "notlar.html",
+    "href": "notlar.html",
+    "title": "Notlar",
+    "section": "",
+    "text": "Akademik okuma sırasında kafamda oluşan kısa yorumlar, metodolojik gözlemler ve sıkça karşılaştığım hatalar.\nDaha kapsamlı içerikler için Projeler sayfasına bakabilirsin — orada GitHub’daki açık kaynak rehberlerin hepsi listeli.\n\n\n\n\n\n\n\n\n\n31\n\n\nMayıs 2026\n\n\n6 dakika\n\n\n\n\nGitHub’da gizlilik, güvenlik ve lisanslar\n\n\n\ngithub\n\n\ngizlilik\n\n\ngüvenlik\n\n\nlisans\n\n\naçık-bilim\n\n\n\nRepoya dosya yüklerken hasta verisini ve sırları sızdırmamak, doğru lisansı seçmek ve güvenle paylaşmak için pratik bir kontrol listesi.\n\n\n\n\n\n\n26\n\n\nMayıs 2026\n\n\n6 dakika\n\n\n\n\nR’de açık WMS ile choropleth\n\n\n\nR\n\n\nGIS\n\n\ngörselleştirme\n\n\naçık-veri\n\n\n\nAçık lisanslı WMS servisleri ve vektör verilerle Türkiye haritası üretmenin pratik yolu.\n\n\n\n\n\n\n03\n\n\nMayıs 2026\n\n\n1 dakika\n\n\n\n\nHoş geldiniz: bu site nasıl kuruldu, neden kuruldu\n\n\n\nduyuru\n\n\naçık-bilim\n\n\n\nSitenin kuruluş hikâyesi, paylaşmayı planladığım içerikler ve teknik altyapı üzerine kısa bir not.\n\n\n\n\nEşleşen öğe yok\n Başa dön"
   }
 ]
